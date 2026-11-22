@@ -2,7 +2,7 @@
   "name": "ai-zero-to-hero",
   "private": true,
   "version": "0.1.0",
-  "description": "AI Zero to Hero \u2014 an open-source, interactive AI engineering course. Created by Bala Venkatesh.",
+  "description": "Learn machine learning by running it — every lesson ends in a live app powered by a real model on real data.",
   "license": "MIT",
   "type": "module",
   "scripts": {
