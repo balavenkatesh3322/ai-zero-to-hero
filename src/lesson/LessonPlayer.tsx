@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Stage } from './Stage';
 import { Stepper } from './Stepper';
 import { StepCard } from './StepCard';
@@ -19,9 +19,33 @@ export function LessonPlayer({ lesson, folder, index, step, onFinish, railOpen, 
   const [ctx, setCtx] = useState<LessonCtx>({ temp: 1 });
   const [paused, setPaused] = useState(false);
   const [replayKey, setReplayKey] = useState(0);
+  const boxRef = useRef<HTMLDivElement>(null);
   const n = lesson.steps.length;
   const s = Math.min(step, n - 1);
   const cur = lesson.steps[s];
+
+  // LIVE APP steps: let the real system draw first, then bring the whole app into view.
+  useEffect(() => {
+    const box = boxRef.current;
+    if (!box || lesson.steps[Math.min(step, lesson.steps.length - 1)].scene !== 'system') return;
+    box.scrollTop = 0;
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const start = performance.now();
+    let timer = 0, cancelled = false;
+    const stop = () => { cancelled = true; };
+    box.addEventListener('wheel', stop, { passive: true });
+    box.addEventListener('touchstart', stop, { passive: true });
+    const attempt = () => {
+      if (cancelled) return;
+      const app = box.querySelector<HTMLElement>('.app-win:not(.app-win--loading)');
+      const waited = performance.now() - start;
+      if (!app || waited < (reduce ? 200 : 1050)) { if (waited < 6000) timer = window.setTimeout(attempt, 120); return; }
+      const scroller = box.scrollHeight > box.clientHeight + 4 ? box.clientHeight : innerHeight;
+      app.scrollIntoView({ block: app.offsetHeight + 24 <= scroller ? 'end' : 'start', behavior: reduce ? 'auto' : 'smooth' });
+    };
+    timer = window.setTimeout(attempt, 120);
+    return () => { clearTimeout(timer); box.removeEventListener('wheel', stop); box.removeEventListener('touchstart', stop); };
+  }, [lesson, step, replayKey]);
 
   const go = (i: number) => navigate(lessonHref(lesson.slug, Math.max(0, Math.min(n - 1, i))));
   const next = () => {
@@ -63,7 +87,7 @@ export function LessonPlayer({ lesson, folder, index, step, onFinish, railOpen, 
           <p className="lesson-head__sum">{lesson.summary}</p>
         </div>
 
-        <div className={cur.scene === 'system' ? 'stagebox stagebox--live' : 'stagebox'}>
+        <div ref={boxRef} className={cur.scene === 'system' ? 'stagebox stagebox--live' : 'stagebox'}>
           <div className="stage__hud">
             <div className="metrics">
               {lesson.metrics.map((m, mi) => {

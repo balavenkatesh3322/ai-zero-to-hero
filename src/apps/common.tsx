@@ -52,7 +52,7 @@ interface FrameProps { name: string; icon: string; source: string; playing?: boo
 /** A small app window: title bar with live indicator, body, and a data-source footer. */
 export function AppFrame({ name, icon, source, playing, onToggle, status, children }: FrameProps) {
   return (
-    <section className="app-win" aria-label={`${name} (live app)`}>
+    <section className="app-win app-win--launch" aria-label={`${name} (live app)`}>
       <header className="app-win__bar">
         <span className="app-win__dots" aria-hidden="true"><i /><i /><i /></span>
         <span className="app-win__icon" aria-hidden="true">{icon}</span>
