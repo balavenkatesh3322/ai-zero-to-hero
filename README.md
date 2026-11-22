@@ -58,7 +58,7 @@ Most courses explain machine learning. This one lets you **watch it work**.
 | # | Module | Status |
 |---|---|---|
 | **00** | **ML Fundamentals** — 21 lessons, each with a live app | ✅ Live |
-| 01 | Deep Learning Core | 🔜 Coming soon |
+| 01 | Deep Learning Core — **Optimizers** live (optimizer race app), 12 lessons coming soon | 🟡 1 of 13 live |
 | 02–17 | Vision, NLP, transformers, LLMs, RAG, agents, MCP, evaluation, safety, production and AI system design | 🔜 Coming soon |
 
 ML Fundamentals covers: what ML is · linear & logistic regression · decision trees & forests · SVMs · KNN · clustering · feature engineering · evaluation · bias & variance · ensembles · hyper-parameter tuning · pipelines · naive Bayes · time series · anomaly detection · imbalanced data · feature selection · ML system design · monitoring & drift · feature stores & training-serving skew.

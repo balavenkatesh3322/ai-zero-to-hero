@@ -131,6 +131,7 @@ Parked until the course has traction (suggested trigger: 10k monthly learners or
 | 1 | Learn: lesson player (header, colour-folder sidebar + Show filter + search, scene engine with draw-in arrows/packets, widgets, stepper, step card, recap, light/dark, keyboard ← → R Space, hash URLs per step, local progress, staged launch animation) | 🟡 built, awaiting approval |
 | 1a | Start Here, Phase 00 and Phase 01 | ✂️ removed from the app on 2026-11-22 (sources kept in `archive/`) |
 | 1b | **Phase 02 ML Fundamentals: 21 lessons, each with a live app** on real data (`scripts/data/measure_p02.py`, `measure_apps.py`) | 🟡 built, awaiting approval |
+| 1d | **01 · Deep Learning Core — Optimizers** (lesson 6 of 13) with the optimizer-race live app (`scripts/data/measure_m01.py`) | 🟡 in review (PR) |
 | 1c | **Realistic object library** (39 kinds, `#/objects`) | 🟡 built, awaiting approval |
 | 2 | Course map | ⏳ coming-soon screen live |
 | 3 | Practice | ⏳ coming-soon screen live |
@@ -184,6 +185,7 @@ Run locally: `npm install && npm run dev` → http://localhost:5173
 Lesson-1 completion ≥ 55% · weekly returning learners · GitHub stars & forks · contributors per month · merged lesson PRs · time-to-merge.
 
 ## Changelog
+- **v13 (2026-11-22):** First Deep Learning Core lesson: Optimizers (gradient descent, momentum, Adam, mini-batch SGD) with a live optimizer race on the real loss landscape, computed exactly from data moments. A folder now counts as available as soon as it has a built lesson.
 - **v12.2 (2026-11-22):** Light theme by default (only an explicit toggle is remembered); removed the language button; header GitHub button links to the repo; every step card links to “Open an issue” and “Edit on GitHub”; PR templates (general, add-lesson, edit-lesson), issue forms and two worked sample PRs in `docs/contributing/`.
 - **v12.1 (2026-11-22):** Professional README (one-line statement, screenshots in `docs/screenshots/`, features, curriculum status, run/contribute sections), `CONTRIBUTING.md` and MIT `LICENSE`. Dataset and third-party details stay in this spec and the scripts, not the README.
 - **v12 (2026-11-22):** SEO & sharing (per-page titles/descriptions, canonical URLs, generated Open Graph/Twitter cards, icons, manifest, sitemap, robots, JSON-LD), path URLs instead of hashes, ML Fundamentals renumbered as 00 · START with later phases 01–17 coming soon, deployment to Vercel from GitHub.

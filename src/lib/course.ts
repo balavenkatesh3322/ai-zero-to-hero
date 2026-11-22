@@ -1,9 +1,10 @@
 import curriculum from '../../docs/curriculum.json';
 import type { Lesson } from '../lesson/types';
 import { P02 } from '../lessons/p02';
+import { M01 } from '../lessons/m01';
 
 /** Lessons that are built as interactive scenes. Everything else shows "coming soon". */
-export const BUILT: Lesson[] = [...P02];
+export const BUILT: Lesson[] = [...P02, ...M01];
 
 export interface CourseLesson {
   slug: string;
@@ -35,7 +36,7 @@ const phases: Folder[] = curriculum.phases.filter((p) => p.phase >= FIRST_PHASE)
       const built = BUILT.find((b) => b.phase === id && b.index === l.n - 1) ?? null;
       return { slug: built ? built.slug : `${number}-${String(l.n).padStart(2, '0')}-${kebab(l.title)}`, title: l.title, status: l.status as CourseLesson['status'], topics: l.topics, built };
     });
-  return { id, number, title: p.title, tagline: p.phase === FIRST_PHASE ? 'Start here: the core ideas of machine learning, each one running live on real data.' : p.tagline, start: p.phase === FIRST_PHASE, lessons, live: lessons.filter((l) => l.status === 'LIVE').length };
+  return { id, number, title: p.title, tagline: p.phase === FIRST_PHASE ? 'Start here: the core ideas of machine learning, each one running live on real data.' : p.tagline, start: p.phase === FIRST_PHASE, lessons, live: lessons.filter((l) => l.built).length };
 });
 
 export const FOLDERS: Folder[] = phases;

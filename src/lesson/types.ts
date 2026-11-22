@@ -70,7 +70,8 @@ export type AppId =
   | 'movies-knn' | 'movies-segments'
   | 'loans-tree' | 'loans-ensemble' | 'loans-tuning'
   | 'sensor-forecast' | 'sensor-anomaly' | 'sensor-drift'
-  | 'cards-fraud' | 'serving-load';
+  | 'cards-fraud' | 'serving-load'
+  | 'optim-race';
 
 export interface Callout { text: string; at: string; tone: 'sheet' | 'violet' | 'orange' | 'green'; place?: 'above' | 'below' }
 

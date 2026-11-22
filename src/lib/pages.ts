@@ -28,6 +28,7 @@ export const APP_INFO: Record<string, { name: string; data: string }> = {
   sensor: { name: 'PlantWatch · machine temperature', data: 'NAB machine sensor' },
   cards: { name: 'CardGuard · payment screening', data: 'ULB credit-card fraud' },
   serving: { name: 'ModelServe · load test', data: 'measured model latencies' },
+  optim: { name: 'Trainer · optimizer race', data: 'California Housing census' },
 };
 export const appOf = (l: Lesson) => {
   const id = l.steps.find((s) => s.widget?.type === 'app')?.widget as { app: AppId } | undefined;

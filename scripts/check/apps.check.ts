@@ -26,3 +26,13 @@ cmp('loan forest', X.map((x) => { const p = (loans.forest.trees as N[]).map((t) 
 cmp('loan boost', X.map((x) => 1 / (1 + Math.exp(-((loans.boost.trees as N[]).reduce((s, t) => s + loans.boost.lr * walk(t, x).leaf, loans.boost.init))))), loans.check.boost);
 if (worst > 5e-3) { console.error('MISMATCH'); process.exit(1); }
 console.log('OK — browser models match scikit-learn (rounding only).');
+
+// optimizers: the browser update rules reproduce the steps-to-best-fit measured in Python
+import m01 from '../../src/lessons/data/m01.json';
+import { runOptimizer } from '../../src/apps/OptimApp';
+for (const [kind, lrs] of Object.entries(m01.lrs) as [ 'gd' | 'momentum' | 'adam', number[]][]) for (const lr of lrs) {
+  const p = runOptimizer(m01, kind, lr, 150), want = (m01.summary as Record<string, Record<string, { steps: number | null }>>)[kind][String(lr)].steps;
+  const got = p.findIndex((s) => s[2] <= m01.optimum.loss * 1.01);
+  if ((want ?? -1) !== got) { console.error(`MISMATCH optimizer ${kind} lr ${lr}: browser ${got}, python ${want}`); process.exit(1); }
+}
+console.log('OK — optimizer race matches measure_m01.py step for step.');

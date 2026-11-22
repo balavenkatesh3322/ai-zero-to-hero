@@ -9,6 +9,7 @@ const Loans = lazy(() => import('./LoansApp'));
 const Sensor = lazy(() => import('./SensorApp'));
 const Cards = lazy(() => import('./CardsApp'));
 const Serving = lazy(() => import('./ServingApp'));
+const Optim = lazy(() => import('./OptimApp'));
 
 export function AppView({ app }: { app: AppId }) {
   const [family, mode] = app.split('-') as [string, string];
@@ -21,6 +22,7 @@ export function AppView({ app }: { app: AppId }) {
       {family === 'sensor' && <Sensor mode={mode as 'forecast'} />}
       {family === 'cards' && <Cards />}
       {family === 'serving' && <Serving />}
+      {family === 'optim' && <Optim />}
     </Suspense>
   );
 }
