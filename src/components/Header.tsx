@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { GitHubMark, Icon, type IconName } from './Icon';
 import type { Theme } from '../lib/hooks';
+import { SITE } from '../lib/pages';
 
 const NAV: { view: string; label: string; icon: IconName }[] = [
   { view: 'learn', label: 'Learn', icon: 'book' },
@@ -43,11 +44,10 @@ export function Header({ view, theme, toggleTheme, query, setQuery }: Props) {
           <input ref={searchRef} id="lesson-search" name="q" type="search" placeholder="Search lessons…" value={query} onChange={(e) => setQuery(e.target.value)} />
           <kbd>⌘K</kbd>
         </label>
-        <button type="button" className="tool-btn" aria-label="Language: English"><Icon name="globe" /> EN</button>
         <button type="button" className="tool-btn" onClick={toggleTheme} aria-label={theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme'}>
           <Icon name={theme === 'light' ? 'moon' : 'sun'} />
         </button>
-        <a className="tool-btn" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="Contribute on GitHub"><GitHubMark /></a>
+        <a className="tool-btn gh-btn" href={SITE.repo} target="_blank" rel="noreferrer" aria-label="AI Zero to Hero on GitHub — star or contribute"><GitHubMark /><span className="gh-btn__label">GitHub</span></a>
         <a className="creator" href="https://balavenkatesh.is-a.dev/" target="_blank" rel="noreferrer">
           <span className="creator__avatar">BV</span>
           <span className="creator__text"><span className="creator__by">created by</span><span className="creator__name">Bala Venkatesh</span></span>

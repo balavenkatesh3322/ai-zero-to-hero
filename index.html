@@ -16,11 +16,10 @@
     <meta name="apple-mobile-web-app-title" content="Zero to Hero" />
     <!--seo-->
     <script>
-      // apply the saved or system theme before first paint, so the page never flashes
+      // light theme by default; a theme the learner picked is remembered (applied before first paint, no flash)
       try {
-        var t = localStorage.getItem('azh:theme');
-        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.dataset.theme = t;
+        var t = localStorage.getItem('azh:theme-pick');
+        document.documentElement.dataset.theme = t === 'dark' ? 'dark' : 'light';
       } catch (e) { document.documentElement.dataset.theme = 'light'; }
     </script>
   </head>

@@ -1,9 +1,10 @@
 import type { Step } from './types';
 import { Icon } from '../components/Icon';
+import { SITE } from '../lib/pages';
 
-interface Props { step: Step; index: number; total: number; onBack: () => void; onNext: () => void; nextLabel: string }
+interface Props { lessonTitle: string; step: Step; index: number; total: number; onBack: () => void; onNext: () => void; nextLabel: string }
 
-export function StepCard({ step, index, total, onBack, onNext, nextLabel }: Props) {
+export function StepCard({ lessonTitle, step, index, total, onBack, onNext, nextLabel }: Props) {
   const tagClass = step.tag === 'TRY IT' ? 'TRY' : step.tag === 'LIVE APP' ? 'LIVE' : step.tag;
   const isLast = index === total - 1;
   return (
@@ -36,7 +37,10 @@ export function StepCard({ step, index, total, onBack, onNext, nextLabel }: Prop
             <div><div className="keyidea__label muted">COMING UP</div><p>{step.comingUp}</p></div>
           </div>
         )}
-        <a className="discuss" href="https://github.com/" target="_blank" rel="noreferrer">Question or fix? Discuss on GitHub <span aria-hidden="true">↗</span></a>
+        <div className="discuss">
+          <a href={`${SITE.repo}/issues/new?template=lesson-feedback.yml&title=${encodeURIComponent(`[Lesson] ${lessonTitle} — step ${index + 1}`)}`} target="_blank" rel="noreferrer">Ask a question <span aria-hidden="true">↗</span></a>
+          <a href={`${SITE.repo}/edit/main/src/lessons/p02.ts`} target="_blank" rel="noreferrer">Edit on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
       <div className="stepcard__nav">
         <button type="button" className="ghost navbtn" onClick={onBack} disabled={index === 0}><Icon name="arrowLeft" size={14} /> Back</button>

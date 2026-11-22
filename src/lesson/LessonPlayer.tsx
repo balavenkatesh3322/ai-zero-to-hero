@@ -101,7 +101,7 @@ export function LessonPlayer({ lesson, folder, index, step, onFinish }: Props) {
       </main>
 
       <aside className="rail" aria-label="Step">
-        <StepCard step={cur} index={s} total={n} onBack={() => go(s - 1)} onNext={next} nextLabel={nextLabel} />
+        <StepCard lessonTitle={lesson.title} step={cur} index={s} total={n} onBack={() => go(s - 1)} onNext={next} nextLabel={nextLabel} />
         <section className="card learn">
           <div className="eyebrow">YOU’LL LEARN</div>
           <ul>

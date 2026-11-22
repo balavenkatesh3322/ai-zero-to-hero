@@ -1,0 +1,19 @@
+name: Propose a lesson or live app
+description: Suggest a new lesson, or offer to build one
+title: "[New lesson] "
+labels: ["new lesson"]
+body:
+  - type: input
+    id: title
+    attributes: { label: Lesson title }
+    validations: { required: true }
+  - type: textarea
+    id: story
+    attributes: { label: The story, description: The real problem the lesson opens with, and the live app the learner uses at the end. }
+    validations: { required: true }
+  - type: textarea
+    id: data
+    attributes: { label: Real data, description: Which public dataset or measurement would power it? }
+  - type: checkboxes
+    id: build
+    attributes: { label: Building it, options: [{ label: "I'd like to build this lesson myself" }] }

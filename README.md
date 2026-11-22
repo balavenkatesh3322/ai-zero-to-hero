@@ -127,6 +127,7 @@ Browse every available object at `/objects` and pick the one that looks like the
 Contributions are very welcome — new lessons, live apps, fixes, translations and design polish.
 
 1. Read [CONTRIBUTING.md](CONTRIBUTING.md) and the product spec in [`docs/spec.md`](docs/spec.md).
+   Copy a sample PR: **[edit a lesson](docs/contributing/sample-pr-edit-lesson.md)** · **[add a lesson](docs/contributing/sample-pr-add-lesson.md)**.
 2. Open an issue to discuss bigger changes first.
 3. Fork, create a branch, and open a pull request.
 

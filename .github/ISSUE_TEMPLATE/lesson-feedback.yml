@@ -1,0 +1,17 @@
+name: Lesson feedback
+description: A question, mistake or confusing step in a lesson
+title: "[Lesson] "
+labels: ["lesson", "feedback"]
+body:
+  - type: input
+    id: url
+    attributes: { label: Lesson URL, description: The page and step, e.g. /learn/naive-bayes/3 }
+    validations: { required: true }
+  - type: dropdown
+    id: kind
+    attributes: { label: What kind of feedback?, options: [Something is wrong, Something is unclear, The live app misbehaves, Idea to make it better] }
+    validations: { required: true }
+  - type: textarea
+    id: details
+    attributes: { label: Details, description: What did you expect, and what happened? Screenshots help. }
+    validations: { required: true }

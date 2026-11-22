@@ -12,6 +12,15 @@ Thanks for helping make machine learning easier to understand. This guide covers
 
 For anything larger than a small fix, please **open an issue first** so we can agree on the approach.
 
+## Sample pull requests
+
+Two complete, copyable examples:
+
+- **[Edit a lesson](docs/contributing/sample-pr-edit-lesson.md)**: fix or clarify a step (the most common contribution).
+- **[Add a lesson](docs/contributing/sample-pr-add-lesson.md)**: measure the data, write the lesson, add its live app and register it.
+
+Pull request templates are ready for both: add `?template=edit-lesson.md` or `?template=add-lesson.md` to the "Open a pull request" URL. Every step card in the app also has **Edit on GitHub** and **Open an issue** links.
+
 ## Setup
 
 ```bash

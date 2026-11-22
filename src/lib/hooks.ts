@@ -15,9 +15,14 @@ export function useTheme(): [Theme, () => void] {
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#211e1a' : '#f4ebe0');
-    try { localStorage.setItem('azh:theme', theme); } catch { /* ignore */ }
   }, [theme]);
-  return [theme, useCallback(() => setTheme((t) => (t === 'light' ? 'dark' : 'light')), [])];
+  // light by default; only an explicit choice is remembered
+  const toggle = useCallback(() => setTheme((t) => {
+    const next = t === 'light' ? 'dark' : 'light';
+    try { localStorage.setItem('azh:theme-pick', next); } catch { /* ignore */ }
+    return next;
+  }), []);
+  return [theme, toggle];
 }
 
 /* ---------- path route: /learn/<slug>/<step> (old #/ links are redirected) ---------- */

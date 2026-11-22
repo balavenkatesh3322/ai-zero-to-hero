@@ -2,6 +2,7 @@ import { SceneObject } from '../lesson/SceneObject';
 import type { ObjectKind } from '../lesson/types';
 import { AVAILABLE, FOLDERS, DEFAULT_SLUG } from '../lib/course';
 import { lessonHref } from '../lib/hooks';
+import { SITE } from '../lib/pages';
 import { GitHubMark, Icon } from './Icon';
 
 export interface SoonConfig {
@@ -59,7 +60,7 @@ export function ComingSoon({ cfg, crumbs }: { cfg: SoonConfig; crumbs?: string }
           </ul>
           <div className="soonpage__actions">
             <a className="pop soon__btn" href={lessonHref(DEFAULT_SLUG)}>Start learning now <Icon name="arrowRight" size={14} /></a>
-            <a className="ghost soon__btn" href="https://github.com/" target="_blank" rel="noreferrer"><GitHubMark /> Watch or help build it</a>
+            <a className="ghost soon__btn" href={SITE.repo} target="_blank" rel="noreferrer"><GitHubMark /> Star or help build it</a>
           </div>
           <p className="muted soonpage__note">Available today: 00 · ML Fundamentals — {availableCount} interactive lessons with live apps.</p>
         </div>
