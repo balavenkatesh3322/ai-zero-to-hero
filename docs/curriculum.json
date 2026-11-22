@@ -1,0 +1,7088 @@
+{
+ "product": "AI Zero to Hero",
+ "source": "rohitg00/ai-engineering-from-scratch (MIT)",
+ "volumes": [
+  {
+   "id": "V0",
+   "title": "Start Here",
+   "phases": [],
+   "blurb": "Zero to your first AI call. No experience needed."
+  },
+  {
+   "id": "V1",
+   "title": "Foundations",
+   "phases": [
+    0,
+    1,
+    2
+   ],
+   "blurb": "Tools, maths and classical ML."
+  },
+  {
+   "id": "V2",
+   "title": "Deep Learning",
+   "phases": [
+    3,
+    4,
+    6
+   ],
+   "blurb": "From a perceptron to vision and speech."
+  },
+  {
+   "id": "V3",
+   "title": "Language",
+   "phases": [
+    5,
+    7
+   ],
+   "blurb": "NLP, attention and the transformer, by hand."
+  },
+  {
+   "id": "V4",
+   "title": "Large Language Models",
+   "phases": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "blurb": "Generative AI, RL, train a mini GPT, ship RAG."
+  },
+  {
+   "id": "V5",
+   "title": "Agents",
+   "phases": [
+    12,
+    13,
+    14,
+    15,
+    16
+   ],
+   "blurb": "Multimodal, tools & MCP, agents, swarms."
+  },
+  {
+   "id": "V6",
+   "title": "Production & Safety",
+   "phases": [
+    17,
+    18,
+    19
+   ],
+   "blurb": "Serving, safety, capstones."
+  }
+ ],
+ "startHere": [
+  "What is AI, ML & GenAI?",
+  "How an LLM picks the next word",
+  "Tokens & context windows",
+  "Your first API call",
+  "Messages, roles & system prompts",
+  "Napkin math: cost & latency",
+  "What an AI engineer actually does"
+ ],
+ "designCases": [
+  "Enterprise document Q&A (RAG)",
+  "ChatGPT",
+  "Coding assistant",
+  "Customer-support agent",
+  "Real-time voice assistant",
+  "AI search engine",
+  "Deep-research multi-agent system",
+  "LLM gateway / platform",
+  "Content moderation",
+  "Meeting summarizer",
+  "Code-review bot",
+  "LLM-powered recommender"
+ ],
+ "phases": [
+  {
+   "phase": 0,
+   "title": "Setup & Tooling",
+   "tagline": "",
+   "volume": "V1",
+   "hook": "An API key was committed to a public repo.",
+   "count": 13
+  },
+  {
+   "phase": 1,
+   "title": "Math Foundations",
+   "tagline": "The intuition behind every AI algorithm, through code.",
+   "volume": "V1",
+   "hook": "Search returns shoes for a \"boot camp\" query.",
+   "count": 22
+  },
+  {
+   "phase": 2,
+   "title": "ML Fundamentals",
+   "tagline": "Classical ML — still the backbone of most production AI.",
+   "volume": "V1",
+   "hook": "The fraud model is 99% accurate and catches nothing.",
+   "count": 21
+  },
+  {
+   "phase": 3,
+   "title": "Deep Learning Core",
+   "tagline": "Neural networks from first principles. No frameworks until you build one.",
+   "volume": "V2",
+   "hook": "Loss is NaN after 3 epochs.",
+   "count": 13
+  },
+  {
+   "phase": 4,
+   "title": "Computer Vision",
+   "tagline": "From pixels to understanding — image, video, 3D, VLMs, and world models.",
+   "volume": "V2",
+   "hook": "The receipt scanner reads $1,000 as $1.000.",
+   "count": 28
+  },
+  {
+   "phase": 5,
+   "title": "NLP: Foundations to Advanced",
+   "tagline": "Language is the interface to intelligence.",
+   "volume": "V3",
+   "hook": "The answer was split across two chunks.",
+   "count": 29
+  },
+  {
+   "phase": 6,
+   "title": "Speech & Audio",
+   "tagline": "Hear, understand, speak.",
+   "volume": "V2",
+   "hook": "The voice bot talks over the customer.",
+   "count": 17
+  },
+  {
+   "phase": 7,
+   "title": "Transformers Deep Dive",
+   "tagline": "The architecture that changed everything.",
+   "volume": "V3",
+   "hook": "Latency doubles as the chat grows.",
+   "count": 16
+  },
+  {
+   "phase": 8,
+   "title": "Generative AI",
+   "tagline": "Create images, video, audio, 3D, and more.",
+   "volume": "V4",
+   "hook": "Generated product photos all have six fingers.",
+   "count": 15
+  },
+  {
+   "phase": 9,
+   "title": "Reinforcement Learning",
+   "tagline": "The foundation of RLHF and game-playing AI.",
+   "volume": "V4",
+   "hook": "The reward model learned to love long answers.",
+   "count": 12
+  },
+  {
+   "phase": 10,
+   "title": "LLMs from Scratch",
+   "tagline": "Build, train, and understand large language models.",
+   "volume": "V4",
+   "hook": "The fine-tuned model forgot how to speak English.",
+   "count": 24
+  },
+  {
+   "phase": 11,
+   "title": "LLM Engineering",
+   "tagline": "Put LLMs to work in production.",
+   "volume": "V4",
+   "hook": "The bot quotes a refund policy from 2019.",
+   "count": 17
+  },
+  {
+   "phase": 12,
+   "title": "Multimodal AI",
+   "tagline": "See, hear, read, and reason across modalities — from ViT patches to computer-use agents.",
+   "volume": "V5",
+   "hook": "The model reads a chart upside down.",
+   "count": 25
+  },
+  {
+   "phase": 13,
+   "title": "Tools & Protocols",
+   "tagline": "The interfaces between AI and the real world.",
+   "volume": "V5",
+   "hook": "The model called delete_user with the wrong ID.",
+   "count": 45
+  },
+  {
+   "phase": 14,
+   "title": "Agent Engineering",
+   "tagline": "Build agents from first principles, use coding agents reliably, and shape the work before implementation.",
+   "volume": "V5",
+   "hook": "The agent loops forever on a 404.",
+   "count": 54
+  },
+  {
+   "phase": 15,
+   "title": "Autonomous Systems",
+   "tagline": "Long-horizon agents, self-improvement, and the 2026 safety stack.",
+   "volume": "V5",
+   "hook": "The coding agent force-pushed to main.",
+   "count": 22
+  },
+  {
+   "phase": 16,
+   "title": "Multi-Agent & Swarms",
+   "tagline": "Coordination, emergence, and collective intelligence.",
+   "volume": "V5",
+   "hook": "Three agents agree on a wrong answer.",
+   "count": 25
+  },
+  {
+   "phase": 17,
+   "title": "Infrastructure & Production",
+   "tagline": "Ship AI to the real world.",
+   "volume": "V6",
+   "hook": "p99 latency is 14 s at 200 users — and the bill tripled.",
+   "count": 29
+  },
+  {
+   "phase": 18,
+   "title": "Ethics, Safety & Alignment",
+   "tagline": "Build AI that helps humanity. Not optional.",
+   "volume": "V6",
+   "hook": "A PDF told the agent to email the customer list.",
+   "count": 30
+  },
+  {
+   "phase": 19,
+   "title": "Capstone Projects",
+   "tagline": "17 end-to-end products + 9 deep-build tracks. 20-40 hours per project; 4-12 lessons per track.",
+   "volume": "V6",
+   "hook": "Ship it end to end, with evals and a dashboard.",
+   "count": 85
+  }
+ ],
+ "topics": [
+  {
+   "id": "basics",
+   "title": "Very basics",
+   "count": 8
+  },
+  {
+   "id": "rag",
+   "title": "RAG",
+   "count": 18
+  },
+  {
+   "id": "tools",
+   "title": "Tool calling",
+   "count": 11
+  },
+  {
+   "id": "mcp",
+   "title": "MCP",
+   "count": 18
+  },
+  {
+   "id": "skills",
+   "title": "Agent Skills",
+   "count": 6
+  },
+  {
+   "id": "agents",
+   "title": "Agents",
+   "count": 27
+  },
+  {
+   "id": "eval",
+   "title": "Evaluation",
+   "count": 35
+  },
+  {
+   "id": "security",
+   "title": "Security & safety",
+   "count": 25
+  }
+ ],
+ "lessons": [
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 1,
+   "title": "Dev Environment",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/01-dev-environment/",
+   "topics": [
+    "basics"
+   ]
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 2,
+   "title": "Git & Collaboration",
+   "repoType": "Learn",
+   "languages": "—",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/02-git-and-collaboration/",
+   "topics": []
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 3,
+   "title": "GPU Setup & Cloud",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/03-gpu-setup-and-cloud/",
+   "topics": []
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 4,
+   "title": "APIs & Keys",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/04-apis-and-keys/",
+   "topics": [
+    "basics"
+   ]
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 5,
+   "title": "Jupyter Notebooks",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/05-jupyter-notebooks/",
+   "topics": []
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 6,
+   "title": "Python Environments",
+   "repoType": "Build",
+   "languages": "Shell",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/06-python-environments/",
+   "topics": []
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 7,
+   "title": "Docker for AI",
+   "repoType": "Build",
+   "languages": "Docker",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/07-docker-for-ai/",
+   "topics": []
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 8,
+   "title": "Editor Setup",
+   "repoType": "Build",
+   "languages": "—",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/08-editor-setup/",
+   "topics": []
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 9,
+   "title": "Data Management",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/09-data-management/",
+   "topics": []
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 10,
+   "title": "Terminal & Shell",
+   "repoType": "Learn",
+   "languages": "—",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/10-terminal-and-shell/",
+   "topics": []
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 11,
+   "title": "Linux for AI",
+   "repoType": "Learn",
+   "languages": "—",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/11-linux-for-ai/",
+   "topics": []
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 12,
+   "title": "Debugging & Profiling",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/12-debugging-and-profiling/",
+   "topics": []
+  },
+  {
+   "phase": 0,
+   "phaseTitle": "Setup & Tooling",
+   "n": 13,
+   "title": "Python for AI Engineering",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/00-setup-and-tooling/13-python-for-ai-engineering/",
+   "topics": [
+    "basics"
+   ]
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 1,
+   "title": "Linear Algebra Intuition",
+   "repoType": "Learn",
+   "languages": "Python, Julia",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/01-linear-algebra-intuition/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 2,
+   "title": "Vectors, Matrices & Operations",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/02-vectors-matrices-operations/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 3,
+   "title": "Matrix Transformations & Eigenvalues",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/03-matrix-transformations/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 4,
+   "title": "Calculus for ML: Derivatives & Gradients",
+   "repoType": "Learn",
+   "languages": "Python, Julia",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/04-calculus-for-ml/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 5,
+   "title": "Chain Rule & Automatic Differentiation",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/05-chain-rule-and-autodiff/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 6,
+   "title": "Probability & Distributions",
+   "repoType": "Learn",
+   "languages": "Python, Julia",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/06-probability-and-distributions/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 7,
+   "title": "Bayes' Theorem & Statistical Thinking",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/07-bayes-theorem/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 8,
+   "title": "Optimization: Gradient Descent Family",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/08-optimization/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 9,
+   "title": "Information Theory: Entropy, KL Divergence",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/09-information-theory/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 10,
+   "title": "Dimensionality Reduction: PCA, t-SNE, UMAP",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/10-dimensionality-reduction/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 11,
+   "title": "Singular Value Decomposition",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/11-singular-value-decomposition/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 12,
+   "title": "Tensor Operations",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/12-tensor-operations/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 13,
+   "title": "Numerical Stability",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/13-numerical-stability/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 14,
+   "title": "Norms & Distances",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/14-norms-and-distances/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 15,
+   "title": "Statistics for ML",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/15-statistics-for-ml/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 16,
+   "title": "Sampling Methods",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/16-sampling-methods/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 17,
+   "title": "Linear Systems",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/17-linear-systems/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 18,
+   "title": "Convex Optimization",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/18-convex-optimization/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 19,
+   "title": "Complex Numbers for AI",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/19-complex-numbers/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 20,
+   "title": "The Fourier Transform",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/20-fourier-transform/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 21,
+   "title": "Graph Theory for ML",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/21-graph-theory/",
+   "topics": []
+  },
+  {
+   "phase": 1,
+   "phaseTitle": "Math Foundations",
+   "n": 22,
+   "title": "Stochastic Processes",
+   "repoType": "Learn",
+   "languages": "Python, Julia",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/01-math-foundations/22-stochastic-processes/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 1,
+   "title": "What Is Machine Learning",
+   "repoType": "Learn",
+   "languages": "Python",
+   "format": "Scene",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/01-what-is-machine-learning/",
+   "topics": [
+    "basics"
+   ]
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 2,
+   "title": "Linear Regression from Scratch",
+   "repoType": "Build",
+   "languages": "Python, Rust, Julia",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/02-linear-regression/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 3,
+   "title": "Logistic Regression & Classification",
+   "repoType": "Build",
+   "languages": "Python, Rust, Julia",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/03-logistic-regression/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 4,
+   "title": "Decision Trees & Random Forests",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/04-decision-trees/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 5,
+   "title": "Support Vector Machines",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/05-support-vector-machines/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 6,
+   "title": "KNN & Distance Metrics",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/06-knn-and-distances/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 7,
+   "title": "Unsupervised Learning: K-Means, DBSCAN",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/07-unsupervised-learning/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 8,
+   "title": "Feature Engineering & Selection",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/08-feature-engineering/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 9,
+   "title": "Model Evaluation: Metrics, Cross-Validation",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/09-model-evaluation/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 10,
+   "title": "Bias, Variance & the Learning Curve",
+   "repoType": "Learn",
+   "languages": "Python",
+   "format": "Scene",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/10-bias-variance/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 11,
+   "title": "Ensemble Methods: Boosting, Bagging, Stacking",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/11-ensemble-methods/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 12,
+   "title": "Hyperparameter Tuning",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/12-hyperparameter-tuning/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 13,
+   "title": "ML Pipelines & Experiment Tracking",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/13-ml-pipelines/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 14,
+   "title": "Naive Bayes",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/14-naive-bayes/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 15,
+   "title": "Time Series Fundamentals",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/15-time-series/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 16,
+   "title": "Anomaly Detection",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/16-anomaly-detection/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 17,
+   "title": "Handling Imbalanced Data",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/17-imbalanced-data/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 18,
+   "title": "Feature Selection",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/18-feature-selection/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 19,
+   "title": "ML System Design — From Problem to Deployed Model",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/19-ml-system-design/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 20,
+   "title": "Monitoring Models in Production — Data Drift and Concept Drift",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/20-model-monitoring-and-drift/",
+   "topics": []
+  },
+  {
+   "phase": 2,
+   "phaseTitle": "ML Fundamentals",
+   "n": 21,
+   "title": "Feature Stores and Training-Serving Skew",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "LIVE",
+   "source": "phases/02-ml-fundamentals/21-feature-stores-and-training-serving-skew/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 1,
+   "title": "The Perceptron: Where It All Started",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Rust, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/01-the-perceptron/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 2,
+   "title": "Multi-Layer Networks & Forward Pass",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/02-multi-layer-networks/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 3,
+   "title": "Backpropagation from Scratch",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Rust, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/03-backpropagation/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 4,
+   "title": "Activation Functions: ReLU, Sigmoid, GELU & Why",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/04-activation-functions/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 5,
+   "title": "Loss Functions: MSE, Cross-Entropy, Contrastive",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/05-loss-functions/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 6,
+   "title": "Optimizers: SGD, Momentum, Adam, AdamW",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/06-optimizers/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 7,
+   "title": "Regularization: Dropout, Weight Decay, BatchNorm",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/07-regularization/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 8,
+   "title": "Weight Initialization & Training Stability",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/08-weight-initialization/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 9,
+   "title": "Learning Rate Schedules & Warmup",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/09-learning-rate-schedules/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 10,
+   "title": "Build Your Own Mini Framework",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/10-mini-framework/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 11,
+   "title": "Introduction to PyTorch",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/11-intro-to-pytorch/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 12,
+   "title": "Introduction to JAX",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/12-intro-to-jax/",
+   "topics": []
+  },
+  {
+   "phase": 3,
+   "phaseTitle": "Deep Learning Core",
+   "n": 13,
+   "title": "Debugging Neural Networks",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/03-deep-learning-core/13-debugging-neural-networks/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 1,
+   "title": "Image Fundamentals: Pixels, Channels, Color Spaces",
+   "repoType": "Learn",
+   "languages": "Python, Julia",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/01-image-fundamentals/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 2,
+   "title": "Convolutions from Scratch",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/02-convolutions-from-scratch/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 3,
+   "title": "CNNs: LeNet to ResNet",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/03-cnns-lenet-to-resnet/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 4,
+   "title": "Image Classification",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/04-image-classification/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 5,
+   "title": "Transfer Learning & Fine-Tuning",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/05-transfer-learning/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 6,
+   "title": "Object Detection — YOLO from Scratch",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/06-object-detection-yolo/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 7,
+   "title": "Semantic Segmentation — U-Net",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/07-semantic-segmentation-unet/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 8,
+   "title": "Instance Segmentation — Mask R-CNN",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/08-instance-segmentation-mask-rcnn/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 9,
+   "title": "Image Generation — GANs",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/09-image-generation-gans/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 10,
+   "title": "Image Generation — Diffusion Models",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/10-image-generation-diffusion/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 11,
+   "title": "Stable Diffusion — Architecture & Fine-Tuning",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/11-stable-diffusion/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 12,
+   "title": "Video Understanding — Temporal Modeling",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/12-video-understanding/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 13,
+   "title": "3D Vision: Point Clouds, NeRFs",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/13-3d-vision-nerf/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 14,
+   "title": "Vision Transformers (ViT)",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/14-vision-transformers/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 15,
+   "title": "Real-Time Vision: Edge Deployment",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/15-real-time-edge/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 16,
+   "title": "Build a Complete Vision Pipeline",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/16-vision-pipeline-capstone/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 17,
+   "title": "Self-Supervised Vision — SimCLR, DINO, MAE",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/17-self-supervised-vision/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 18,
+   "title": "Open-Vocabulary Vision — CLIP",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/18-open-vocab-clip/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 19,
+   "title": "OCR & Document Understanding",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/19-ocr-document-understanding/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 20,
+   "title": "Image Retrieval & Metric Learning",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/20-image-retrieval-metric/",
+   "topics": [
+    "rag",
+    "eval"
+   ]
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 21,
+   "title": "Keypoint Detection & Pose Estimation",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/21-keypoint-pose/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 22,
+   "title": "3D Gaussian Splatting from Scratch",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/22-3d-gaussian-splatting/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 23,
+   "title": "Diffusion Transformers & Rectified Flow",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/23-diffusion-transformers-rectified-flow/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 24,
+   "title": "SAM 3 & Open-Vocabulary Segmentation",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/24-sam3-open-vocab-segmentation/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 25,
+   "title": "Vision-Language Models (ViT-MLP-LLM)",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/25-vision-language-models/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 26,
+   "title": "Monocular Depth & Geometry Estimation",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/26-monocular-depth/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 27,
+   "title": "Multi-Object Tracking & Video Memory",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/27-multi-object-tracking/",
+   "topics": []
+  },
+  {
+   "phase": 4,
+   "phaseTitle": "Computer Vision",
+   "n": 28,
+   "title": "World Models & Video Diffusion",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/04-computer-vision/28-world-models-video-diffusion/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 1,
+   "title": "Text Processing: Tokenization, Stemming, Lemmatization",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/01-text-processing/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 2,
+   "title": "Bag of Words, TF-IDF & Text Representation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/02-bag-of-words-tfidf/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 3,
+   "title": "Word Embeddings: Word2Vec from Scratch",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/03-word-embeddings-word2vec/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 4,
+   "title": "GloVe, FastText & Subword Embeddings",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/04-glove-fasttext-subword/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 5,
+   "title": "Sentiment Analysis",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/05-sentiment-analysis/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 6,
+   "title": "Named Entity Recognition (NER)",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/06-named-entity-recognition/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 7,
+   "title": "POS Tagging & Syntactic Parsing",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/07-pos-tagging-parsing/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 8,
+   "title": "Text Classification — CNNs & RNNs for Text",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/08-cnns-rnns-for-text/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 9,
+   "title": "Sequence-to-Sequence Models",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/09-sequence-to-sequence/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 10,
+   "title": "Attention Mechanism — The Breakthrough",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/10-attention-mechanism/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 11,
+   "title": "Machine Translation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/11-machine-translation/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 12,
+   "title": "Text Summarization",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/12-text-summarization/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 13,
+   "title": "Question Answering Systems",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/13-question-answering/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 14,
+   "title": "Information Retrieval & Search",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/14-information-retrieval-search/",
+   "topics": [
+    "rag",
+    "eval"
+   ]
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 15,
+   "title": "Topic Modeling: LDA, BERTopic",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/15-topic-modeling/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 16,
+   "title": "Text Generation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/16-text-generation-pre-transformer/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 17,
+   "title": "Chatbots: Rule-Based to Neural",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/17-chatbots-rule-to-neural/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 18,
+   "title": "Multilingual NLP",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/18-multilingual-nlp/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 19,
+   "title": "Subword Tokenization: BPE, WordPiece, Unigram, SentencePiece",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/19-subword-tokenization/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 20,
+   "title": "Structured Outputs & Constrained Decoding",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/20-structured-outputs-constrained-decoding/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 21,
+   "title": "NLI & Textual Entailment",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/21-nli-textual-entailment/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 22,
+   "title": "Embedding Models Deep Dive",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/22-embedding-models-deep-dive/",
+   "topics": [
+    "rag"
+   ]
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 23,
+   "title": "Chunking Strategies for RAG",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/23-chunking-strategies-rag/",
+   "topics": [
+    "rag"
+   ]
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 24,
+   "title": "Coreference Resolution",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/24-coreference-resolution/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 25,
+   "title": "Entity Linking & Disambiguation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/25-entity-linking/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 26,
+   "title": "Relation Extraction & Knowledge Graph Construction",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/26-relation-extraction-kg/",
+   "topics": []
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 27,
+   "title": "LLM Evaluation: RAGAS, DeepEval, G-Eval",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/27-llm-evaluation-frameworks/",
+   "topics": [
+    "rag",
+    "eval"
+   ]
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 28,
+   "title": "Long-Context Evaluation: NIAH, RULER, LongBench, MRCR",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/28-long-context-evaluation/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 5,
+   "phaseTitle": "NLP: Foundations to Advanced",
+   "n": 29,
+   "title": "Dialogue State Tracking",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/05-nlp-foundations-to-advanced/29-dialogue-state-tracking/",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 1,
+   "title": "Audio Fundamentals: Waveforms, Sampling, FFT",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/01-audio-fundamentals",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 2,
+   "title": "Spectrograms, Mel Scale & Audio Features",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/02-spectrograms-mel-features",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 3,
+   "title": "Audio Classification",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/03-audio-classification",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 4,
+   "title": "Speech Recognition (ASR)",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/04-speech-recognition-asr",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 5,
+   "title": "Whisper: Architecture & Fine-Tuning",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/05-whisper-architecture-finetuning",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 6,
+   "title": "Speaker Recognition & Verification",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/06-speaker-recognition-verification",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 7,
+   "title": "Text-to-Speech (TTS)",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/07-text-to-speech",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 8,
+   "title": "Voice Cloning & Voice Conversion",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/08-voice-cloning-conversion",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 9,
+   "title": "Music Generation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/09-music-generation",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 10,
+   "title": "Audio-Language Models",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/10-audio-language-models",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 11,
+   "title": "Real-Time Audio Processing",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/11-real-time-audio-processing",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 12,
+   "title": "Build a Voice Assistant Pipeline",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/12-voice-assistant-pipeline",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 13,
+   "title": "Neural Audio Codecs — EnCodec, SNAC, Mimi, DAC",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/13-neural-audio-codecs",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 14,
+   "title": "Voice Activity Detection & Turn-Taking",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/14-voice-activity-detection-turn-taking",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 15,
+   "title": "Streaming Speech-to-Speech — Moshi, Hibiki",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/15-streaming-speech-to-speech-moshi-hibiki",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 16,
+   "title": "Voice Anti-Spoofing & Audio Watermarking",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/16-anti-spoofing-audio-watermarking",
+   "topics": []
+  },
+  {
+   "phase": 6,
+   "phaseTitle": "Speech & Audio",
+   "n": 17,
+   "title": "Audio Evaluation — WER, MOS, MMAU, Leaderboards",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/06-speech-and-audio/17-audio-evaluation-metrics",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 1,
+   "title": "Why Transformers: The Problems with RNNs",
+   "repoType": "Learn",
+   "languages": "Python, Julia",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/01-why-transformers/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 2,
+   "title": "Self-Attention from Scratch",
+   "repoType": "Build",
+   "languages": "Python, Rust, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/02-self-attention-from-scratch/",
+   "topics": [
+    "basics"
+   ]
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 3,
+   "title": "Multi-Head Attention",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/03-multi-head-attention/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 4,
+   "title": "Positional Encoding: Sinusoidal, RoPE, ALiBi",
+   "repoType": "Build",
+   "languages": "Python, Rust, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/04-positional-encoding/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 5,
+   "title": "The Full Transformer: Encoder + Decoder",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/05-full-transformer/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 6,
+   "title": "BERT — Masked Language Modeling",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/06-bert-masked-language-modeling/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 7,
+   "title": "GPT — Causal Language Modeling",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/07-gpt-causal-language-modeling/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 8,
+   "title": "T5, BART — Encoder-Decoder Models",
+   "repoType": "Learn",
+   "languages": "Python, Rust",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/08-t5-bart-encoder-decoder/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 9,
+   "title": "Vision Transformers (ViT)",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/09-vision-transformers/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 10,
+   "title": "Audio Transformers — Whisper Architecture",
+   "repoType": "Learn",
+   "languages": "Python, Rust",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/10-audio-transformers-whisper/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 11,
+   "title": "Mixture of Experts (MoE)",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/11-mixture-of-experts/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 12,
+   "title": "KV Cache, Flash Attention & Inference Optimization",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/12-kv-cache-flash-attention/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 13,
+   "title": "Scaling Laws",
+   "repoType": "Learn",
+   "languages": "Python, Rust",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/13-scaling-laws/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 14,
+   "title": "Build a Transformer from Scratch",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/14-build-a-transformer-capstone/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 15,
+   "title": "Attention Variants — Sliding Window, Sparse, Differential",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/15-attention-variants/",
+   "topics": []
+  },
+  {
+   "phase": 7,
+   "phaseTitle": "Transformers Deep Dive",
+   "n": 16,
+   "title": "Speculative Decoding — Draft, Verify, Repeat",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/07-transformers-deep-dive/16-speculative-decoding/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 1,
+   "title": "Generative Models: Taxonomy & History",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/01-generative-models-taxonomy-history/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 2,
+   "title": "Autoencoders & VAE",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/02-autoencoders-vae/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 3,
+   "title": "GANs: Generator vs Discriminator",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/03-gans-generator-discriminator/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 4,
+   "title": "Conditional GANs & Pix2Pix",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/04-conditional-gans-pix2pix/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 5,
+   "title": "StyleGAN",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/05-stylegan/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 6,
+   "title": "Diffusion Models — DDPM from Scratch",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/06-diffusion-ddpm-from-scratch/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 7,
+   "title": "Latent Diffusion & Stable Diffusion",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/07-latent-diffusion-stable-diffusion/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 8,
+   "title": "ControlNet, LoRA & Conditioning",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/08-controlnet-lora-conditioning/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 9,
+   "title": "Inpainting, Outpainting & Editing",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/09-inpainting-outpainting-editing/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 10,
+   "title": "Video Generation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/10-video-generation/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 11,
+   "title": "Audio Generation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/11-audio-generation/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 12,
+   "title": "3D Generation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/12-3d-generation/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 13,
+   "title": "Flow Matching & Rectified Flows",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/13-flow-matching-rectified-flows/",
+   "topics": []
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 14,
+   "title": "Evaluation: FID, CLIP Score",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/14-evaluation-fid-clip-score/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 8,
+   "phaseTitle": "Generative AI",
+   "n": 19,
+   "title": "Visual Autoregressive Modeling (VAR): Next-Scale Prediction",
+   "repoType": "Build",
+   "languages": "Python, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/08-generative-ai/19-visual-autoregressive-var/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 1,
+   "title": "MDPs, States, Actions & Rewards",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/01-mdps-states-actions-rewards/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 2,
+   "title": "Dynamic Programming",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/02-dynamic-programming/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 3,
+   "title": "Monte Carlo Methods",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/03-monte-carlo-methods/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 4,
+   "title": "Q-Learning, SARSA",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/04-q-learning-sarsa/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 5,
+   "title": "Deep Q-Networks (DQN)",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/05-dqn/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 6,
+   "title": "Policy Gradients — REINFORCE",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/06-policy-gradients-reinforce/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 7,
+   "title": "Actor-Critic — A2C, A3C",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/07-actor-critic-a2c-a3c/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 8,
+   "title": "PPO",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/08-ppo/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 9,
+   "title": "Reward Modeling & RLHF",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/09-reward-modeling-rlhf/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 10,
+   "title": "Multi-Agent RL",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/10-multi-agent-rl/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 11,
+   "title": "Sim-to-Real Transfer",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/11-sim-to-real-transfer/",
+   "topics": []
+  },
+  {
+   "phase": 9,
+   "phaseTitle": "Reinforcement Learning",
+   "n": 12,
+   "title": "RL for Games",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/09-reinforcement-learning/12-rl-for-games/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 1,
+   "title": "Tokenizers: BPE, WordPiece, SentencePiece",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/01-tokenizers/",
+   "topics": [
+    "basics"
+   ]
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 2,
+   "title": "Building a Tokenizer from Scratch",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/02-building-a-tokenizer/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 3,
+   "title": "Data Pipelines for Pre-Training",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/03-data-pipelines/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 4,
+   "title": "Pre-Training a Mini GPT (124M)",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/04-pre-training-mini-gpt/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 5,
+   "title": "Distributed Training, FSDP, DeepSpeed",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/05-scaling-distributed/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 6,
+   "title": "Instruction Tuning — SFT",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/06-instruction-tuning-sft/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 7,
+   "title": "RLHF — Reward Model + PPO",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/07-rlhf/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 8,
+   "title": "DPO — Direct Preference Optimization",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/08-dpo/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 9,
+   "title": "Constitutional AI & Self-Improvement",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/09-constitutional-ai-self-improvement/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 10,
+   "title": "Evaluation — Benchmarks, Evals",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/10-evaluation/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 11,
+   "title": "Quantization: INT8, GPTQ, AWQ, GGUF",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/11-quantization/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 12,
+   "title": "Inference Optimization",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/12-inference-optimization/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 13,
+   "title": "Building a Complete LLM Pipeline",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/13-building-complete-llm-pipeline/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 14,
+   "title": "Open Models: Architecture Walkthroughs",
+   "repoType": "Learn",
+   "languages": "Python, Rust",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/14-open-models-architecture-walkthroughs/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 15,
+   "title": "Speculative Decoding and EAGLE-3",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/15-speculative-decoding-eagle3/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 16,
+   "title": "Differential Attention (V2)",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/16-differential-attention-v2/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 17,
+   "title": "Native Sparse Attention (DeepSeek NSA)",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/17-native-sparse-attention/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 18,
+   "title": "Multi-Token Prediction (MTP)",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/18-multi-token-prediction/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 19,
+   "title": "DualPipe Parallelism",
+   "repoType": "Learn",
+   "languages": "Python, Rust",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/19-dualpipe-parallelism/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 20,
+   "title": "DeepSeek-V3 Architecture Walkthrough",
+   "repoType": "Learn",
+   "languages": "Python, Rust",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/20-deepseek-v3-walkthrough/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 21,
+   "title": "Jamba — Hybrid SSM-Transformer",
+   "repoType": "Learn",
+   "languages": "Python, Rust",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/21-jamba-hybrid-ssm-transformer/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 22,
+   "title": "Async and Hogwild! Inference",
+   "repoType": "Build",
+   "languages": "Python, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/22-async-hogwild-inference/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 25,
+   "title": "Speculative Decoding and EAGLE",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/25-speculative-decoding/",
+   "topics": []
+  },
+  {
+   "phase": 10,
+   "phaseTitle": "LLMs from Scratch",
+   "n": 34,
+   "title": "Gradient Checkpointing and Activation Recomputation",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/10-llms-from-scratch/34-gradient-checkpointing/",
+   "topics": []
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 1,
+   "title": "Prompt Engineering: Techniques & Patterns",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/01-prompt-engineering/",
+   "topics": [
+    "basics"
+   ]
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 2,
+   "title": "Few-Shot, CoT, Tree-of-Thought",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/02-few-shot-cot/",
+   "topics": []
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 3,
+   "title": "Structured Outputs",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/03-structured-outputs/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 4,
+   "title": "Embeddings & Vector Representations",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/04-embeddings/",
+   "topics": [
+    "basics"
+   ]
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 5,
+   "title": "Context Engineering",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/05-context-engineering/",
+   "topics": []
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 6,
+   "title": "RAG: Retrieval-Augmented Generation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/06-rag/",
+   "topics": [
+    "rag",
+    "eval"
+   ]
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 7,
+   "title": "Advanced RAG: Chunking, Reranking",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/07-advanced-rag/",
+   "topics": [
+    "rag"
+   ]
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 8,
+   "title": "Fine-Tuning with LoRA & QLoRA",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/08-fine-tuning-lora/",
+   "topics": []
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 9,
+   "title": "Function Calling & Tool Use",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/09-function-calling/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 10,
+   "title": "Evaluation & Testing",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/10-evaluation/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 11,
+   "title": "Caching, Rate Limiting & Cost",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/11-caching-cost/",
+   "topics": []
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 12,
+   "title": "Guardrails & Safety",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/12-guardrails/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 13,
+   "title": "Building a Production LLM App",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/13-production-app/",
+   "topics": []
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 14,
+   "title": "Model Context Protocol (MCP)",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/14-model-context-protocol/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 15,
+   "title": "Prompt Caching & Context Caching",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/15-prompt-caching/",
+   "topics": []
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 16,
+   "title": "Agent State Machines — Graphs, Nodes, Checkpoints",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/16-langgraph-state-machines/",
+   "topics": []
+  },
+  {
+   "phase": 11,
+   "phaseTitle": "LLM Engineering",
+   "n": 17,
+   "title": "Agent Framework Tradeoffs",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/11-llm-engineering/17-agent-framework-tradeoffs/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 1,
+   "title": "Vision Transformers and the Patch-Token Primitive",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/01-vision-transformer-patch-tokens/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 2,
+   "title": "CLIP and Contrastive Vision-Language Pretraining",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/02-clip-contrastive-pretraining/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 3,
+   "title": "BLIP-2 Q-Former as Modality Bridge",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/03-blip2-qformer-bridge/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 4,
+   "title": "Flamingo and Gated Cross-Attention",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/04-flamingo-gated-cross-attention/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 5,
+   "title": "LLaVA and Visual Instruction Tuning",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/05-llava-visual-instruction-tuning/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 6,
+   "title": "Any-Resolution Vision — Patch-n'-Pack and NaFlex",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/06-any-resolution-patch-n-pack/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 7,
+   "title": "Open-Weight VLM Recipes: What Actually Matters",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/07-open-weight-vlm-recipes/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 8,
+   "title": "LLaVA-OneVision: Single, Multi, Video",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/08-llava-onevision-single-multi-video/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 9,
+   "title": "Qwen-VL Family and Dynamic-FPS Video",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/09-qwen-vl-family-dynamic-fps/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 10,
+   "title": "InternVL3 Native Multimodal Pretraining",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/10-internvl3-native-multimodal/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 11,
+   "title": "Chameleon Early-Fusion Token-Only",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/11-chameleon-early-fusion-tokens/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 12,
+   "title": "Emu3 Next-Token Prediction for Generation",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/12-emu3-next-token-for-generation/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 13,
+   "title": "Transfusion Autoregressive + Diffusion",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/13-transfusion-autoregressive-diffusion/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 14,
+   "title": "Show-o Discrete-Diffusion Unified",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/14-show-o-discrete-diffusion-unified/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 15,
+   "title": "Janus-Pro Decoupled Encoders",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/15-janus-pro-decoupled-encoders/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 16,
+   "title": "MIO Any-to-Any Streaming",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/16-mio-any-to-any-streaming/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 17,
+   "title": "Video-Language Temporal Grounding",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/17-video-language-temporal-grounding/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 18,
+   "title": "Long-Video at Million-Token Context",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/18-long-video-million-token/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 19,
+   "title": "Audio-Language Models: Whisper to AF3",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/19-audio-language-whisper-to-af3/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 20,
+   "title": "Omni Models: Thinker-Talker Streaming",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/20-omni-models-thinker-talker/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 21,
+   "title": "Embodied VLAs: RT-2, OpenVLA, π0, GR00T",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/21-embodied-vlas-openvla-pi0-groot/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 22,
+   "title": "Document and Diagram Understanding",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/22-document-diagram-understanding/",
+   "topics": []
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 23,
+   "title": "ColPali Vision-Native Document RAG",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/23-colpali-vision-native-rag/",
+   "topics": [
+    "rag"
+   ]
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 24,
+   "title": "Multimodal RAG and Cross-Modal Retrieval",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/24-multimodal-rag-cross-modal/",
+   "topics": [
+    "rag",
+    "eval"
+   ]
+  },
+  {
+   "phase": 12,
+   "phaseTitle": "Multimodal AI",
+   "n": 25,
+   "title": "Multimodal Agents and Computer-Use (Capstone)",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/12-multimodal-ai/25-multimodal-agents-computer-use/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 1,
+   "title": "The Tool Interface",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/01-the-tool-interface/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 2,
+   "title": "Function Calling Deep Dive",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/02-function-calling-deep-dive/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 3,
+   "title": "Parallel and Streaming Tool Calls",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/03-parallel-and-streaming-tool-calls/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 4,
+   "title": "Structured Output",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/04-structured-output/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 5,
+   "title": "Tool Schema Design",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/05-tool-schema-design/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 6,
+   "title": "MCP Fundamentals: Stateless Requests and JSON-RPC",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/06-mcp-fundamentals/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 7,
+   "title": "Building an MCP Server: Stateless Python and TypeScript",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/07-building-an-mcp-server/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 8,
+   "title": "Building an MCP Client: Discovery, Routing, and Dual-Era Fallback",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/08-building-an-mcp-client/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 9,
+   "title": "MCP Transports: stdio and Stateless Streamable HTTP",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/09-mcp-transports/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 10,
+   "title": "MCP Resources and Prompts: Addressable Context for Stateless Servers",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/10-mcp-resources-and-prompts/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 11,
+   "title": "MCP Model Input: Sampling Migration and Stateless MRTR",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/11-mcp-sampling/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 12,
+   "title": "Explicit Scope and Stateless Elicitation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/12-mcp-roots-and-elicitation/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 13,
+   "title": "MCP Tasks Extension: Durable Work on a Stateless Core",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/13-mcp-async-tasks/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 14,
+   "title": "MCP Apps on the Stateless Protocol",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/14-mcp-apps/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 15,
+   "title": "MCP Security: Poisoned Metadata, Routing, and MRTR State",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/15-mcp-security-tool-poisoning/",
+   "topics": [
+    "mcp",
+    "security"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 16,
+   "title": "MCP Authorization: CIMD, Issuer Binding, PKCE, and Step-Up",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/16-mcp-security-oauth-2-1/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 17,
+   "title": "Stateless MCP Gateways and Registry Admission",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/17-mcp-gateways-and-registries/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 18,
+   "title": "MCP Auth in Production: Issuer-Bound Enrollment and Tokens",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/18-mcp-auth-production/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 19,
+   "title": "A2A Protocol",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/19-a2a-protocol/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 20,
+   "title": "OpenTelemetry GenAI",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/20-opentelemetry-genai/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 21,
+   "title": "LLM Routing Layer",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/21-llm-routing-layer/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 22,
+   "title": "Agent Skills: Portable Contract and Runtime Boundary",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/22-skills-and-agent-sdks/",
+   "topics": [
+    "skills"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 23,
+   "title": "Capstone: Stateless Tool Ecosystem",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/23-capstone-tool-ecosystem/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 24,
+   "title": "Skill Discovery and Progressive Disclosure",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/24-skill-discovery-and-progressive-disclosure/",
+   "topics": [
+    "skills"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 25,
+   "title": "Skill Invocation and Routing",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/25-skill-invocation-and-routing/",
+   "topics": [
+    "skills"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 26,
+   "title": "Skill Permissions, Sandboxes, and Trust",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/26-skill-permissions-sandboxes-and-trust/",
+   "topics": [
+    "skills",
+    "security"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 27,
+   "title": "Skill Evals, Packaging, and Portability",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/27-skill-evals-packaging-and-portability/",
+   "topics": [
+    "skills",
+    "eval"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 28,
+   "title": "MCP Tool Contracts and Content",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/28-mcp-tool-contracts-and-content/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 29,
+   "title": "MCP Reliability, Cancellation, and Flow Control",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/29-mcp-reliability-cancellation-and-flow-control/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 30,
+   "title": "MCP Registry Supply Chain: Admission, Drift, and Rollback",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/30-mcp-registry-supply-chain-and-drift/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 31,
+   "title": "MCP Conformance Engineering: Versioning, Evidence, and Operations",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/31-mcp-conformance-versioning-and-operations/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 32,
+   "title": "Program Anatomy: An ELF Reader From Scratch",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/32-program-anatomy-elf-from-scratch/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 33,
+   "title": "Disassembly and Control Flow: From Bytes to a Graph You Can Check",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/33-disassembly-and-control-flow/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 34,
+   "title": "Lifting to Pseudocode: IR, SSA, and Structuring From Scratch",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/34-lifting-to-pseudocode/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 35,
+   "title": "Evidence, Confidence, and Unknowns in Binary Analysis",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/35-evidence-confidence-and-unknowns/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 36,
+   "title": "Rebuild and Prove Equal: Differential Tests, Byte Comparison, and the Evidence Loop",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/36-rebuild-and-prove-equal/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 37,
+   "title": "The Reverse Engineering Landscape: History, Tool Families, and How a Decompiler Is Built",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/37-the-reverse-engineering-landscape/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 38,
+   "title": "Calling Conventions and Stack Frames: System V, Windows x64, and AArch64",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/38-calling-conventions-and-stack-frames/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 39,
+   "title": "Compiler Idioms: What Optimization Does to Your Code and How to Read It Back",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/39-compiler-idioms-and-optimization/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 40,
+   "title": "Linking, Loading, and Stripped Binaries: PLT, GOT, Imports, Fixups, and Function Identification",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/40-linking-loading-and-stripped-binaries/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 41,
+   "title": "Recovering Data and Types: Structs, Arrays, C++ Objects, and DWARF",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/41-recovering-data-and-types/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 42,
+   "title": "Dynamic Analysis of Your Own Program: Debuggers, Traces, and Confirming Static Claims",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/42-dynamic-analysis-of-your-own-program/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 43,
+   "title": "Beyond Native Code: Python, JVM, .NET, and WebAssembly Bytecode",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/43-bytecode-and-managed-formats/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 44,
+   "title": "Binary Diffing and Symbolic Execution: Matching Functions and Solving for Inputs",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/44-binary-diffing-and-symbolic-execution/",
+   "topics": []
+  },
+  {
+   "phase": 13,
+   "phaseTitle": "Tools & Protocols",
+   "n": 45,
+   "title": "AI-Assisted Reverse Engineering: LLM Decompilers, Analysis Agents, and Ground Truth",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/13-tools-and-protocols/45-ai-assisted-reverse-engineering/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 1,
+   "title": "The Agent Loop",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/01-the-agent-loop/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 2,
+   "title": "ReWOO and Plan-and-Execute",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/02-rewoo-plan-and-execute/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 3,
+   "title": "Reflexion and Verbal Reinforcement Learning",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/03-reflexion-verbal-rl/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 4,
+   "title": "Tree of Thoughts and LATS",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/04-tree-of-thoughts-lats/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 5,
+   "title": "Self-Refine and CRITIC",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/05-self-refine-and-critic/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 6,
+   "title": "Tool Use and Function Calling",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/06-tool-use-and-function-calling/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 7,
+   "title": "Agent Memory — Virtual Context and Memory Paging",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/07-memory-virtual-context-memgpt/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 8,
+   "title": "Memory Blocks and Sleep-Time Compute",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/08-memory-blocks-sleep-time-compute/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 9,
+   "title": "Hybrid Memory — Vector + Graph + KV",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/09-hybrid-memory-mem0/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 10,
+   "title": "Skill Libraries and Lifelong Learning (Voyager)",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/10-skill-libraries-voyager/",
+   "topics": [
+    "skills"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 11,
+   "title": "Planning with HTN and Evolutionary Search",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/11-planning-htn-and-evolutionary/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 12,
+   "title": "Anthropic's Workflow Patterns",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/12-anthropic-workflow-patterns/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 13,
+   "title": "Stateful Graph Orchestration — Durable Execution and Checkpoints",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/13-langgraph-stateful-graphs/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 14,
+   "title": "The Actor Model for Agents",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/14-autogen-actor-model/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 15,
+   "title": "Role-Based Agent Teams — Roles, Tasks, Processes",
+   "repoType": "Build",
+   "languages": "Python",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/15-crewai-role-based-crews/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 16,
+   "title": "OpenAI Agents SDK — Handoffs, Guardrails, Tracing",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/16-openai-agents-sdk/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 17,
+   "title": "The Harness as a Library — Subagents and Session Store",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/17-claude-agent-sdk/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 18,
+   "title": "Production Agent Runtimes",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/18-agno-and-mastra-runtimes/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 19,
+   "title": "Benchmarks — SWE-bench, GAIA, AgentBench",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/19-benchmarks-swebench-gaia/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 20,
+   "title": "Benchmarks — WebArena and OSWorld",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/20-benchmarks-webarena-osworld/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 21,
+   "title": "Computer Use — Claude, OpenAI CUA, Gemini",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/21-computer-use-agents/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 22,
+   "title": "Voice Agents — Pipecat and LiveKit",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/22-voice-agents-pipecat-livekit/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 23,
+   "title": "OpenTelemetry GenAI Semantic Conventions",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/23-otel-genai-conventions/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 24,
+   "title": "Agent Observability — Langfuse, Phoenix, Opik",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/24-agent-observability-platforms/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 25,
+   "title": "Multi-Agent Debate and Collaboration",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/25-multi-agent-debate/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 26,
+   "title": "Failure Modes — Why Agents Break",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/26-failure-modes-agentic/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 27,
+   "title": "Prompt Injection and the PVE Defense",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/27-prompt-injection-defense/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 28,
+   "title": "Orchestration Patterns — Supervisor, Swarm, Hierarchical",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/28-orchestration-patterns/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 29,
+   "title": "Production Runtimes — Queue, Event, Cron",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/29-production-runtimes/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 30,
+   "title": "Eval-Driven Agent Development",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/30-eval-driven-agent-development/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 31,
+   "title": "Agent Workbench: Why Capable Models Still Fail",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/31-agent-workbench-why-models-fail/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 32,
+   "title": "The Minimal Agent Workbench",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/32-minimal-agent-workbench/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 33,
+   "title": "Agent Instructions as Executable Constraints",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/33-instructions-as-executable-constraints/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 34,
+   "title": "Repo Memory and Durable State",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/34-repo-memory-and-state/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 35,
+   "title": "Initialization Scripts for Agents",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/35-initialization-scripts/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 36,
+   "title": "Scope Contracts and Task Boundaries",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/36-scope-contracts/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 37,
+   "title": "Runtime Feedback Loops",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/37-runtime-feedback-loops/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 38,
+   "title": "Verification Gates",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/38-verification-gates/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 39,
+   "title": "Reviewer Agent: Separate Builder from Marker",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/39-reviewer-agent/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 40,
+   "title": "Multi-Session Handoff",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/40-multi-session-handoff/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 41,
+   "title": "The Workbench on a Real Repo",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/41-workbench-for-real-repos/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 42,
+   "title": "Capstone: Ship a Reusable Agent Workbench Pack",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/42-agent-workbench-capstone/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 43,
+   "title": "Frame the Task Before the Agent Writes Code",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/43-frame-the-task-before-code/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 44,
+   "title": "Build an Evidence-Backed Execution Plan",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/44-plan-from-evidence/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 45,
+   "title": "Delegate Agent Work with Isolation and Merge Contracts",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/45-delegate-with-isolation/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 46,
+   "title": "Turn Every Agent Correction into a System Improvement",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/46-turn-feedback-into-system/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 47,
+   "title": "Define the Outcome Before You Choose the Output",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/47-outcomes-before-output/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 48,
+   "title": "Discover the Workflow People Actually Perform",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/48-discover-the-real-workflow/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 49,
+   "title": "Map Assumptions and Resolve the Riskiest One First",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/49-map-assumptions-and-risk/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 50,
+   "title": "Choose the Smallest Slice That Can Change the Decision",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/50-choose-the-smallest-testable-slice/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 51,
+   "title": "Write Specifications That Preserve Judgment",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/51-write-specifications-that-preserve-judgment/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 52,
+   "title": "Design Success Metrics Before the Result Exists",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/52-design-success-metrics/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 53,
+   "title": "Choose Prototype, Pilot, or Production Deliberately",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/53-prototype-pilot-or-production/",
+   "topics": []
+  },
+  {
+   "phase": 14,
+   "phaseTitle": "Agent Engineering",
+   "n": 54,
+   "title": "Build a Feedback Ratchet with Ownership and Retirement",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/14-agent-engineering/54-build-the-feedback-ratchet/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 1,
+   "title": "From Chatbots to Long-Horizon Agents (METR)",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/01-long-horizon-agents/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 2,
+   "title": "STaR, V-STaR, Quiet-STaR: Self-Taught Reasoning",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/02-star-family-reasoning/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 3,
+   "title": "AlphaEvolve: Evolutionary Coding Agents",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/03-alphaevolve-evolutionary-coding/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 4,
+   "title": "Darwin Gödel Machine: Self-Modifying Agents",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/04-darwin-godel-machine/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 5,
+   "title": "AI Scientist v2: Workshop-Level Research",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/05-ai-scientist-v2/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 6,
+   "title": "Automated Alignment Research (Anthropic AAR)",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/06-automated-alignment-research/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 7,
+   "title": "Recursive Self-Improvement: Capability vs Alignment",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/07-recursive-self-improvement/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 8,
+   "title": "Bounded Self-Improvement Designs",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/08-bounded-self-improvement/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 9,
+   "title": "Autonomous Coding Agent Landscape (SWE-bench, CodeAct)",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/09-coding-agent-landscape/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 10,
+   "title": "Permission Modes for Autonomous Agents",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/10-claude-code-permission-modes/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 11,
+   "title": "Browser Agents and Indirect Prompt Injection",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/11-browser-agents/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 12,
+   "title": "Durable Execution for Long-Running Agents",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/12-durable-execution/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 13,
+   "title": "Action Budgets, Iteration Caps, Cost Governors",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/13-cost-governors/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 14,
+   "title": "Kill Switches, Circuit Breakers, Canary Tokens",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/14-kill-switches-canaries/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 15,
+   "title": "HITL: Propose-Then-Commit",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/15-propose-then-commit/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 16,
+   "title": "Checkpoints and Rollback",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/16-checkpoints-rollback/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 17,
+   "title": "Constitutional AI and Rule Overrides",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/17-constitutional-ai/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 18,
+   "title": "Llama Guard and Input/Output Classification",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/18-llama-guard/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 19,
+   "title": "Anthropic Responsible Scaling Policy v3.0",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/19-anthropic-rsp/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 20,
+   "title": "OpenAI Preparedness Framework and DeepMind FSF",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/20-openai-preparedness-deepmind-fsf/",
+   "topics": []
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 21,
+   "title": "METR Time Horizons and External Evaluation",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/21-metr-external-evaluation/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 15,
+   "phaseTitle": "Autonomous Systems",
+   "n": 22,
+   "title": "CAIS, CAISI, and Societal-Scale Risk",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/15-autonomous-systems/22-cais-caisi-societal-risk/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 1,
+   "title": "Why Multi-Agent",
+   "repoType": "Learn",
+   "languages": "TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/01-why-multi-agent/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 2,
+   "title": "FIPA-ACL Heritage and Speech Acts",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/02-fipa-acl-heritage/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 3,
+   "title": "Communication Protocols",
+   "repoType": "Build",
+   "languages": "TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/03-communication-protocols/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 4,
+   "title": "The Multi-Agent Primitive Model",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/04-primitive-model/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 5,
+   "title": "Supervisor / Orchestrator-Worker Pattern",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/05-supervisor-orchestrator-pattern/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 6,
+   "title": "Hierarchical Architecture and Decomposition Drift",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/06-hierarchical-architecture/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 7,
+   "title": "Society of Mind and Multi-Agent Debate",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/07-society-of-mind-debate/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 8,
+   "title": "Role Specialization — Planner / Critic / Executor / Verifier",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/08-role-specialization/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 9,
+   "title": "Parallel Swarm and Networked Architectures",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/09-parallel-swarm-networks/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 10,
+   "title": "Group Chat and Speaker Selection",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/10-group-chat-speaker-selection/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 11,
+   "title": "Handoffs and Routines (Stateless Orchestration)",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/11-handoffs-and-routines/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 12,
+   "title": "A2A — The Agent-to-Agent Protocol",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Go",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/12-a2a-protocol/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 13,
+   "title": "Shared Memory and Blackboard Patterns",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/13-shared-memory-blackboard/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 14,
+   "title": "Consensus and Byzantine Fault Tolerance",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/14-consensus-and-bft/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 15,
+   "title": "Voting, Self-Consistency, and Debate Topology",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/15-voting-debate-topology/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 16,
+   "title": "Negotiation and Bargaining",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/16-negotiation-bargaining/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 17,
+   "title": "Generative Agents and Emergent Simulation",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/17-generative-agents-simulation/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 18,
+   "title": "Theory of Mind and Emergent Coordination",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/18-theory-of-mind-coordination/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 19,
+   "title": "Swarm Optimization (PSO, ACO)",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/19-swarm-optimization-pso-aco/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 20,
+   "title": "MARL — MADDPG, QMIX, MAPPO",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/20-marl-maddpg-qmix-mappo/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 21,
+   "title": "Agent Economies, Token Incentives, Reputation",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/21-agent-economies/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 22,
+   "title": "Production Scaling — Queues, Checkpoints, Durability",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/22-production-scaling-queues-checkpoints/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 23,
+   "title": "Failure Modes — MAST, Groupthink, Monoculture",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/23-failure-modes-mast-groupthink/",
+   "topics": []
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 24,
+   "title": "Evaluation and Coordination Benchmarks",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/24-evaluation-coordination-benchmarks/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 16,
+   "phaseTitle": "Multi-Agent & Swarms",
+   "n": 25,
+   "title": "Case Studies and 2026 State of the Art",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/16-multi-agent-and-swarms/25-case-studies-2026-sota/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 1,
+   "title": "Managed LLM Platforms — Bedrock, Azure OpenAI, Vertex AI",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/01-managed-llm-platforms/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 2,
+   "title": "Inference Platform Economics — Fireworks, Together, Baseten, Modal",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/02-inference-platform-economics/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 3,
+   "title": "GPU Autoscaling on Kubernetes — Karpenter, KAI Scheduler",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/03-gpu-autoscaling-kubernetes/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 4,
+   "title": "Serving Engine Internals — PagedAttention, Continuous Batching, Chunked Prefill",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/04-vllm-serving-internals/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 5,
+   "title": "EAGLE-3 Speculative Decoding in Production",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/05-eagle3-speculative-decoding/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 6,
+   "title": "Prefix-Cache Serving — RadixAttention and KV Reuse",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/06-sglang-radixattention/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 7,
+   "title": "Hardware-Specialized Inference Compilation — FP8 and NVFP4 on Blackwell",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/07-tensorrt-llm-blackwell/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 8,
+   "title": "Inference Metrics — TTFT, TPOT, ITL, Goodput, P99",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/08-inference-metrics-goodput/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 9,
+   "title": "Production Quantization — AWQ, GPTQ, GGUF, FP8, NVFP4",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/09-production-quantization/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 10,
+   "title": "Cold Start Mitigation for Serverless LLMs",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/10-cold-start-mitigation/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 11,
+   "title": "Multi-Region LLM Serving and KV Cache Locality",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/11-multi-region-kv-locality/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 12,
+   "title": "Edge Inference — ANE, Hexagon, WebGPU, Jetson",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/12-edge-inference/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 13,
+   "title": "LLM Observability Stack Selection",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/13-llm-observability/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 14,
+   "title": "Prompt Caching and Semantic Caching Economics",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/14-prompt-semantic-caching/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 15,
+   "title": "Batch APIs — the 50% Discount as Industry Standard",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/15-batch-apis/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 16,
+   "title": "Model Routing as a Cost-Reduction Primitive",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/16-model-routing/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 17,
+   "title": "Disaggregated Prefill/Decode — NVIDIA Dynamo and llm-d",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/17-disaggregated-prefill-decode/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 18,
+   "title": "Production Serving Stack — KV Offloading and Cache-Aware Routing",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/18-vllm-production-stack-lmcache/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 19,
+   "title": "AI Gateways — LiteLLM, Portkey, Kong, Bifrost",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/19-ai-gateways/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 20,
+   "title": "Shadow, Canary, and Progressive Deployment",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/20-shadow-canary-progressive/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 21,
+   "title": "A/B Testing LLM Features — GrowthBook and Statsig",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/21-ab-testing-llm-features/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 22,
+   "title": "Load Testing LLM APIs — k6, LLMPerf, GenAI-Perf",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/22-load-testing-llm-apis/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 23,
+   "title": "SRE for AI — Multi-Agent Incident Response",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/23-sre-for-ai/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 24,
+   "title": "Chaos Engineering for LLM Production",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/24-chaos-engineering-llm/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 25,
+   "title": "Security — Secrets, PII Scrubbing, Audit Logs",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/25-security-secrets-audit/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 26,
+   "title": "Compliance — SOC 2, HIPAA, GDPR, EU AI Act, ISO 42001",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/26-compliance-frameworks/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 27,
+   "title": "FinOps for LLMs — Unit Economics and Multi-Tenant Attribution",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/27-finops-llms/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 28,
+   "title": "Self-Hosted Serving Selection — Matching Engine to Hardware and Scale",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/28-self-hosted-serving-selection/",
+   "topics": []
+  },
+  {
+   "phase": 17,
+   "phaseTitle": "Infrastructure & Production",
+   "n": 29,
+   "title": "Model Demo Interfaces — From a Function to a Shareable App",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/17-infrastructure-and-production/29-model-demo-interfaces/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 1,
+   "title": "Instruction-Following as Alignment Signal",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/01-instruction-following-alignment-signal/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 2,
+   "title": "Reward Hacking & Goodhart's Law",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/02-reward-hacking-goodhart/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 3,
+   "title": "Direct Preference Optimization Family",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/03-direct-preference-optimization-family/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 4,
+   "title": "Sycophancy as RLHF Amplification",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/04-sycophancy-rlhf-amplification/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 5,
+   "title": "Constitutional AI & RLAIF",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/05-constitutional-ai-rlaif/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 6,
+   "title": "Mesa-Optimization & Deceptive Alignment",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/06-mesa-optimization-deceptive-alignment/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 7,
+   "title": "Sleeper Agents — Persistent Deception",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/07-sleeper-agents-persistent-deception/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 8,
+   "title": "In-Context Scheming in Frontier Models",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/08-in-context-scheming-frontier-models/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 9,
+   "title": "Alignment Faking",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/09-alignment-faking/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 10,
+   "title": "AI Control — Safety Despite Subversion",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/10-ai-control-subversion/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 11,
+   "title": "Scalable Oversight & Weak-to-Strong",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/11-scalable-oversight-weak-to-strong/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 12,
+   "title": "Red-Teaming: PAIR & Automated Attacks",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/12-red-teaming-pair-automated-attacks/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 13,
+   "title": "Many-Shot Jailbreaking",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/13-many-shot-jailbreaking/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 14,
+   "title": "ASCII Art & Visual Jailbreaks",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/14-ascii-art-visual-jailbreaks/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 15,
+   "title": "Indirect Prompt Injection",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/15-indirect-prompt-injection/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 16,
+   "title": "Red-Team Tooling: Garak, Llama Guard, PyRIT",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/16-red-team-tooling-garak-llamaguard-pyrit/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 17,
+   "title": "WMDP & Dual-Use Capability Evaluation",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/17-wmdp-dual-use-evaluation/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 18,
+   "title": "Frontier Safety Frameworks — RSP, PF, FSF",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/18-frontier-safety-frameworks-rsp-pf-fsf/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 19,
+   "title": "Model Welfare Research",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/19-model-welfare-research/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 20,
+   "title": "Bias & Representational Harm",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/20-bias-representational-harm/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 21,
+   "title": "Fairness Criteria: Group, Individual, Counterfactual",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/21-fairness-criteria-group-individual-counterfactual/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 22,
+   "title": "Differential Privacy for LLMs",
+   "repoType": "Build",
+   "languages": "Python, TypeScript, Julia",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/22-differential-privacy-for-llms/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 23,
+   "title": "Watermarking: SynthID, Stable Signature, C2PA",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/23-watermarking-synthid-stable-signature-c2pa/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 24,
+   "title": "Regulatory Frameworks: EU, US, UK, Korea",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/24-regulatory-frameworks-eu-us-uk-korea/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 25,
+   "title": "EchoLeak & CVEs for AI",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/25-echoleak-cves-for-ai/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 26,
+   "title": "Model, System & Dataset Cards",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/26-model-system-dataset-cards/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 27,
+   "title": "Data Provenance & Training-Data Governance",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/27-data-provenance-training-governance/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 28,
+   "title": "Alignment Research Ecosystem: MATS, Redwood, Apollo, METR",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/28-alignment-research-ecosystem/",
+   "topics": []
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 29,
+   "title": "Moderation Systems: OpenAI, Perspective, Llama Guard",
+   "repoType": "Build",
+   "languages": "Python, TypeScript",
+   "format": "Scene + code lab",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/29-moderation-systems-openai-perspective-llamaguard/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 18,
+   "phaseTitle": "Ethics, Safety & Alignment",
+   "n": 30,
+   "title": "Dual-Use Risk: Cyber, Bio, Chem, Nuclear",
+   "repoType": "Learn",
+   "languages": "Python, TypeScript",
+   "format": "Scene",
+   "status": "SOON",
+   "source": "phases/18-ethics-safety-alignment/30-dual-use-risk-cyber-bio-chem-nuclear/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 1,
+   "title": "Terminal-Native Coding Agent",
+   "repoType": "P0 P5 P7 P10 P11 P13 P14 P15 P17 P18",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/01-terminal-native-coding-agent/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 2,
+   "title": "RAG over Codebase (Cross-Repo Semantic Search)",
+   "repoType": "P5 P7 P11 P13 P17",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/02-rag-over-codebase/",
+   "topics": [
+    "rag"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 3,
+   "title": "Real-Time Voice Assistant (ASR → LLM → TTS)",
+   "repoType": "P6 P7 P11 P13 P14 P17",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/03-realtime-voice-assistant/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 4,
+   "title": "Multimodal Document QA (Vision-First)",
+   "repoType": "P4 P5 P7 P11 P12 P17",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/04-multimodal-document-qa/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 5,
+   "title": "Autonomous Research Agent (AI-Scientist Class)",
+   "repoType": "P0 P2 P3 P7 P10 P14 P15 P16 P18",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/05-autonomous-research-agent/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 6,
+   "title": "DevOps Troubleshooting Agent for Kubernetes",
+   "repoType": "P11 P13 P14 P15 P17 P18",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/06-devops-troubleshooting-agent/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 7,
+   "title": "End-to-End Fine-Tuning Pipeline",
+   "repoType": "P2 P3 P7 P10 P11 P17 P18",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/07-end-to-end-fine-tuning-pipeline/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 8,
+   "title": "Production RAG Chatbot (Regulated Vertical)",
+   "repoType": "P5 P7 P11 P12 P17 P18",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/08-production-rag-chatbot/",
+   "topics": [
+    "rag"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 9,
+   "title": "Code Migration Agent (Repo-Level Upgrade)",
+   "repoType": "P5 P7 P11 P13 P14 P15 P17",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/09-code-migration-agent/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 10,
+   "title": "Multi-Agent Software Engineering Team",
+   "repoType": "P11 P13 P14 P15 P16 P17",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/10-multi-agent-software-team/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 11,
+   "title": "LLM Observability & Eval Dashboard",
+   "repoType": "P11 P13 P17 P18",
+   "languages": "Python, TypeScript, Go",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/11-llm-observability-dashboard/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 12,
+   "title": "Video Understanding Pipeline (Scene → QA)",
+   "repoType": "P4 P6 P7 P11 P12 P17",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/12-video-understanding-pipeline/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 13,
+   "title": "Stateless MCP Server with Registry and Governance",
+   "repoType": "P11 P13 P14 P17 P18",
+   "languages": "Python, TypeScript, Go",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/13-mcp-server-with-registry/",
+   "topics": [
+    "mcp"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 14,
+   "title": "Speculative-Decoding Inference Server",
+   "repoType": "P3 P7 P10 P17",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/14-speculative-decoding-server/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 15,
+   "title": "Constitutional Safety Harness + Red-Team Range",
+   "repoType": "P10 P11 P13 P14 P18",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/15-constitutional-safety-harness/",
+   "topics": [
+    "agents",
+    "security"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 16,
+   "title": "GitHub Issue-to-PR Autonomous Agent",
+   "repoType": "P11 P13 P14 P15 P17",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/16-github-issue-to-pr-agent/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 17,
+   "title": "Personal AI Tutor (Adaptive, Multimodal)",
+   "repoType": "P5 P6 P11 P12 P14 P17 P18",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/17-personal-ai-tutor/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 20,
+   "title": "Agent Harness Loop Contract",
+   "repoType": "A. Agent harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/20-agent-harness-loop-contract/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 21,
+   "title": "Tool Registry with Schema Validation",
+   "repoType": "A. Agent harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/21-tool-registry-schema-validation/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 22,
+   "title": "JSON-RPC 2.0 Over Newline-Delimited Stdio",
+   "repoType": "A. Agent harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/22-jsonrpc-stdio-transport/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 23,
+   "title": "Function Call Dispatcher",
+   "repoType": "A. Agent harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/23-function-call-dispatcher/",
+   "topics": [
+    "tools"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 24,
+   "title": "Plan-Execute Control Flow",
+   "repoType": "A. Agent harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/24-plan-execute-control-flow/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 25,
+   "title": "Verification Gates and Observation Budget",
+   "repoType": "A. Agent harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/25-verification-gates-observation-budget/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 26,
+   "title": "Sandbox Runner with Denylist and Path Jail",
+   "repoType": "A. Agent harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/26-sandbox-runner-denylist/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 27,
+   "title": "Eval Harness with Fixture Tasks",
+   "repoType": "A. Agent harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/27-eval-harness-fixture-tasks/",
+   "topics": [
+    "agents",
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 28,
+   "title": "Observability with OTel GenAI Spans and Prometheus Metrics",
+   "repoType": "A. Agent harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/28-observability-otel-traces/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 29,
+   "title": "End-to-End Coding Agent on the Harness",
+   "repoType": "A. Agent harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/29-end-to-end-coding-task-demo/",
+   "topics": [
+    "agents"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 30,
+   "title": "BPE Tokenizer From Scratch",
+   "repoType": "B. NLP LLM",
+   "languages": "Python, TypeScript, Rust",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/30-bpe-tokenizer-from-scratch/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 31,
+   "title": "Tokenized Dataset with Sliding Window",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/31-tokenized-dataset-sliding-window/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 32,
+   "title": "Token and Positional Embeddings",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/32-token-positional-embeddings/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 33,
+   "title": "Multi-Head Self-Attention",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/33-multihead-self-attention/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 34,
+   "title": "Transformer Block from Scratch",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/34-transformer-block/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 35,
+   "title": "GPT Model Assembly",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/35-gpt-model-assembly/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 36,
+   "title": "Training Loop and Evaluation",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/36-training-loop-eval/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 37,
+   "title": "Loading Pretrained Weights",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/37-loading-pretrained-weights/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 38,
+   "title": "Classifier Fine-Tuning by Head Swap",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/38-classifier-finetuning/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 39,
+   "title": "Instruction Tuning by Supervised Fine-Tuning",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/39-instruction-tuning-sft/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 40,
+   "title": "Direct Preference Optimization from Scratch",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/40-dpo-from-scratch/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 41,
+   "title": "Full Evaluation Pipeline",
+   "repoType": "B. NLP LLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/41-eval-pipeline/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 42,
+   "title": "Large Corpus Downloader",
+   "repoType": "C. Train end-to-end",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/42-large-corpus-downloader/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 43,
+   "title": "HDF5 Tokenized Corpus",
+   "repoType": "C. Train end-to-end",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/43-hdf5-tokenized-corpus/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 44,
+   "title": "Cosine LR with Linear Warmup",
+   "repoType": "C. Train end-to-end",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/44-cosine-lr-warmup/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 45,
+   "title": "Gradient Clipping and Mixed Precision",
+   "repoType": "C. Train end-to-end",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/45-gradient-clipping-amp/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 46,
+   "title": "Gradient Accumulation",
+   "repoType": "C. Train end-to-end",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/46-gradient-accumulation/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 47,
+   "title": "Checkpoint Save and Resume",
+   "repoType": "C. Train end-to-end",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/47-checkpoint-save-resume/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 48,
+   "title": "Distributed Data Parallel and FSDP from Scratch",
+   "repoType": "C. Train end-to-end",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/48-distributed-fsdp-ddp/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 49,
+   "title": "Language Model Evaluation Harness",
+   "repoType": "C. Train end-to-end",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/49-lm-eval-harness/",
+   "topics": [
+    "agents",
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 50,
+   "title": "Hypothesis Generator",
+   "repoType": "D. Auto research",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/50-hypothesis-generator/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 51,
+   "title": "Literature Retrieval",
+   "repoType": "D. Auto research",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/51-literature-retrieval/",
+   "topics": [
+    "rag",
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 52,
+   "title": "Experiment Runner",
+   "repoType": "D. Auto research",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/52-experiment-runner/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 53,
+   "title": "Result Evaluator",
+   "repoType": "D. Auto research",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/53-result-evaluator/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 54,
+   "title": "Paper Writer",
+   "repoType": "D. Auto research",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/54-paper-writer/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 55,
+   "title": "Critic Loop",
+   "repoType": "D. Auto research",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/55-critic-loop/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 56,
+   "title": "Iteration Scheduler",
+   "repoType": "D. Auto research",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/56-iteration-scheduler/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 57,
+   "title": "End-to-End Research Demo",
+   "repoType": "D. Auto research",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/57-end-to-end-research-demo/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 58,
+   "title": "Vision Encoder Patches",
+   "repoType": "E. Multimodal VLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/58-vision-encoder-patches/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 59,
+   "title": "Vision Transformer Encoder",
+   "repoType": "E. Multimodal VLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/59-vit-transformer/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 60,
+   "title": "Projection Layer for Modality Alignment",
+   "repoType": "E. Multimodal VLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/60-projection-layer-modality-align/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 61,
+   "title": "Cross-Attention Fusion",
+   "repoType": "E. Multimodal VLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/61-cross-attention-fusion/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 62,
+   "title": "Vision-Language Pretraining",
+   "repoType": "E. Multimodal VLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/62-vision-language-pretraining/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 63,
+   "title": "Multimodal Evaluation",
+   "repoType": "E. Multimodal VLM",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/63-multimodal-eval/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 64,
+   "title": "Chunking Strategies, Compared",
+   "repoType": "F. Advanced RAG",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/64-chunking-strategies-advanced/",
+   "topics": [
+    "rag"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 65,
+   "title": "Hybrid Retrieval with BM25 and Dense Embeddings",
+   "repoType": "F. Advanced RAG",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/65-hybrid-retrieval-bm25-dense/",
+   "topics": [
+    "rag",
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 66,
+   "title": "Cross-Encoder Reranker",
+   "repoType": "F. Advanced RAG",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/66-reranker-cross-encoder/",
+   "topics": [
+    "rag"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 67,
+   "title": "Query Rewriting: HyDE, Multi-Query, and Decomposition",
+   "repoType": "F. Advanced RAG",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/67-query-rewriting-hyde/",
+   "topics": [
+    "rag"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 68,
+   "title": "RAG Evaluation: Precision, Recall, MRR, nDCG, Faithfulness, Answer Relevance",
+   "repoType": "F. Advanced RAG",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/68-rag-eval-precision-recall/",
+   "topics": [
+    "rag",
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 69,
+   "title": "End-to-End RAG System",
+   "repoType": "F. Advanced RAG",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/69-end-to-end-rag-system/",
+   "topics": [
+    "rag"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 70,
+   "title": "Task Spec Format",
+   "repoType": "G. Eval framework",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/70-task-spec-format/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 71,
+   "title": "Classical Metrics",
+   "repoType": "G. Eval framework",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/71-classical-metrics/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 72,
+   "title": "Code Exec Metric",
+   "repoType": "G. Eval framework",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/72-code-exec-metric/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 73,
+   "title": "Perplexity and Calibration",
+   "repoType": "G. Eval framework",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/73-perplexity-calibration/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 74,
+   "title": "Leaderboard Aggregation",
+   "repoType": "G. Eval framework",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/74-leaderboard-aggregation/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 75,
+   "title": "End-to-End Eval Runner",
+   "repoType": "G. Eval framework",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/75-end-to-end-eval-runner/",
+   "topics": [
+    "eval"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 76,
+   "title": "Collective Ops From Scratch",
+   "repoType": "H. Distributed train",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/76-collective-ops-from-scratch/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 77,
+   "title": "Data Parallel DDP From Scratch",
+   "repoType": "H. Distributed train",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/77-data-parallel-ddp/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 78,
+   "title": "ZeRO Optimizer State Sharding",
+   "repoType": "H. Distributed train",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/78-zero-parameter-sharding/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 79,
+   "title": "Pipeline Parallel and Bubble Analysis",
+   "repoType": "H. Distributed train",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/79-pipeline-parallel/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 80,
+   "title": "Sharded Checkpoint and Atomic Resume",
+   "repoType": "H. Distributed train",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/80-checkpoint-sharded-resume/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 81,
+   "title": "End-to-End Distributed Training",
+   "repoType": "H. Distributed train",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/81-end-to-end-distributed-train/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 82,
+   "title": "Jailbreak Taxonomy",
+   "repoType": "I. Safety harness",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/82-jailbreak-taxonomy/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 83,
+   "title": "Prompt Injection Detector",
+   "repoType": "I. Safety harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/83-prompt-injection-detector/",
+   "topics": [
+    "security"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 84,
+   "title": "Refusal Evaluation",
+   "repoType": "I. Safety harness",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/84-refusal-evaluation/",
+   "topics": [
+    "eval",
+    "security"
+   ]
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 85,
+   "title": "Content Classifier Integration",
+   "repoType": "I. Safety harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/85-content-classifier-integration/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 86,
+   "title": "Constitutional Rules Engine",
+   "repoType": "I. Safety harness",
+   "languages": "Python",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/86-constitutional-rules-engine/",
+   "topics": []
+  },
+  {
+   "phase": 19,
+   "phaseTitle": "Capstone Projects",
+   "n": 87,
+   "title": "End-to-End Safety Gate",
+   "repoType": "I. Safety harness",
+   "languages": "Python, TypeScript",
+   "format": "Project",
+   "status": "SOON",
+   "source": "phases/19-capstone-projects/87-end-to-end-safety-gate/",
+   "topics": [
+    "security"
+   ]
+  }
+ ]
+}

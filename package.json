@@ -1,0 +1,30 @@
+{
+  "name": "ai-zero-to-hero",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AI Zero to Hero \u2014 an open-source, interactive AI engineering course. Created by Bala Venkatesh.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && npm run seo",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "check:apps": "esbuild scripts/check/apps.check.ts --bundle --platform=node --jsx=automatic --log-level=warning --outfile=node_modules/.cache/apps.check.cjs && node node_modules/.cache/apps.check.cjs",
+    "seo": "esbuild scripts/seo/build.ts --bundle --platform=node --external:@resvg/resvg-js --log-level=warning --outfile=node_modules/.cache/seo-build.cjs && node node_modules/.cache/seo-build.cjs"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "esbuild": "^0.21.5",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}

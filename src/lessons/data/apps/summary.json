@@ -1,0 +1,524 @@
+{
+ "inbox": {
+  "counts": {
+   "messages": 5574,
+   "spam": 747,
+   "ham": 4827,
+   "train": 3901,
+   "test": 1673
+  },
+  "vocab": 3294,
+  "baseline": 0.8661,
+  "rule": {
+   "accuracy": 0.9199,
+   "precision": 0.8082,
+   "recall": 0.5268,
+   "f1": 0.6378,
+   "tp": 118,
+   "fp": 28,
+   "fn": 106,
+   "tn": 1421
+  },
+  "nb": {
+   "accuracy": 0.9833,
+   "precision": 0.9623,
+   "recall": 0.9107,
+   "f1": 0.9358,
+   "tp": 204,
+   "fp": 8,
+   "fn": 20,
+   "tn": 1441
+  },
+  "lr": {
+   "accuracy": 0.9785,
+   "precision": 0.9845,
+   "recall": 0.8527,
+   "f1": 0.9139,
+   "tp": 191,
+   "fp": 3,
+   "fn": 33,
+   "tn": 1446
+  },
+  "svm": {
+   "accuracy": 0.9833,
+   "precision": 0.9851,
+   "recall": 0.8884,
+   "f1": 0.9343,
+   "tp": 199,
+   "fp": 3,
+   "fn": 25,
+   "tn": 1446
+  },
+  "auc": {
+   "nb": 0.98,
+   "lr": 0.979,
+   "svm": 0.9754
+  },
+  "nearMargin": 293,
+  "lr01": {
+   "t": 0.1,
+   "accuracy": 0.9755,
+   "precision": 0.8961,
+   "recall": 0.9241,
+   "f1": 0.9099,
+   "tp": 207,
+   "fp": 24,
+   "fn": 17,
+   "tn": 1425
+  },
+  "lr09": {
+   "t": 0.9,
+   "accuracy": 0.9653,
+   "precision": 0.994,
+   "recall": 0.7455,
+   "f1": 0.852,
+   "tp": 167,
+   "fp": 1,
+   "fn": 57,
+   "tn": 1448
+  },
+  "ruleWords": [
+   "free",
+   "win",
+   "winner",
+   "prize",
+   "claim",
+   "urgent",
+   "cash"
+  ],
+  "topSpam": [
+   "claim",
+   "prize",
+   "150p",
+   "tone",
+   "18",
+   "www"
+  ],
+  "source": "SMS Spam Collection v.1 (T. A. Almeida & J. M. Gómez Hidalgo (2011), CC BY 4.0)"
+ },
+ "homes": {
+  "counts": {
+   "districts": 20640,
+   "train": 16512,
+   "test": 4128,
+   "capped": 992
+  },
+  "one": {
+   "slope": 0.42032,
+   "intercept": 0.44321,
+   "mae": 63521.0,
+   "r2": 0.4467
+  },
+  "raw": {
+   "mae": 53513.0,
+   "r2": 0.5943
+  },
+  "eng": {
+   "mae": 44647.0,
+   "r2": 0.6944
+  },
+  "cells": 57,
+  "baselineMae": 90713.0,
+  "depth2": {
+   "depth": 2,
+   "leaves": 4,
+   "train": 65172.0,
+   "test": 66512.0
+  },
+  "depth8": {
+   "depth": 8,
+   "leaves": 236,
+   "train": 40432.0,
+   "test": 46619.0
+  },
+  "depthNone": {
+   "depth": "none",
+   "leaves": 15833,
+   "train": 0.0,
+   "test": 46858.0
+  },
+  "depth12": {
+   "depth": 12,
+   "leaves": 1895,
+   "train": 23982.0,
+   "test": 43422.0
+  },
+  "lasso": [
+   {
+    "alpha": 0.001,
+    "nonzero": 8,
+    "mae": 53536.0
+   },
+   {
+    "alpha": 0.01,
+    "nonzero": 7,
+    "mae": 54008.0
+   },
+   {
+    "alpha": 0.03,
+    "nonzero": 6,
+    "mae": 55941.0
+   },
+   {
+    "alpha": 0.06,
+    "nonzero": 4,
+    "mae": 60588.0
+   },
+   {
+    "alpha": 0.1,
+    "nonzero": 3,
+    "mae": 62721.0
+   },
+   {
+    "alpha": 0.2,
+    "nonzero": 1,
+    "mae": 66321.0
+   },
+   {
+    "alpha": 0.35,
+    "nonzero": 1,
+    "mae": 70577.0
+   },
+   {
+    "alpha": 0.5,
+    "nonzero": 1,
+    "mae": 76437.0
+   },
+   {
+    "alpha": 0.8,
+    "nonzero": 1,
+    "mae": 90640.0
+   }
+  ],
+  "source": "California Housing (1990 US census block groups) (R. K. Pace & R. Barry (1997), via scikit-learn)"
+ },
+ "movies": {
+  "counts": {
+   "ratings": 100000,
+   "users": 943,
+   "movies": 1682,
+   "popular": 338
+  },
+  "eval": {
+   "users": 932,
+   "popularity": 0.1481,
+   "knn": [
+    {
+     "k": 1,
+     "hit10": 0.1845
+    },
+    {
+     "k": 3,
+     "hit10": 0.2157
+    },
+    {
+     "k": 5,
+     "hit10": 0.22
+    },
+    {
+     "k": 10,
+     "hit10": 0.2124
+    },
+    {
+     "k": 20,
+     "hit10": 0.2039
+    },
+    {
+     "k": 50,
+     "hit10": 0.1856
+    }
+   ]
+  },
+  "elbow": [
+   {
+    "k": 2,
+    "inertia": 14.9535,
+    "silhouette": 0.2251
+   },
+   {
+    "k": 3,
+    "inertia": 12.8231,
+    "silhouette": 0.2008
+   },
+   {
+    "k": 4,
+    "inertia": 11.4273,
+    "silhouette": 0.1819
+   },
+   {
+    "k": 5,
+    "inertia": 10.3508,
+    "silhouette": 0.1861
+   },
+   {
+    "k": 6,
+    "inertia": 9.4591,
+    "silhouette": 0.1829
+   },
+   {
+    "k": 7,
+    "inertia": 8.8892,
+    "silhouette": 0.1878
+   },
+   {
+    "k": 8,
+    "inertia": 8.4487,
+    "silhouette": 0.1642
+   },
+   {
+    "k": 9,
+    "inertia": 8.0273,
+    "silhouette": 0.1534
+   },
+   {
+    "k": 10,
+    "inertia": 7.7339,
+    "silhouette": 0.1504
+   }
+  ],
+  "source": "MovieLens 100K (GroupLens Research, University of Minnesota (Harper & Konstan 2015))"
+ },
+ "loans": {
+  "counts": {
+   "applicants": 1000,
+   "defaulted": 300,
+   "train": 700,
+   "test": 300
+  },
+  "baseline": 0.7,
+  "tree": {
+   "accuracy": 0.7033,
+   "recall": 0.0333,
+   "precision": 0.6,
+   "auc": 0.7082,
+   "cost": 437
+  },
+  "forest": {
+   "accuracy": 0.7467,
+   "recall": 0.1889,
+   "precision": 0.85,
+   "auc": 0.8304,
+   "cost": 368
+  },
+  "boost": {
+   "accuracy": 0.7267,
+   "recall": 0.3,
+   "precision": 0.587,
+   "auc": 0.756,
+   "cost": 334
+  },
+  "depthCurve": [
+   {
+    "depth": 1,
+    "train": 0.7,
+    "test": 0.7,
+    "auc": 0.7111
+   },
+   {
+    "depth": 2,
+    "train": 0.7186,
+    "test": 0.7033,
+    "auc": 0.7166
+   },
+   {
+    "depth": 3,
+    "train": 0.72,
+    "test": 0.7033,
+    "auc": 0.7082
+   },
+   {
+    "depth": 4,
+    "train": 0.7529,
+    "test": 0.6733,
+    "auc": 0.6994
+   },
+   {
+    "depth": 5,
+    "train": 0.7671,
+    "test": 0.6833,
+    "auc": 0.7167
+   },
+   {
+    "depth": 6,
+    "train": 0.8057,
+    "test": 0.6633,
+    "auc": 0.7039
+   },
+   {
+    "depth": 8,
+    "train": 0.8414,
+    "test": 0.6733,
+    "auc": 0.6948
+   },
+   {
+    "depth": 10,
+    "train": 0.8957,
+    "test": 0.6933,
+    "auc": 0.6877
+   },
+   {
+    "depth": 15,
+    "train": 0.9686,
+    "test": 0.6967,
+    "auc": 0.6627
+   },
+   {
+    "depth": "none",
+    "train": 1.0,
+    "test": 0.7,
+    "auc": 0.6492
+   }
+  ],
+  "gridTrials": 35,
+  "randomTrials": 12,
+  "best": {
+   "max_depth": 8,
+   "min_samples_leaf": 10,
+   "auc": 0.7223
+  },
+  "bestTestAuc": 0.6519,
+  "randomBest": 0.7066,
+  "source": "Statlog (German Credit Data) (Prof. Dr. Hans Hofmann (1994), UCI, CC BY 4.0)"
+ },
+ "sensor": {
+  "hours": 1891,
+  "raw": 22695,
+  "windows": 4,
+  "zscore": {
+   "2.0": {
+    "caught": 4,
+    "falseAlarms": 27,
+    "hoursIntoWindow": [
+     -2,
+     3,
+     -2,
+     -6
+    ]
+   },
+   "2.5": {
+    "caught": 4,
+    "falseAlarms": 20,
+    "hoursIntoWindow": [
+     23,
+     4,
+     -2,
+     -6
+    ]
+   },
+   "3.0": {
+    "caught": 3,
+    "falseAlarms": 14,
+    "hoursIntoWindow": [
+     null,
+     4,
+     -2,
+     -6
+    ]
+   },
+   "3.5": {
+    "caught": 2,
+    "falseAlarms": 10,
+    "hoursIntoWindow": [
+     null,
+     4,
+     -1,
+     null
+    ]
+   },
+   "4.0": {
+    "caught": 2,
+    "falseAlarms": 6,
+    "hoursIntoWindow": [
+     null,
+     4,
+     -1,
+     null
+    ]
+   }
+  },
+  "mae": {
+   "naive": 6.0701,
+   "seasonal": 10.3525,
+   "mean24": 8.2734
+  },
+  "psi": {
+   "refHours": 168,
+   "max": 6.295,
+   "firstAbove02": 336
+  },
+  "start": "2013-12-02 21:00:00",
+  "source": "NAB realKnownCause/machine_temperature_system_failure (Numenta Anomaly Benchmark (Lavin & Ahmad 2015), MIT)"
+ },
+ "cards": {
+  "counts": {
+   "transactions": 284807,
+   "frauds": 492,
+   "train": 199364,
+   "test": 85443,
+   "testFrauds": 108
+  },
+  "baseline": 0.99874,
+  "plain": {
+   "accuracy": 0.9992,
+   "precision": 0.7681,
+   "recall": 0.4907,
+   "f1": 0.5989,
+   "tp": 53,
+   "fp": 16,
+   "fn": 55,
+   "tn": 85319,
+   "auc": 0.9734
+  },
+  "weighted": {
+   "accuracy": 0.9726,
+   "precision": 0.0396,
+   "recall": 0.8889,
+   "f1": 0.0758,
+   "tp": 96,
+   "fp": 2328,
+   "fn": 12,
+   "tn": 83007,
+   "auc": 0.9788
+  },
+  "source": "Credit Card Fraud Detection (European cardholders, Sept 2013) (Worldline & ULB Machine Learning Group (Dal Pozzolo et al. 2015), OpenML 1597, DbCL 1.0)"
+ },
+ "serving": {
+  "models": {
+   "Spam · naive Bayes": {
+    "p50": 0.095,
+    "p99": 0.137
+   },
+   "Spam · logistic regression": {
+    "p50": 0.055,
+    "p99": 0.087
+   },
+   "Homes · linear regression": {
+    "p50": 0.507,
+    "p99": 1.001
+   },
+   "Loans · decision tree": {
+    "p50": 0.063,
+    "p99": 0.089
+   },
+   "Loans · random forest (40 trees)": {
+    "p50": 1.362,
+    "p99": 2.784
+   },
+   "Loans · gradient boosting (80 trees)": {
+    "p50": 0.2,
+    "p99": 0.27
+   }
+  },
+  "machine": "x86_64 · Python 3.12.16"
+ },
+ "provenance": {
+  "measuredAt": "2026-11-22",
+  "script": "scripts/data/measure_apps.py",
+  "sklearn": "1.5.2",
+  "seed": 0,
+  "dataset": "see each app",
+  "by": "T. A. Almeida & J. M. Gómez Hidalgo (2011)",
+  "licence": "CC BY 4.0",
+  "url": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection"
+ }
+}

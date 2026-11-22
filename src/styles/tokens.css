@@ -1,0 +1,73 @@
+/* AI Zero to Hero design tokens — see docs/spec.md §6 */
+:root,
+:root[data-theme='light'] {
+  color-scheme: light;
+  --paper: #f4ebe0;
+  --paper-2: #f7efe4;
+  --sheet: #f9f2e8;
+  --card: #f8f0e6;
+  --card-2: #f6eee3;
+  --line: #ddd3c5;
+  --line-soft: #e6ddd0;
+  --line-strong: #c6bbac;
+  --edge: #46413b;
+  --ink: #1d1b18;
+  --ink-2: #34302b;
+  --muted: #6f6961;
+  --green: #cfe3b2;
+  --green-2: #b2d491;
+  --green-3: #7fc278;
+  --green-fg: #24521c;
+  --violet: #e7ddf5;
+  --violet-2: #d5c8e2;
+  --violet-fg: #5a43a6;
+  --orange: #fcdcbd;
+  --orange-fg: #7a3d0c;
+  --red: #f8d5cf;
+  --red-fg: #8f2a22;
+  --mint: #dff0de;
+  --rust: #d0683a;
+  --drop: #1d1b18;
+  --ghost: #fbf7f1;
+  --grid: #e3d9cb;
+  --hl: #cfe3b2;
+  --a-top: rgba(255, 255, 255, 0.65);
+  --a-sh: rgba(80, 60, 35, 0.35);
+  --font: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #211e1a;
+  --paper-2: #25211c;
+  --sheet: #28241f;
+  --card: #26231e;
+  --card-2: #24201c;
+  --line: #342f28;
+  --line-soft: #29251f;
+  --line-strong: #4f473d;
+  --edge: #c6bfb7;
+  --ink: #efe6d6;
+  --ink-2: #ddd3c2;
+  --muted: #a3998b;
+  --green: #3f4c2b;
+  --green-2: #2e3b22;
+  --green-3: #7fc278;
+  --green-fg: #bae5b3;
+  --violet: #493563;
+  --violet-2: #41354e;
+  --violet-fg: #d9c9f5;
+  --orange: #5a4531;
+  --orange-fg: #f3cfa5;
+  --red: #5f3a33;
+  --red-fg: #ebb2ad;
+  --mint: #3c5c3a;
+  --rust: #d97a4f;
+  --drop: #050403;
+  --ghost: #2e2923;
+  --grid: #2d2823;
+  --hl: #3f4c2b;
+  --a-top: rgba(255, 240, 220, 0.04);
+  --a-sh: rgba(0, 0, 0, 0.6);
+}

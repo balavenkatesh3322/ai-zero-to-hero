@@ -1,0 +1,1021 @@
+{
+ "provenance": {
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "dtype": "float32",
+  "device": "cpu",
+  "measuredAt": "2026-11-21",
+  "script": "scripts/data/measure_start_here.py",
+  "torch": "2.5.1+cpu",
+  "note": "Probabilities are softmax(logits / T) over the full vocabulary; T = 0 means greedy (argmax)."
+ },
+ "tokens": [
+  {
+   "text": "How",
+   "id": 4340
+  },
+  {
+   "text": " long",
+   "id": 1293
+  },
+  {
+   "text": " do",
+   "id": 653
+  },
+  {
+   "text": " I",
+   "id": 358
+  },
+  {
+   "text": " have",
+   "id": 614
+  },
+  {
+   "text": " to",
+   "id": 311
+  },
+  {
+   "text": " return",
+   "id": 470
+  },
+  {
+   "text": " shoes",
+   "id": 15294
+  },
+  {
+   "text": "?",
+   "id": 30
+  }
+ ],
+ "languages": [
+  {
+   "lang": "English",
+   "text": "How long do I have to return shoes?",
+   "tokens": 9,
+   "chars": 35
+  },
+  {
+   "lang": "Spanish",
+   "text": "¿Cuánto tiempo tengo para devolver los zapatos?",
+   "tokens": 13,
+   "chars": 47
+  },
+  {
+   "lang": "Hindi",
+   "text": "मुझे जूते लौटाने के लिए कितना समय मिलता है?",
+   "tokens": 41,
+   "chars": 43
+  }
+ ],
+ "embeddings": {
+  "dims": 896,
+  "words": [
+   {
+    "word": " return",
+    "tokenIds": [
+     470
+    ],
+    "first12": [
+     -0.006,
+     -0.0079,
+     0.0209,
+     0.0055,
+     0.0123,
+     -0.0022,
+     -0.0102,
+     -0.0087,
+     -0.0206,
+     -0.0011,
+     -0.0226,
+     0.0225
+    ]
+   },
+   {
+    "word": " refund",
+    "tokenIds": [
+     20965
+    ],
+    "first12": [
+     0.0187,
+     -0.007,
+     -0.0005,
+     0.0074,
+     -0.0034,
+     0.0229,
+     -0.0094,
+     0.0107,
+     -0.0106,
+     -0.0115,
+     -0.0015,
+     -0.0002
+    ]
+   },
+   {
+    "word": " shoes",
+    "tokenIds": [
+     15294
+    ],
+    "first12": [
+     -0.0064,
+     0.0076,
+     0.0144,
+     0.0045,
+     0.0107,
+     0.0007,
+     -0.0361,
+     0.014,
+     0.0156,
+     -0.0096,
+     -0.0023,
+     -0.0095
+    ]
+   }
+  ],
+  "cosine": [
+   {
+    "a": " return",
+    "b": " refund",
+    "cos": 0.1728
+   },
+   {
+    "a": " return",
+    "b": " shoes",
+    "cos": 0.0369
+   },
+   {
+    "a": " refund",
+    "b": " shoes",
+    "cos": 0.152
+   }
+  ]
+ },
+ "nextToken": {
+  "prompt": {
+   "system": "You are a customer-support assistant for an online shoe store. Answer in one sentence.",
+   "user": "How long do I have to return shoes?",
+   "assistantPrefix": "You have "
+  },
+  "policy": "Store policy: Returns are accepted within 14 days of delivery.",
+  "promptTokens": 42,
+  "groundedPromptTokens": 56,
+  "withoutPolicy": {
+   "0": [
+    {
+     "token": "3",
+     "p": 1.0
+    },
+    {
+     "token": "\"",
+     "p": 0.0
+    },
+    {
+     "token": "$",
+     "p": 0.0
+    },
+    {
+     "token": "%",
+     "p": 0.0
+    },
+    {
+     "token": "!",
+     "p": 0.0
+    }
+   ],
+   "0.7": [
+    {
+     "token": "3",
+     "p": 0.937
+    },
+    {
+     "token": "7",
+     "p": 0.0304
+    },
+    {
+     "token": "1",
+     "p": 0.0202
+    },
+    {
+     "token": "9",
+     "p": 0.008
+    },
+    {
+     "token": "6",
+     "p": 0.0029
+    }
+   ],
+   "1.5": [
+    {
+     "token": "3",
+     "p": 0.6114
+    },
+    {
+     "token": "7",
+     "p": 0.1234
+    },
+    {
+     "token": "1",
+     "p": 0.102
+    },
+    {
+     "token": "9",
+     "p": 0.0664
+    },
+    {
+     "token": "6",
+     "p": 0.0414
+    }
+   ]
+  },
+  "withPolicy": {
+   "0": [
+    {
+     "token": "1",
+     "p": 1.0
+    },
+    {
+     "token": "\"",
+     "p": 0.0
+    },
+    {
+     "token": "$",
+     "p": 0.0
+    },
+    {
+     "token": "%",
+     "p": 0.0
+    },
+    {
+     "token": "!",
+     "p": 0.0
+    }
+   ],
+   "0.7": [
+    {
+     "token": "1",
+     "p": 1.0
+    },
+    {
+     "token": "3",
+     "p": 0.0
+    },
+    {
+     "token": "7",
+     "p": 0.0
+    },
+    {
+     "token": "2",
+     "p": 0.0
+    },
+    {
+     "token": "6",
+     "p": 0.0
+    }
+   ],
+   "1.5": [
+    {
+     "token": "1",
+     "p": 0.9801
+    },
+    {
+     "token": "3",
+     "p": 0.0072
+    },
+    {
+     "token": "7",
+     "p": 0.0042
+    },
+    {
+     "token": "2",
+     "p": 0.0032
+    },
+    {
+     "token": "6",
+     "p": 0.0017
+    }
+   ]
+  }
+ },
+ "candidates": {
+  "candidates": [
+   "14 days",
+   "30 days",
+   "60 days",
+   "90 days"
+  ],
+  "withoutPolicy": {
+   "0": [
+    {
+     "answer": "14 days",
+     "p": 0.0,
+     "shareOfShown": 0.0
+    },
+    {
+     "answer": "30 days",
+     "p": 1.0,
+     "shareOfShown": 1.0
+    },
+    {
+     "answer": "60 days",
+     "p": 0.0,
+     "shareOfShown": 0.0
+    },
+    {
+     "answer": "90 days",
+     "p": 0.0,
+     "shareOfShown": 0.0
+    }
+   ],
+   "0.7": [
+    {
+     "answer": "14 days",
+     "p": 0.01649,
+     "shareOfShown": 0.0171
+    },
+    {
+     "answer": "30 days",
+     "p": 0.93665,
+     "shareOfShown": 0.9715
+    },
+    {
+     "answer": "60 days",
+     "p": 0.00292,
+     "shareOfShown": 0.003
+    },
+    {
+     "answer": "90 days",
+     "p": 0.00804,
+     "shareOfShown": 0.0083
+    }
+   ],
+   "1.5": [
+    {
+     "answer": "14 days",
+     "p": 0.04824,
+     "shareOfShown": 0.0729
+    },
+    {
+     "answer": "30 days",
+     "p": 0.52317,
+     "shareOfShown": 0.7904
+    },
+    {
+     "answer": "60 days",
+     "p": 0.03298,
+     "shareOfShown": 0.0498
+    },
+    {
+     "answer": "90 days",
+     "p": 0.05754,
+     "shareOfShown": 0.0869
+    }
+   ]
+  },
+  "withPolicy": {
+   "0": [
+    {
+     "answer": "14 days",
+     "p": 1.0,
+     "shareOfShown": 1.0
+    },
+    {
+     "answer": "30 days",
+     "p": 0.0,
+     "shareOfShown": 0.0
+    },
+    {
+     "answer": "60 days",
+     "p": 0.0,
+     "shareOfShown": 0.0
+    },
+    {
+     "answer": "90 days",
+     "p": 0.0,
+     "shareOfShown": 0.0
+    }
+   ],
+   "0.7": [
+    {
+     "answer": "14 days",
+     "p": 0.99968,
+     "shareOfShown": 1.0
+    },
+    {
+     "answer": "30 days",
+     "p": 3e-05,
+     "shareOfShown": 0.0
+    },
+    {
+     "answer": "60 days",
+     "p": 0.0,
+     "shareOfShown": 0.0
+    },
+    {
+     "answer": "90 days",
+     "p": 0.0,
+     "shareOfShown": 0.0
+    }
+   ],
+   "1.5": [
+    {
+     "answer": "14 days",
+     "p": 0.92332,
+     "shareOfShown": 0.9921
+    },
+    {
+     "answer": "30 days",
+     "p": 0.0054,
+     "shareOfShown": 0.0058
+    },
+    {
+     "answer": "60 days",
+     "p": 0.00124,
+     "shareOfShown": 0.0013
+    },
+    {
+     "answer": "90 days",
+     "p": 0.00068,
+     "shareOfShown": 0.0007
+    }
+   ]
+  },
+  "note": "p = product over the answer's tokens of softmax(logits/T); shareOfShown renormalises over these four answers only."
+ },
+ "attention": {
+  "layer": "last",
+  "heads": "mean",
+  "fromPosition": "next-token position",
+  "tokens": [
+   {
+    "text": "How",
+    "weight": 0.0076
+   },
+   {
+    "text": " long",
+    "weight": 0.0513
+   },
+   {
+    "text": " do",
+    "weight": 0.1319
+   },
+   {
+    "text": " I",
+    "weight": 0.1491
+   },
+   {
+    "text": " have",
+    "weight": 0.0314
+   },
+   {
+    "text": " to",
+    "weight": 0.3175
+   },
+   {
+    "text": " return",
+    "weight": 0.0293
+   },
+   {
+    "text": " shoes",
+    "weight": 0.0023
+   },
+   {
+    "text": "?",
+    "weight": 0.2796
+   }
+  ]
+ },
+ "answers": {
+  "withoutPolicy": "You typically have 30 days from the date of purchase to return your shoes to our store.",
+  "withPolicy": "You can return shoes within 14 days of delivery, subject to the store's return policy.",
+  "systemFrench": "A token in a language model refers to a single word or phrase that is used as a unit of input for the model's processing and generation process.",
+  "systemOneSentence": "A token in a language model refers to a single, distinct input or output that the model processes and uses for its operations.",
+  "systemPirate": "In a language model, a token refers to a single unit of data or information that can be processed and analyzed by the system. Tokens are essential for representing text, images, audio, and other forms",
+  "systemNone": "In a language model, a token refers to a single unit of input or output that the model processes and generates. Tokens can be represented as characters, words, phrases, or other units of information within a text or message. In natural language processing (NLP), tokens are used to represent individual words"
+ },
+ "chatTemplate": {
+  "rendered": "<|im_start|>system\nAnswer in one short sentence.<|im_end|>\n<|im_start|>user\nWhat is a token?<|im_end|>\n<|im_start|>assistant\n",
+  "contextWindow": 32768,
+  "vocabSize": 151936
+ },
+ "samples": [
+  {
+   "name": "English sentence",
+   "text": "How long do I have to return shoes?",
+   "chars": 35,
+   "tokens": [
+    {
+     "text": "How",
+     "id": 4340
+    },
+    {
+     "text": " long",
+     "id": 1293
+    },
+    {
+     "text": " do",
+     "id": 653
+    },
+    {
+     "text": " I",
+     "id": 358
+    },
+    {
+     "text": " have",
+     "id": 614
+    },
+    {
+     "text": " to",
+     "id": 311
+    },
+    {
+     "text": " return",
+     "id": 470
+    },
+    {
+     "text": " shoes",
+     "id": 15294
+    },
+    {
+     "text": "?",
+     "id": 30
+    }
+   ]
+  },
+  {
+   "name": "Spanish sentence",
+   "text": "¿Cuánto tiempo tengo para devolver los zapatos?",
+   "chars": 47,
+   "tokens": [
+    {
+     "text": "¿",
+     "id": 30182
+    },
+    {
+     "text": "Cu",
+     "id": 44819
+    },
+    {
+     "text": "ánt",
+     "id": 85433
+    },
+    {
+     "text": "o",
+     "id": 78
+    },
+    {
+     "text": " tiempo",
+     "id": 28742
+    },
+    {
+     "text": " tengo",
+     "id": 66890
+    },
+    {
+     "text": " para",
+     "id": 3348
+    },
+    {
+     "text": " dev",
+     "id": 3483
+    },
+    {
+     "text": "olver",
+     "id": 7921
+    },
+    {
+     "text": " los",
+     "id": 2478
+    },
+    {
+     "text": " zap",
+     "id": 32978
+    },
+    {
+     "text": "atos",
+     "id": 14030
+    },
+    {
+     "text": "?",
+     "id": 30
+    }
+   ]
+  },
+  {
+   "name": "Hindi sentence",
+   "text": "मुझे जूते लौटाने के लिए कितना समय मिलता है?",
+   "chars": 43,
+   "tokens": [
+    {
+     "text": "म",
+     "id": 87244
+    },
+    {
+     "text": "ु",
+     "id": 72653
+    },
+    {
+     "text": "झ",
+     "id": 148971
+    },
+    {
+     "text": "े",
+     "id": 34370
+    },
+    {
+     "text": " �",
+     "id": 14925
+    },
+    {
+     "text": "�",
+     "id": 250
+    },
+    {
+     "text": "�",
+     "id": 12619
+    },
+    {
+     "text": "�",
+     "id": 224
+    },
+    {
+     "text": "त",
+     "id": 79238
+    },
+    {
+     "text": "े",
+     "id": 34370
+    },
+    {
+     "text": " �",
+     "id": 14925
+    },
+    {
+     "text": "�",
+     "id": 110
+    },
+    {
+     "text": "�",
+     "id": 12619
+    },
+    {
+     "text": "�",
+     "id": 234
+    },
+    {
+     "text": "ट",
+     "id": 145769
+    },
+    {
+     "text": "ा�",
+     "id": 31411
+    },
+    {
+     "text": "�",
+     "id": 101
+    },
+    {
+     "text": "े",
+     "id": 34370
+    },
+    {
+     "text": " क",
+     "id": 47809
+    },
+    {
+     "text": "े",
+     "id": 34370
+    },
+    {
+     "text": " �",
+     "id": 14925
+    },
+    {
+     "text": "�",
+     "id": 110
+    },
+    {
+     "text": "ि�",
+     "id": 42311
+    },
+    {
+     "text": "�",
+     "id": 237
+    },
+    {
+     "text": " क",
+     "id": 47809
+    },
+    {
+     "text": "ि�",
+     "id": 42311
+    },
+    {
+     "text": "�",
+     "id": 97
+    },
+    {
+     "text": "न",
+     "id": 60096
+    },
+    {
+     "text": "ा",
+     "id": 23868
+    },
+    {
+     "text": " स",
+     "id": 68158
+    },
+    {
+     "text": "म",
+     "id": 87244
+    },
+    {
+     "text": "य",
+     "id": 145420
+    },
+    {
+     "text": " म",
+     "id": 91217
+    },
+    {
+     "text": "ि�",
+     "id": 42311
+    },
+    {
+     "text": "�",
+     "id": 110
+    },
+    {
+     "text": "त",
+     "id": 79238
+    },
+    {
+     "text": "ा",
+     "id": 23868
+    },
+    {
+     "text": " ह",
+     "id": 84310
+    },
+    {
+     "text": "�",
+     "id": 12619
+    },
+    {
+     "text": "�",
+     "id": 230
+    },
+    {
+     "text": "?",
+     "id": 30
+    }
+   ]
+  },
+  {
+   "name": "A number",
+   "text": "The order total is 1234567.89 dollars.",
+   "chars": 38,
+   "tokens": [
+    {
+     "text": "The",
+     "id": 785
+    },
+    {
+     "text": " order",
+     "id": 1973
+    },
+    {
+     "text": " total",
+     "id": 2790
+    },
+    {
+     "text": " is",
+     "id": 374
+    },
+    {
+     "text": " ",
+     "id": 220
+    },
+    {
+     "text": "1",
+     "id": 16
+    },
+    {
+     "text": "2",
+     "id": 17
+    },
+    {
+     "text": "3",
+     "id": 18
+    },
+    {
+     "text": "4",
+     "id": 19
+    },
+    {
+     "text": "5",
+     "id": 20
+    },
+    {
+     "text": "6",
+     "id": 21
+    },
+    {
+     "text": "7",
+     "id": 22
+    },
+    {
+     "text": ".",
+     "id": 13
+    },
+    {
+     "text": "8",
+     "id": 23
+    },
+    {
+     "text": "9",
+     "id": 24
+    },
+    {
+     "text": " dollars",
+     "id": 11192
+    },
+    {
+     "text": ".",
+     "id": 13
+    }
+   ]
+  },
+  {
+   "name": "Python code",
+   "text": "def add(a, b):\n    return a + b",
+   "chars": 31,
+   "tokens": [
+    {
+     "text": "def",
+     "id": 750
+    },
+    {
+     "text": " add",
+     "id": 912
+    },
+    {
+     "text": "(a",
+     "id": 2877
+    },
+    {
+     "text": ",",
+     "id": 11
+    },
+    {
+     "text": " b",
+     "id": 293
+    },
+    {
+     "text": "):\n",
+     "id": 982
+    },
+    {
+     "text": "   ",
+     "id": 262
+    },
+    {
+     "text": " return",
+     "id": 470
+    },
+    {
+     "text": " a",
+     "id": 264
+    },
+    {
+     "text": " +",
+     "id": 488
+    },
+    {
+     "text": " b",
+     "id": 293
+    }
+   ]
+  },
+  {
+   "name": "JSON",
+   "text": "{\"order_id\": 4521, \"status\": \"shipped\"}",
+   "chars": 39,
+   "tokens": [
+    {
+     "text": "{\"",
+     "id": 4913
+    },
+    {
+     "text": "order",
+     "id": 1358
+    },
+    {
+     "text": "_id",
+     "id": 842
+    },
+    {
+     "text": "\":",
+     "id": 788
+    },
+    {
+     "text": " ",
+     "id": 220
+    },
+    {
+     "text": "4",
+     "id": 19
+    },
+    {
+     "text": "5",
+     "id": 20
+    },
+    {
+     "text": "2",
+     "id": 17
+    },
+    {
+     "text": "1",
+     "id": 16
+    },
+    {
+     "text": ",",
+     "id": 11
+    },
+    {
+     "text": " \"",
+     "id": 330
+    },
+    {
+     "text": "status",
+     "id": 2829
+    },
+    {
+     "text": "\":",
+     "id": 788
+    },
+    {
+     "text": " \"",
+     "id": 330
+    },
+    {
+     "text": "sh",
+     "id": 927
+    },
+    {
+     "text": "ipped",
+     "id": 6450
+    },
+    {
+     "text": "\"}",
+     "id": 9207
+    }
+   ]
+  },
+  {
+   "name": "Emoji",
+   "text": "Great service 👍🎉",
+   "chars": 16,
+   "tokens": [
+    {
+     "text": "Great",
+     "id": 21396
+    },
+    {
+     "text": " service",
+     "id": 2473
+    },
+    {
+     "text": " �",
+     "id": 61804
+    },
+    {
+     "text": "�",
+     "id": 235
+    },
+    {
+     "text": "🎉",
+     "id": 144841
+    }
+   ]
+  }
+ ],
+ "memory": {
+  "firstTurn": {
+   "user": "Hi, my name is Priya.",
+   "assistant": "Hello Priya! Nice to meet you."
+  },
+  "secondTurnUser": "What is my name?",
+  "withoutHistory": "I am an artificial intelligence designed to assist with information and answer questions, but I do not have a personal name.",
+  "withHistory": "Your name is Priya."
+ },
+ "spam": [
+  {
+   "email": "You won a FREE cruise! Click here to claim your prize now.",
+   "llm": "SPAM - The email is soliciting an action (claiming a prize) that could be considered spam due to its"
+  },
+  {
+   "email": "Hi, can you send me the invoice for order 4521?",
+   "llm": "SPAM\n\nReason: The content is irrelevant to the request and appears to be spam."
+  }
+ ]
+}

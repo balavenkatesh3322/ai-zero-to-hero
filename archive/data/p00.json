@@ -1,0 +1,219 @@
+{
+ "provenance": {
+  "measuredAt": "2026-11-21",
+  "script": "scripts/data/measure_p00.py",
+  "machine": "Linux 7.0.0-43-generic · x86_64 · 8 CPU threads"
+ },
+ "versions": [
+  {
+   "tool": "Python (system)",
+   "cmd": "python3 --version",
+   "code": 0,
+   "out": "Python 3.14.4"
+  },
+  {
+   "tool": "Python (project venv)",
+   "cmd": "<project>/scripts/data/.venv/bin/python --version",
+   "code": 0,
+   "out": "Python 3.12.16"
+  },
+  {
+   "tool": "Node.js",
+   "cmd": "node --version",
+   "code": 0,
+   "out": "v22.22.1"
+  },
+  {
+   "tool": "npm",
+   "cmd": "npm --version",
+   "code": 0,
+   "out": "9.2.0"
+  },
+  {
+   "tool": "git",
+   "cmd": "git --version",
+   "code": 0,
+   "out": "git version 2.53.0"
+  },
+  {
+   "tool": "uv",
+   "cmd": "uv --version",
+   "code": 0,
+   "out": "uv 0.13.6 (x86_64-unknown-linux-gnu)"
+  }
+ ],
+ "packageJson": {
+  "dependencies": {
+   "@fontsource/jetbrains-mono": "^5.1.1",
+   "react": "^18.3.1",
+   "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+   "@types/react": "^18.3.12",
+   "@types/react-dom": "^18.3.1",
+   "@vitejs/plugin-react": "^4.3.4",
+   "typescript": "^5.6.3",
+   "vite": "^5.4.11"
+  }
+ },
+ "lockfileBytes": 55812,
+ "git": {
+  "merge": {
+   "cmd": "git merge tune",
+   "code": 1,
+   "out": "Auto-merging config.py\nCONFLICT (content): Merge conflict in config.py\nAutomatic merge failed; fix conflicts and then commit the result."
+  },
+  "conflictFile": "<<<<<<< HEAD\nTEMPERATURE = 1.0\n=======\nTEMPERATURE = 0.2\n>>>>>>> tune\n",
+  "historyOfSecret": "1786390 Remove key\n1504c4c Add key",
+  "secretStillInHistory": "API_KEY = \"sk-demo-not-a-real-key\"",
+  "log": "* 1786390 Remove key\n* 1504c4c Add key\n* e5220d6 Raise temperature\n| * a41f1b7 Lower temperature\n|/  \n* 0838d1e Add config"
+ },
+ "gpu": {
+  "nvidiaSmi": {
+   "cmd": "nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader",
+   "code": 0,
+   "out": "NVIDIA GeForce GTX 1650, 4096 MiB, 580.178.04"
+  },
+  "torch": "2.5.1+cpu",
+  "cudaAvailable": false,
+  "torchCudaBuild": null,
+  "model": {
+   "name": "Qwen/Qwen2.5-0.5B-Instruct",
+   "parameters": 494032768,
+   "bytes": {
+    "float32": 1976131072,
+    "bfloat16": 988065536,
+    "int8": 494032768,
+    "int4": 247016384
+   }
+  }
+ },
+ "keys": {
+  "scan": {
+   "cmd": "grep -rnE 'sk-ant-[A-Za-z0-9-]{10,}' --include='*.py' .",
+   "code": 0,
+   "out": "./old_demo.py:1:API_KEY = \"sk-ant-demo-0000000000000000\"  # pasted for a quick test"
+  },
+  "envIgnored": {
+   "cmd": "git init -q && git status --short --ignored",
+   "code": 0,
+   "out": "?? .gitignore\n?? app.py\n?? old_demo.py\n!! .env"
+  }
+ },
+ "notebook": {
+  "cells": [
+   "prices = [10, 20, 30]",
+   "total = sum(prices)",
+   "prices = [p * 2 for p in prices]",
+   "print(total)"
+  ],
+  "topToBottom": "60",
+  "clickedOrder": [
+   1,
+   3,
+   2,
+   4
+  ],
+  "clickedResult": "120"
+ },
+ "envs": [
+  {
+   "name": "project-a",
+   "requested": "1.26.4",
+   "venvSeconds": 0.12,
+   "installSeconds": 7.35,
+   "ok": true,
+   "reports": "1.26.4 3.12.16"
+  },
+  {
+   "name": "project-b",
+   "requested": "2.1.3",
+   "venvSeconds": 0.03,
+   "installSeconds": 4.86,
+   "ok": true,
+   "reports": "2.1.3 3.12.16"
+  }
+ ],
+ "tsc": {
+  "cmd": "<project>/node_modules/.bin/tsc --noEmit --strict bug.ts",
+  "code": 2,
+  "out": "bug.ts(2,57): error TS2551: Property 'output_token' does not exist on type 'Usage'. Did you mean 'output_tokens'?\nbug.ts(3,8): error TS2322: Type 'string' is not assignable to type 'number'.",
+  "source": "interface Usage { input_tokens: number; output_tokens: number }\nfunction cost(u: Usage) { return u.input_tokens * 4 + u.output_token * 20; }\ncost({ input_tokens: \"1200\", output_tokens: 300 });\n"
+ },
+ "formats": {
+  "dataset": "Breast Cancer Wisconsin (Diagnostic), scikit-learn",
+  "rows": 569,
+  "columns": 31,
+  "files": [
+   {
+    "format": "CSV",
+    "bytes": 121385,
+    "readMs": 4.55,
+    "sha256": "75a1d74a59df"
+   },
+   {
+    "format": "JSON",
+    "bytes": 437258,
+    "readMs": 20.12,
+    "sha256": "fb056fabc623"
+   },
+   {
+    "format": "Parquet",
+    "bytes": 144270,
+    "readMs": 11.26,
+    "sha256": "67916517a843"
+   }
+  ],
+  "changedOneCellSha256": "6ac9e788493b"
+ },
+ "shell": [
+  {
+   "cmd": "ls docs",
+   "code": 0,
+   "out": "curriculum-full.md\ncurriculum.json\ncurriculum.md\nspec.md"
+  },
+  {
+   "cmd": "wc -l docs/curriculum-full.md",
+   "code": 0,
+   "out": "746 docs/curriculum-full.md"
+  },
+  {
+   "cmd": "grep -c '| LIVE |' docs/curriculum-full.md",
+   "code": 0,
+   "out": "56"
+  },
+  {
+   "cmd": "grep -o 'Phase [0-9]* · [A-Za-z&]*' docs/curriculum-full.md | head -5",
+   "code": 0,
+   "out": "Phase 00 · Setup\nPhase 01 · Math\nPhase 02 · ML\nPhase 03 · Deep\nPhase 04 · Computer"
+  },
+  {
+   "cmd": "cat does-not-exist.txt; echo \"exit code: $?\"",
+   "code": 0,
+   "out": "exit code: 1\ncat: does-not-exist.txt: No such file or directory"
+  }
+ ],
+ "linux": {
+  "uname": "Linux 7.0.0-43-generic",
+  "nproc": "8",
+  "memory": "total        used        free      shared  buff/cache   available\nMem:            10Gi       8.1Gi       1.4Gi       268Mi       2.1Gi       2.9Gi",
+  "disk": "/dev/nvme0n1p1  468G  136G  309G  31% /",
+  "before": "-rw-rw-r-- 1 use use 22 Nov 21 13:54 .env",
+  "chmod": "-rw------- 1 use use 22 Nov 21 13:54 .env"
+ },
+ "traceback": "Traceback (most recent call last):\n  File \"<project>/scripts/data/measure_p00.py\", line 165, in <module>\n    usage[\"output_tokens\"] * 20  # noqa: B018\n    ~~~~~^^^^^^^^^^^^^^^^^\nKeyError: 'output_tokens'",
+ "profile": {
+  "queries": 2000,
+  "items": 50000,
+  "slowSeconds": 0.9905,
+  "fastSeconds": 0.000156,
+  "report": "   List reduced from 6 to 2 due to restriction <'slow|fast'>\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    1.197    1.197 <project>/scripts/data/measure_p00.py:170(slow)\n        1    0.000    0.000    0.004    0.004 <project>/scripts/data/measure_p00.py:171(fast)"
+ },
+ "python": {
+  "n": 1000000,
+  "loopSeconds": 0.1401,
+  "numpySeconds": 0.000757,
+  "listBytes": 32000056,
+  "arrayBytes": 4000000
+ }
+}

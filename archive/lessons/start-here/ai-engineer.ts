@@ -1,0 +1,128 @@
+import type { Lesson } from '../../lesson/types';
+
+export const aiEngineer: Lesson = {
+  slug: 'what-an-ai-engineer-actually-does',
+  phase: 'SH',
+  index: 6,
+  title: 'What an AI Engineer Actually Does',
+  summary: 'The model is one box. An AI engineer builds everything around it: grounding, tools, evaluation and safety.',
+  minutes: 9,
+  level: 'Beginner',
+  youWillLearn: [
+    'Why a demo is not a product',
+    'Grounding with your own data (RAG)',
+    'Connecting tools and systems (tool calling, MCP)',
+    'Measuring quality (evaluation)',
+    'Keeping it safe (guardrails)',
+  ],
+  nodes: [
+    { id: 'users', kind: 'user', label: 'users', sub: 'real customers', x: 90, y: 250 },
+    { id: 'app', kind: 'server', label: 'Your app', sub: 'the product', x: 225, y: 165 },
+    { id: 'llm', kind: 'llm', label: 'LLM', sub: 'one component', x: 375, y: 250 },
+    { id: 'kb', kind: 'vector', label: 'knowledge', x: 375, y: 80, appearsAt: 2 },
+    { id: 'tools', kind: 'plug', label: 'Tools · MCP', sub: 'orders, tickets', x: 525, y: 165, appearsAt: 3 },
+    { id: 'evals', kind: 'judge', label: 'Evals', sub: 'is it right?', x: 670, y: 250, appearsAt: 4 },
+    { id: 'guard', kind: 'shield', label: 'Guardrails', sub: 'is it safe?', x: 670, y: 80, appearsAt: 5 },
+  ],
+  links: [
+    { id: 'u', from: 'users', to: 'app' },
+    { id: 'm', from: 'app', to: 'llm' },
+    { id: 'k', from: 'kb', to: 'app', tone: 'grounded' },
+    { id: 't', from: 'llm', to: 'tools' },
+    { id: 'e', from: 'llm', to: 'evals', tone: 'grounded' },
+    { id: 'g', from: 'guard', to: 'tools', tone: 'grounded' },
+  ],
+  metrics: [
+    { label: 'YOU ADDED', values: ['a model call', 'the app path', '+ grounding', '+ tools', '+ evals', '+ guardrails', '—', 'a product'] },
+    { label: 'COURSE PHASE', values: ['Start Here', '11 LLM Engineering', '11 · RAG', '13 Tools & Protocols', '11 · 14 Evaluation', '18 Safety', '—', 'all of the above'] },
+  ],
+  legend: [
+    { label: 'request', swatch: 'request' },
+    { label: 'support systems', swatch: 'grounded' },
+    { label: 'already explained', swatch: 'done' },
+    { label: 'this step', swatch: 'focus' },
+  ],
+  steps: [
+    {
+      label: 'Demo ≠ product', tag: 'PROBLEM', title: 'The demo worked. Production didn’t.',
+      body: 'A prompt in a playground answered five test questions well. With real customers it invented policies, couldn’t check an order, and nobody could tell whether a change made it better or worse. None of those are model problems — they are engineering problems.',
+      keyIdea: 'An AI engineer’s job is the system around the model: what it knows, what it can do, how you measure it and how you keep it safe.',
+      focus: ['users', 'llm'],
+      widget: { type: 'compare', cards: [
+        { title: 'In the demo', tone: 'green', lines: ['A handful of friendly test questions', 'One person watching every answer', 'No real data, no real actions'] },
+        { title: 'In production', tone: 'orange', lines: ['Questions nobody planned for', 'Nobody reads most answers', 'Real orders, real customers, real risk'] },
+      ] },
+    },
+    {
+      label: 'App path', tag: 'CONCEPT', title: 'Build the request path',
+      body: 'Your app turns a user action into a model request (Start Here lessons 4–5), handles errors and retries, and logs token usage. This is ordinary software engineering, applied to a component that is probabilistic.',
+      keyIdea: 'Treat the model like an unreliable remote service: timeouts, retries, logging, budgets.',
+      focus: ['app'], draw: ['u', 'm'],
+      widget: { type: 'compare', cards: [{ title: 'You own', tone: 'blue', lines: ['API calls, retries, timeouts', 'Conversation history', 'Token & cost logging'] }] },
+    },
+    {
+      label: 'Ground it', tag: 'CONCEPT', title: 'Ground answers in your own data',
+      body: 'The model only knows its training data. Retrieval-augmented generation (RAG) finds the relevant pages of your documents and puts them in the prompt — exactly what fixed the "14 days" answer in lesson 2.',
+      keyIdea: 'Most "the AI is wrong" bugs are "the AI didn’t have the facts" bugs.',
+      focus: ['kb'], draw: ['k'],
+      widget: { type: 'compare', cards: [{ title: 'Phase 11 · LLM Engineering', tone: 'violet', lines: ['Embeddings & vector search', 'RAG and advanced RAG', 'Context engineering'] }] },
+    },
+    {
+      label: 'Tools', tag: 'CONCEPT', title: 'Let the model use your systems',
+      body: 'With tool calling, the model can ask your code to look up an order or open a ticket, then use the result. MCP (Model Context Protocol) is a standard way to expose tools to any compatible app.',
+      keyIdea: 'The model proposes; your code executes. Every tool needs permissions and checks.',
+      focus: ['tools'], draw: ['t'],
+      widget: { type: 'compare', cards: [{ title: 'Phase 13 · Tools & Protocols', tone: 'green', lines: ['Function calling', 'MCP servers and clients', 'Agent Skills'] }] },
+    },
+    {
+      label: 'Measure', tag: 'CONCEPT', title: 'Measure quality like you measure speed',
+      body: 'An evaluation set is a list of real questions with known good answers. Run it on every prompt or model change, so "it feels better" becomes a number — the way lesson 1’s spam mistake would have been caught.',
+      keyIdea: 'No evals, no engineering. Build the test set before you tune the prompt.',
+      focus: ['evals'], draw: ['e'],
+      widget: { type: 'compare', cards: [{ title: 'Phases 11 & 14 · Evaluation', tone: 'orange', lines: ['Golden datasets', 'LLM-as-judge (and its biases)', 'Regression gates'] }] },
+    },
+    {
+      label: 'Safety', tag: 'CASE', title: 'Case: a document told the bot what to do',
+      body: 'Text the model reads — a web page, an email, a PDF — can contain instructions ("ignore your rules and…"). If the model can also call tools, that is a security problem, called prompt injection. Guardrails, permissions and human approval for risky actions contain it.',
+      keyIdea: 'Treat everything the model reads as untrusted input, and limit what its tools can do.',
+      focus: ['guard'], draw: ['g'],
+      widget: { type: 'compare', cards: [{ title: 'Phase 18 · Safety & Alignment', tone: 'sheet', lines: ['Prompt injection & jailbreaks', 'Guardrails and red-teaming', 'Human-in-the-loop for risky actions'] }] },
+    },
+    {
+      label: 'Who does what', tag: 'TRY IT', title: 'Whose job is it?',
+      body: 'Role names vary between companies, but these are the typical splits. Pick the role you think usually owns each task.',
+      keyIdea: 'AI engineers build products on top of models; ML engineers and researchers usually build and train the models.',
+      focus: [],
+      widget: { type: 'quiz', items: [
+        { prompt: 'Connect a model to the company’s order system and ship it to customers.', choices: [
+          { text: 'AI engineer', correct: true, why: 'Building a product around an existing model — APIs, tools, evals — is the core of AI engineering.' },
+          { text: 'ML engineer', correct: false, why: 'ML engineers more often train, tune and serve models; integrating one into a product is usually AI engineering.' },
+          { text: 'Data scientist', correct: false, why: 'Data scientists usually analyse data and answer questions with it, rather than ship model-powered features.' },
+        ] },
+        { prompt: 'Train a new model from scratch on a large GPU cluster.', choices: [
+          { text: 'AI engineer', correct: false, why: 'Possible in small teams, but pre-training is usually ML engineering or research work (Phase 10 shows how).' },
+          { text: 'ML engineer', correct: true, why: 'Training pipelines, distributed training and model optimisation are typical ML-engineering work.' },
+          { text: 'Data scientist', correct: false, why: 'Data scientists rarely run large-scale training infrastructure.' },
+        ] },
+        { prompt: 'Analyse last quarter’s data to find why customers cancel.', choices: [
+          { text: 'AI engineer', correct: false, why: 'They may help, but open-ended analysis is usually data-science work.' },
+          { text: 'ML engineer', correct: false, why: 'They may build a model from the findings, but the analysis itself is usually data science.' },
+          { text: 'Data scientist', correct: true, why: 'Exploring data, testing hypotheses and explaining what drives an outcome is classic data science.' },
+        ] },
+      ] },
+    },
+    {
+      label: 'Recap', tag: 'RECAP', title: 'The model is one box in the system',
+      focus: [],
+      widget: { type: 'flow', chips: ['app path', '+ grounding (RAG)', '+ tools (MCP)', '+ evals', '+ guardrails', '= an AI product'] },
+      recap: [
+        ['What do you build?', 'The system around the model', 'Demo ≠ product'],
+        ['How to stop guessing?', 'Ground with your data', 'Phase 11'],
+        ['How does it act?', 'Tools and MCP', 'Phase 13'],
+        ['How do you know it works?', 'Evals', 'Phases 11 & 14'],
+        ['How do you keep it safe?', 'Guardrails, permissions', 'Phase 18'],
+      ],
+      comingUp: 'You’ve finished Start Here. Next: Phase 00 — set up your tools — or jump to Phase 11 to build your first LLM app.',
+    },
+  ],
+};

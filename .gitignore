@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+*.log
+scripts/data/.venv
+__pycache__
+tsconfig.tsbuildinfo
+.vercel
+.env*

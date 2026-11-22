@@ -1,0 +1,3936 @@
+[
+ {
+  "phase": 0,
+  "title": "Setup & Tooling",
+  "tagline": "",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Dev Environment",
+    "type": "Build",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/00-setup-and-tooling/01-dev-environment/"
+   },
+   {
+    "n": 2,
+    "title": "Git & Collaboration",
+    "type": "Learn",
+    "lang": "—",
+    "path": "phases/00-setup-and-tooling/02-git-and-collaboration/"
+   },
+   {
+    "n": 3,
+    "title": "GPU Setup & Cloud",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/00-setup-and-tooling/03-gpu-setup-and-cloud/"
+   },
+   {
+    "n": 4,
+    "title": "APIs & Keys",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/00-setup-and-tooling/04-apis-and-keys/"
+   },
+   {
+    "n": 5,
+    "title": "Jupyter Notebooks",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/00-setup-and-tooling/05-jupyter-notebooks/"
+   },
+   {
+    "n": 6,
+    "title": "Python Environments",
+    "type": "Build",
+    "lang": "Shell",
+    "path": "phases/00-setup-and-tooling/06-python-environments/"
+   },
+   {
+    "n": 7,
+    "title": "Docker for AI",
+    "type": "Build",
+    "lang": "Docker",
+    "path": "phases/00-setup-and-tooling/07-docker-for-ai/"
+   },
+   {
+    "n": 8,
+    "title": "Editor Setup",
+    "type": "Build",
+    "lang": "—",
+    "path": "phases/00-setup-and-tooling/08-editor-setup/"
+   },
+   {
+    "n": 9,
+    "title": "Data Management",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/00-setup-and-tooling/09-data-management/"
+   },
+   {
+    "n": 10,
+    "title": "Terminal & Shell",
+    "type": "Learn",
+    "lang": "—",
+    "path": "phases/00-setup-and-tooling/10-terminal-and-shell/"
+   },
+   {
+    "n": 11,
+    "title": "Linux for AI",
+    "type": "Learn",
+    "lang": "—",
+    "path": "phases/00-setup-and-tooling/11-linux-for-ai/"
+   },
+   {
+    "n": 12,
+    "title": "Debugging & Profiling",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/00-setup-and-tooling/12-debugging-and-profiling/"
+   },
+   {
+    "n": 13,
+    "title": "Python for AI Engineering",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/00-setup-and-tooling/13-python-for-ai-engineering/"
+   }
+  ]
+ },
+ {
+  "phase": 1,
+  "title": "Math Foundations",
+  "tagline": "The intuition behind every AI algorithm, through code.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Linear Algebra Intuition",
+    "type": "Learn",
+    "lang": "Python, Julia",
+    "path": "phases/01-math-foundations/01-linear-algebra-intuition/"
+   },
+   {
+    "n": 2,
+    "title": "Vectors, Matrices & Operations",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/01-math-foundations/02-vectors-matrices-operations/"
+   },
+   {
+    "n": 3,
+    "title": "Matrix Transformations & Eigenvalues",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/01-math-foundations/03-matrix-transformations/"
+   },
+   {
+    "n": 4,
+    "title": "Calculus for ML: Derivatives & Gradients",
+    "type": "Learn",
+    "lang": "Python, Julia",
+    "path": "phases/01-math-foundations/04-calculus-for-ml/"
+   },
+   {
+    "n": 5,
+    "title": "Chain Rule & Automatic Differentiation",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/01-math-foundations/05-chain-rule-and-autodiff/"
+   },
+   {
+    "n": 6,
+    "title": "Probability & Distributions",
+    "type": "Learn",
+    "lang": "Python, Julia",
+    "path": "phases/01-math-foundations/06-probability-and-distributions/"
+   },
+   {
+    "n": 7,
+    "title": "Bayes' Theorem & Statistical Thinking",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/01-math-foundations/07-bayes-theorem/"
+   },
+   {
+    "n": 8,
+    "title": "Optimization: Gradient Descent Family",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/01-math-foundations/08-optimization/"
+   },
+   {
+    "n": 9,
+    "title": "Information Theory: Entropy, KL Divergence",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/01-math-foundations/09-information-theory/"
+   },
+   {
+    "n": 10,
+    "title": "Dimensionality Reduction: PCA, t-SNE, UMAP",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/01-math-foundations/10-dimensionality-reduction/"
+   },
+   {
+    "n": 11,
+    "title": "Singular Value Decomposition",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/01-math-foundations/11-singular-value-decomposition/"
+   },
+   {
+    "n": 12,
+    "title": "Tensor Operations",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/01-math-foundations/12-tensor-operations/"
+   },
+   {
+    "n": 13,
+    "title": "Numerical Stability",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/01-math-foundations/13-numerical-stability/"
+   },
+   {
+    "n": 14,
+    "title": "Norms & Distances",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/01-math-foundations/14-norms-and-distances/"
+   },
+   {
+    "n": 15,
+    "title": "Statistics for ML",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/01-math-foundations/15-statistics-for-ml/"
+   },
+   {
+    "n": 16,
+    "title": "Sampling Methods",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/01-math-foundations/16-sampling-methods/"
+   },
+   {
+    "n": 17,
+    "title": "Linear Systems",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/01-math-foundations/17-linear-systems/"
+   },
+   {
+    "n": 18,
+    "title": "Convex Optimization",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/01-math-foundations/18-convex-optimization/"
+   },
+   {
+    "n": 19,
+    "title": "Complex Numbers for AI",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/01-math-foundations/19-complex-numbers/"
+   },
+   {
+    "n": 20,
+    "title": "The Fourier Transform",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/01-math-foundations/20-fourier-transform/"
+   },
+   {
+    "n": 21,
+    "title": "Graph Theory for ML",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/01-math-foundations/21-graph-theory/"
+   },
+   {
+    "n": 22,
+    "title": "Stochastic Processes",
+    "type": "Learn",
+    "lang": "Python, Julia",
+    "path": "phases/01-math-foundations/22-stochastic-processes/"
+   }
+  ]
+ },
+ {
+  "phase": 2,
+  "title": "ML Fundamentals",
+  "tagline": "Classical ML — still the backbone of most production AI.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "What Is Machine Learning",
+    "type": "Learn",
+    "lang": "Python",
+    "path": "phases/02-ml-fundamentals/01-what-is-machine-learning/"
+   },
+   {
+    "n": 2,
+    "title": "Linear Regression from Scratch",
+    "type": "Build",
+    "lang": "Python, Rust, Julia",
+    "path": "phases/02-ml-fundamentals/02-linear-regression/"
+   },
+   {
+    "n": 3,
+    "title": "Logistic Regression & Classification",
+    "type": "Build",
+    "lang": "Python, Rust, Julia",
+    "path": "phases/02-ml-fundamentals/03-logistic-regression/"
+   },
+   {
+    "n": 4,
+    "title": "Decision Trees & Random Forests",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/02-ml-fundamentals/04-decision-trees/"
+   },
+   {
+    "n": 5,
+    "title": "Support Vector Machines",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/02-ml-fundamentals/05-support-vector-machines/"
+   },
+   {
+    "n": 6,
+    "title": "KNN & Distance Metrics",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/02-ml-fundamentals/06-knn-and-distances/"
+   },
+   {
+    "n": 7,
+    "title": "Unsupervised Learning: K-Means, DBSCAN",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/02-ml-fundamentals/07-unsupervised-learning/"
+   },
+   {
+    "n": 8,
+    "title": "Feature Engineering & Selection",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/02-ml-fundamentals/08-feature-engineering/"
+   },
+   {
+    "n": 9,
+    "title": "Model Evaluation: Metrics, Cross-Validation",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/02-ml-fundamentals/09-model-evaluation/"
+   },
+   {
+    "n": 10,
+    "title": "Bias, Variance & the Learning Curve",
+    "type": "Learn",
+    "lang": "Python",
+    "path": "phases/02-ml-fundamentals/10-bias-variance/"
+   },
+   {
+    "n": 11,
+    "title": "Ensemble Methods: Boosting, Bagging, Stacking",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/02-ml-fundamentals/11-ensemble-methods/"
+   },
+   {
+    "n": 12,
+    "title": "Hyperparameter Tuning",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/02-ml-fundamentals/12-hyperparameter-tuning/"
+   },
+   {
+    "n": 13,
+    "title": "ML Pipelines & Experiment Tracking",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/02-ml-fundamentals/13-ml-pipelines/"
+   },
+   {
+    "n": 14,
+    "title": "Naive Bayes",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/02-ml-fundamentals/14-naive-bayes/"
+   },
+   {
+    "n": 15,
+    "title": "Time Series Fundamentals",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/02-ml-fundamentals/15-time-series/"
+   },
+   {
+    "n": 16,
+    "title": "Anomaly Detection",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/02-ml-fundamentals/16-anomaly-detection/"
+   },
+   {
+    "n": 17,
+    "title": "Handling Imbalanced Data",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/02-ml-fundamentals/17-imbalanced-data/"
+   },
+   {
+    "n": 18,
+    "title": "Feature Selection",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/02-ml-fundamentals/18-feature-selection/"
+   },
+   {
+    "n": 19,
+    "title": "ML System Design — From Problem to Deployed Model",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/02-ml-fundamentals/19-ml-system-design/"
+   },
+   {
+    "n": 20,
+    "title": "Monitoring Models in Production — Data Drift and Concept Drift",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/02-ml-fundamentals/20-model-monitoring-and-drift/"
+   },
+   {
+    "n": 21,
+    "title": "Feature Stores and Training-Serving Skew",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/02-ml-fundamentals/21-feature-stores-and-training-serving-skew/"
+   }
+  ]
+ },
+ {
+  "phase": 3,
+  "title": "Deep Learning Core",
+  "tagline": "Neural networks from first principles. No frameworks until you build one.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "The Perceptron: Where It All Started",
+    "type": "Build",
+    "lang": "Python, TypeScript, Rust, Julia",
+    "path": "phases/03-deep-learning-core/01-the-perceptron/"
+   },
+   {
+    "n": 2,
+    "title": "Multi-Layer Networks & Forward Pass",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/03-deep-learning-core/02-multi-layer-networks/"
+   },
+   {
+    "n": 3,
+    "title": "Backpropagation from Scratch",
+    "type": "Build",
+    "lang": "Python, TypeScript, Rust, Julia",
+    "path": "phases/03-deep-learning-core/03-backpropagation/"
+   },
+   {
+    "n": 4,
+    "title": "Activation Functions: ReLU, Sigmoid, GELU & Why",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/03-deep-learning-core/04-activation-functions/"
+   },
+   {
+    "n": 5,
+    "title": "Loss Functions: MSE, Cross-Entropy, Contrastive",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/03-deep-learning-core/05-loss-functions/"
+   },
+   {
+    "n": 6,
+    "title": "Optimizers: SGD, Momentum, Adam, AdamW",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/03-deep-learning-core/06-optimizers/"
+   },
+   {
+    "n": 7,
+    "title": "Regularization: Dropout, Weight Decay, BatchNorm",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/03-deep-learning-core/07-regularization/"
+   },
+   {
+    "n": 8,
+    "title": "Weight Initialization & Training Stability",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/03-deep-learning-core/08-weight-initialization/"
+   },
+   {
+    "n": 9,
+    "title": "Learning Rate Schedules & Warmup",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/03-deep-learning-core/09-learning-rate-schedules/"
+   },
+   {
+    "n": 10,
+    "title": "Build Your Own Mini Framework",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/03-deep-learning-core/10-mini-framework/"
+   },
+   {
+    "n": 11,
+    "title": "Introduction to PyTorch",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/03-deep-learning-core/11-intro-to-pytorch/"
+   },
+   {
+    "n": 12,
+    "title": "Introduction to JAX",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/03-deep-learning-core/12-intro-to-jax/"
+   },
+   {
+    "n": 13,
+    "title": "Debugging Neural Networks",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/03-deep-learning-core/13-debugging-neural-networks/"
+   }
+  ]
+ },
+ {
+  "phase": 4,
+  "title": "Computer Vision",
+  "tagline": "From pixels to understanding — image, video, 3D, VLMs, and world models.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Image Fundamentals: Pixels, Channels, Color Spaces",
+    "type": "Learn",
+    "lang": "Python, Julia",
+    "path": "phases/04-computer-vision/01-image-fundamentals/"
+   },
+   {
+    "n": 2,
+    "title": "Convolutions from Scratch",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/04-computer-vision/02-convolutions-from-scratch/"
+   },
+   {
+    "n": 3,
+    "title": "CNNs: LeNet to ResNet",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/03-cnns-lenet-to-resnet/"
+   },
+   {
+    "n": 4,
+    "title": "Image Classification",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/04-image-classification/"
+   },
+   {
+    "n": 5,
+    "title": "Transfer Learning & Fine-Tuning",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/05-transfer-learning/"
+   },
+   {
+    "n": 6,
+    "title": "Object Detection — YOLO from Scratch",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/06-object-detection-yolo/"
+   },
+   {
+    "n": 7,
+    "title": "Semantic Segmentation — U-Net",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/07-semantic-segmentation-unet/"
+   },
+   {
+    "n": 8,
+    "title": "Instance Segmentation — Mask R-CNN",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/08-instance-segmentation-mask-rcnn/"
+   },
+   {
+    "n": 9,
+    "title": "Image Generation — GANs",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/09-image-generation-gans/"
+   },
+   {
+    "n": 10,
+    "title": "Image Generation — Diffusion Models",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/10-image-generation-diffusion/"
+   },
+   {
+    "n": 11,
+    "title": "Stable Diffusion — Architecture & Fine-Tuning",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/11-stable-diffusion/"
+   },
+   {
+    "n": 12,
+    "title": "Video Understanding — Temporal Modeling",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/12-video-understanding/"
+   },
+   {
+    "n": 13,
+    "title": "3D Vision: Point Clouds, NeRFs",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/13-3d-vision-nerf/"
+   },
+   {
+    "n": 14,
+    "title": "Vision Transformers (ViT)",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/14-vision-transformers/"
+   },
+   {
+    "n": 15,
+    "title": "Real-Time Vision: Edge Deployment",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/04-computer-vision/15-real-time-edge/"
+   },
+   {
+    "n": 16,
+    "title": "Build a Complete Vision Pipeline",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/16-vision-pipeline-capstone/"
+   },
+   {
+    "n": 17,
+    "title": "Self-Supervised Vision — SimCLR, DINO, MAE",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/17-self-supervised-vision/"
+   },
+   {
+    "n": 18,
+    "title": "Open-Vocabulary Vision — CLIP",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/18-open-vocab-clip/"
+   },
+   {
+    "n": 19,
+    "title": "OCR & Document Understanding",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/19-ocr-document-understanding/"
+   },
+   {
+    "n": 20,
+    "title": "Image Retrieval & Metric Learning",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/20-image-retrieval-metric/"
+   },
+   {
+    "n": 21,
+    "title": "Keypoint Detection & Pose Estimation",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/21-keypoint-pose/"
+   },
+   {
+    "n": 22,
+    "title": "3D Gaussian Splatting from Scratch",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/22-3d-gaussian-splatting/"
+   },
+   {
+    "n": 23,
+    "title": "Diffusion Transformers & Rectified Flow",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/23-diffusion-transformers-rectified-flow/"
+   },
+   {
+    "n": 24,
+    "title": "SAM 3 & Open-Vocabulary Segmentation",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/24-sam3-open-vocab-segmentation/"
+   },
+   {
+    "n": 25,
+    "title": "Vision-Language Models (ViT-MLP-LLM)",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/25-vision-language-models/"
+   },
+   {
+    "n": 26,
+    "title": "Monocular Depth & Geometry Estimation",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/26-monocular-depth/"
+   },
+   {
+    "n": 27,
+    "title": "Multi-Object Tracking & Video Memory",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/04-computer-vision/27-multi-object-tracking/"
+   },
+   {
+    "n": 28,
+    "title": "World Models & Video Diffusion",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/04-computer-vision/28-world-models-video-diffusion/"
+   }
+  ]
+ },
+ {
+  "phase": 5,
+  "title": "NLP: Foundations to Advanced",
+  "tagline": "Language is the interface to intelligence.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Text Processing: Tokenization, Stemming, Lemmatization",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/01-text-processing/"
+   },
+   {
+    "n": 2,
+    "title": "Bag of Words, TF-IDF & Text Representation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/02-bag-of-words-tfidf/"
+   },
+   {
+    "n": 3,
+    "title": "Word Embeddings: Word2Vec from Scratch",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/05-nlp-foundations-to-advanced/03-word-embeddings-word2vec/"
+   },
+   {
+    "n": 4,
+    "title": "GloVe, FastText & Subword Embeddings",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/04-glove-fasttext-subword/"
+   },
+   {
+    "n": 5,
+    "title": "Sentiment Analysis",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/05-sentiment-analysis/"
+   },
+   {
+    "n": 6,
+    "title": "Named Entity Recognition (NER)",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/06-named-entity-recognition/"
+   },
+   {
+    "n": 7,
+    "title": "POS Tagging & Syntactic Parsing",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/07-pos-tagging-parsing/"
+   },
+   {
+    "n": 8,
+    "title": "Text Classification — CNNs & RNNs for Text",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/08-cnns-rnns-for-text/"
+   },
+   {
+    "n": 9,
+    "title": "Sequence-to-Sequence Models",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/09-sequence-to-sequence/"
+   },
+   {
+    "n": 10,
+    "title": "Attention Mechanism — The Breakthrough",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/10-attention-mechanism/"
+   },
+   {
+    "n": 11,
+    "title": "Machine Translation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/11-machine-translation/"
+   },
+   {
+    "n": 12,
+    "title": "Text Summarization",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/12-text-summarization/"
+   },
+   {
+    "n": 13,
+    "title": "Question Answering Systems",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/13-question-answering/"
+   },
+   {
+    "n": 14,
+    "title": "Information Retrieval & Search",
+    "type": "Build",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/05-nlp-foundations-to-advanced/14-information-retrieval-search/"
+   },
+   {
+    "n": 15,
+    "title": "Topic Modeling: LDA, BERTopic",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/05-nlp-foundations-to-advanced/15-topic-modeling/"
+   },
+   {
+    "n": 16,
+    "title": "Text Generation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/16-text-generation-pre-transformer/"
+   },
+   {
+    "n": 17,
+    "title": "Chatbots: Rule-Based to Neural",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/17-chatbots-rule-to-neural/"
+   },
+   {
+    "n": 18,
+    "title": "Multilingual NLP",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/18-multilingual-nlp/"
+   },
+   {
+    "n": 19,
+    "title": "Subword Tokenization: BPE, WordPiece, Unigram, SentencePiece",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/05-nlp-foundations-to-advanced/19-subword-tokenization/"
+   },
+   {
+    "n": 20,
+    "title": "Structured Outputs & Constrained Decoding",
+    "type": "Build",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/05-nlp-foundations-to-advanced/20-structured-outputs-constrained-decoding/"
+   },
+   {
+    "n": 21,
+    "title": "NLI & Textual Entailment",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/21-nli-textual-entailment/"
+   },
+   {
+    "n": 22,
+    "title": "Embedding Models Deep Dive",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/22-embedding-models-deep-dive/"
+   },
+   {
+    "n": 23,
+    "title": "Chunking Strategies for RAG",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/23-chunking-strategies-rag/"
+   },
+   {
+    "n": 24,
+    "title": "Coreference Resolution",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/24-coreference-resolution/"
+   },
+   {
+    "n": 25,
+    "title": "Entity Linking & Disambiguation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/25-entity-linking/"
+   },
+   {
+    "n": 26,
+    "title": "Relation Extraction & Knowledge Graph Construction",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/26-relation-extraction-kg/"
+   },
+   {
+    "n": 27,
+    "title": "LLM Evaluation: RAGAS, DeepEval, G-Eval",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/27-llm-evaluation-frameworks/"
+   },
+   {
+    "n": 28,
+    "title": "Long-Context Evaluation: NIAH, RULER, LongBench, MRCR",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/28-long-context-evaluation/"
+   },
+   {
+    "n": 29,
+    "title": "Dialogue State Tracking",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/05-nlp-foundations-to-advanced/29-dialogue-state-tracking/"
+   }
+  ]
+ },
+ {
+  "phase": 6,
+  "title": "Speech & Audio",
+  "tagline": "Hear, understand, speak.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Audio Fundamentals: Waveforms, Sampling, FFT",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/06-speech-and-audio/01-audio-fundamentals"
+   },
+   {
+    "n": 2,
+    "title": "Spectrograms, Mel Scale & Audio Features",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/06-speech-and-audio/02-spectrograms-mel-features"
+   },
+   {
+    "n": 3,
+    "title": "Audio Classification",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/03-audio-classification"
+   },
+   {
+    "n": 4,
+    "title": "Speech Recognition (ASR)",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/04-speech-recognition-asr"
+   },
+   {
+    "n": 5,
+    "title": "Whisper: Architecture & Fine-Tuning",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/05-whisper-architecture-finetuning"
+   },
+   {
+    "n": 6,
+    "title": "Speaker Recognition & Verification",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/06-speaker-recognition-verification"
+   },
+   {
+    "n": 7,
+    "title": "Text-to-Speech (TTS)",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/07-text-to-speech"
+   },
+   {
+    "n": 8,
+    "title": "Voice Cloning & Voice Conversion",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/08-voice-cloning-conversion"
+   },
+   {
+    "n": 9,
+    "title": "Music Generation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/09-music-generation"
+   },
+   {
+    "n": 10,
+    "title": "Audio-Language Models",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/10-audio-language-models"
+   },
+   {
+    "n": 11,
+    "title": "Real-Time Audio Processing",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/06-speech-and-audio/11-real-time-audio-processing"
+   },
+   {
+    "n": 12,
+    "title": "Build a Voice Assistant Pipeline",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/12-voice-assistant-pipeline"
+   },
+   {
+    "n": 13,
+    "title": "Neural Audio Codecs — EnCodec, SNAC, Mimi, DAC",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/13-neural-audio-codecs"
+   },
+   {
+    "n": 14,
+    "title": "Voice Activity Detection & Turn-Taking",
+    "type": "Build",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/06-speech-and-audio/14-voice-activity-detection-turn-taking"
+   },
+   {
+    "n": 15,
+    "title": "Streaming Speech-to-Speech — Moshi, Hibiki",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/15-streaming-speech-to-speech-moshi-hibiki"
+   },
+   {
+    "n": 16,
+    "title": "Voice Anti-Spoofing & Audio Watermarking",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/16-anti-spoofing-audio-watermarking"
+   },
+   {
+    "n": 17,
+    "title": "Audio Evaluation — WER, MOS, MMAU, Leaderboards",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/06-speech-and-audio/17-audio-evaluation-metrics"
+   }
+  ]
+ },
+ {
+  "phase": 7,
+  "title": "Transformers Deep Dive",
+  "tagline": "The architecture that changed everything.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Why Transformers: The Problems with RNNs",
+    "type": "Learn",
+    "lang": "Python, Julia",
+    "path": "phases/07-transformers-deep-dive/01-why-transformers/"
+   },
+   {
+    "n": 2,
+    "title": "Self-Attention from Scratch",
+    "type": "Build",
+    "lang": "Python, Rust, Julia",
+    "path": "phases/07-transformers-deep-dive/02-self-attention-from-scratch/"
+   },
+   {
+    "n": 3,
+    "title": "Multi-Head Attention",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/03-multi-head-attention/"
+   },
+   {
+    "n": 4,
+    "title": "Positional Encoding: Sinusoidal, RoPE, ALiBi",
+    "type": "Build",
+    "lang": "Python, Rust, Julia",
+    "path": "phases/07-transformers-deep-dive/04-positional-encoding/"
+   },
+   {
+    "n": 5,
+    "title": "The Full Transformer: Encoder + Decoder",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/07-transformers-deep-dive/05-full-transformer/"
+   },
+   {
+    "n": 6,
+    "title": "BERT — Masked Language Modeling",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/06-bert-masked-language-modeling/"
+   },
+   {
+    "n": 7,
+    "title": "GPT — Causal Language Modeling",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/07-gpt-causal-language-modeling/"
+   },
+   {
+    "n": 8,
+    "title": "T5, BART — Encoder-Decoder Models",
+    "type": "Learn",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/08-t5-bart-encoder-decoder/"
+   },
+   {
+    "n": 9,
+    "title": "Vision Transformers (ViT)",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/09-vision-transformers/"
+   },
+   {
+    "n": 10,
+    "title": "Audio Transformers — Whisper Architecture",
+    "type": "Learn",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/10-audio-transformers-whisper/"
+   },
+   {
+    "n": 11,
+    "title": "Mixture of Experts (MoE)",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/11-mixture-of-experts/"
+   },
+   {
+    "n": 12,
+    "title": "KV Cache, Flash Attention & Inference Optimization",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/12-kv-cache-flash-attention/"
+   },
+   {
+    "n": 13,
+    "title": "Scaling Laws",
+    "type": "Learn",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/13-scaling-laws/"
+   },
+   {
+    "n": 14,
+    "title": "Build a Transformer from Scratch",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/07-transformers-deep-dive/14-build-a-transformer-capstone/"
+   },
+   {
+    "n": 15,
+    "title": "Attention Variants — Sliding Window, Sparse, Differential",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/15-attention-variants/"
+   },
+   {
+    "n": 16,
+    "title": "Speculative Decoding — Draft, Verify, Repeat",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/07-transformers-deep-dive/16-speculative-decoding/"
+   }
+  ]
+ },
+ {
+  "phase": 8,
+  "title": "Generative AI",
+  "tagline": "Create images, video, audio, 3D, and more.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Generative Models: Taxonomy & History",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/01-generative-models-taxonomy-history/"
+   },
+   {
+    "n": 2,
+    "title": "Autoencoders & VAE",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/02-autoencoders-vae/"
+   },
+   {
+    "n": 3,
+    "title": "GANs: Generator vs Discriminator",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/03-gans-generator-discriminator/"
+   },
+   {
+    "n": 4,
+    "title": "Conditional GANs & Pix2Pix",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/04-conditional-gans-pix2pix/"
+   },
+   {
+    "n": 5,
+    "title": "StyleGAN",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/05-stylegan/"
+   },
+   {
+    "n": 6,
+    "title": "Diffusion Models — DDPM from Scratch",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/06-diffusion-ddpm-from-scratch/"
+   },
+   {
+    "n": 7,
+    "title": "Latent Diffusion & Stable Diffusion",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/07-latent-diffusion-stable-diffusion/"
+   },
+   {
+    "n": 8,
+    "title": "ControlNet, LoRA & Conditioning",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/08-controlnet-lora-conditioning/"
+   },
+   {
+    "n": 9,
+    "title": "Inpainting, Outpainting & Editing",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/09-inpainting-outpainting-editing/"
+   },
+   {
+    "n": 10,
+    "title": "Video Generation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/10-video-generation/"
+   },
+   {
+    "n": 11,
+    "title": "Audio Generation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/11-audio-generation/"
+   },
+   {
+    "n": 12,
+    "title": "3D Generation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/12-3d-generation/"
+   },
+   {
+    "n": 13,
+    "title": "Flow Matching & Rectified Flows",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/08-generative-ai/13-flow-matching-rectified-flows/"
+   },
+   {
+    "n": 14,
+    "title": "Evaluation: FID, CLIP Score",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/08-generative-ai/14-evaluation-fid-clip-score/"
+   },
+   {
+    "n": 19,
+    "title": "Visual Autoregressive Modeling (VAR): Next-Scale Prediction",
+    "type": "Build",
+    "lang": "Python, Julia",
+    "path": "phases/08-generative-ai/19-visual-autoregressive-var/"
+   }
+  ]
+ },
+ {
+  "phase": 9,
+  "title": "Reinforcement Learning",
+  "tagline": "The foundation of RLHF and game-playing AI.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "MDPs, States, Actions & Rewards",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/01-mdps-states-actions-rewards/"
+   },
+   {
+    "n": 2,
+    "title": "Dynamic Programming",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/02-dynamic-programming/"
+   },
+   {
+    "n": 3,
+    "title": "Monte Carlo Methods",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/03-monte-carlo-methods/"
+   },
+   {
+    "n": 4,
+    "title": "Q-Learning, SARSA",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/04-q-learning-sarsa/"
+   },
+   {
+    "n": 5,
+    "title": "Deep Q-Networks (DQN)",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/05-dqn/"
+   },
+   {
+    "n": 6,
+    "title": "Policy Gradients — REINFORCE",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/06-policy-gradients-reinforce/"
+   },
+   {
+    "n": 7,
+    "title": "Actor-Critic — A2C, A3C",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/07-actor-critic-a2c-a3c/"
+   },
+   {
+    "n": 8,
+    "title": "PPO",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/08-ppo/"
+   },
+   {
+    "n": 9,
+    "title": "Reward Modeling & RLHF",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/09-reward-modeling-rlhf/"
+   },
+   {
+    "n": 10,
+    "title": "Multi-Agent RL",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/10-multi-agent-rl/"
+   },
+   {
+    "n": 11,
+    "title": "Sim-to-Real Transfer",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/11-sim-to-real-transfer/"
+   },
+   {
+    "n": 12,
+    "title": "RL for Games",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/09-reinforcement-learning/12-rl-for-games/"
+   }
+  ]
+ },
+ {
+  "phase": 10,
+  "title": "LLMs from Scratch",
+  "tagline": "Build, train, and understand large language models.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Tokenizers: BPE, WordPiece, SentencePiece",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/01-tokenizers/"
+   },
+   {
+    "n": 2,
+    "title": "Building a Tokenizer from Scratch",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/10-llms-from-scratch/02-building-a-tokenizer/"
+   },
+   {
+    "n": 3,
+    "title": "Data Pipelines for Pre-Training",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/03-data-pipelines/"
+   },
+   {
+    "n": 4,
+    "title": "Pre-Training a Mini GPT (124M)",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/04-pre-training-mini-gpt/"
+   },
+   {
+    "n": 5,
+    "title": "Distributed Training, FSDP, DeepSpeed",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/10-llms-from-scratch/05-scaling-distributed/"
+   },
+   {
+    "n": 6,
+    "title": "Instruction Tuning — SFT",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/10-llms-from-scratch/06-instruction-tuning-sft/"
+   },
+   {
+    "n": 7,
+    "title": "RLHF — Reward Model + PPO",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/10-llms-from-scratch/07-rlhf/"
+   },
+   {
+    "n": 8,
+    "title": "DPO — Direct Preference Optimization",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/10-llms-from-scratch/08-dpo/"
+   },
+   {
+    "n": 9,
+    "title": "Constitutional AI & Self-Improvement",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/10-llms-from-scratch/09-constitutional-ai-self-improvement/"
+   },
+   {
+    "n": 10,
+    "title": "Evaluation — Benchmarks, Evals",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/10-llms-from-scratch/10-evaluation/"
+   },
+   {
+    "n": 11,
+    "title": "Quantization: INT8, GPTQ, AWQ, GGUF",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/11-quantization/"
+   },
+   {
+    "n": 12,
+    "title": "Inference Optimization",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/12-inference-optimization/"
+   },
+   {
+    "n": 13,
+    "title": "Building a Complete LLM Pipeline",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/13-building-complete-llm-pipeline/"
+   },
+   {
+    "n": 14,
+    "title": "Open Models: Architecture Walkthroughs",
+    "type": "Learn",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/14-open-models-architecture-walkthroughs/"
+   },
+   {
+    "n": 15,
+    "title": "Speculative Decoding and EAGLE-3",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/15-speculative-decoding-eagle3/"
+   },
+   {
+    "n": 16,
+    "title": "Differential Attention (V2)",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/16-differential-attention-v2/"
+   },
+   {
+    "n": 17,
+    "title": "Native Sparse Attention (DeepSeek NSA)",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/17-native-sparse-attention/"
+   },
+   {
+    "n": 18,
+    "title": "Multi-Token Prediction (MTP)",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/18-multi-token-prediction/"
+   },
+   {
+    "n": 19,
+    "title": "DualPipe Parallelism",
+    "type": "Learn",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/19-dualpipe-parallelism/"
+   },
+   {
+    "n": 20,
+    "title": "DeepSeek-V3 Architecture Walkthrough",
+    "type": "Learn",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/20-deepseek-v3-walkthrough/"
+   },
+   {
+    "n": 21,
+    "title": "Jamba — Hybrid SSM-Transformer",
+    "type": "Learn",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/21-jamba-hybrid-ssm-transformer/"
+   },
+   {
+    "n": 22,
+    "title": "Async and Hogwild! Inference",
+    "type": "Build",
+    "lang": "Python, Rust",
+    "path": "phases/10-llms-from-scratch/22-async-hogwild-inference/"
+   },
+   {
+    "n": 25,
+    "title": "Speculative Decoding and EAGLE",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/10-llms-from-scratch/25-speculative-decoding/"
+   },
+   {
+    "n": 34,
+    "title": "Gradient Checkpointing and Activation Recomputation",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/10-llms-from-scratch/34-gradient-checkpointing/"
+   }
+  ]
+ },
+ {
+  "phase": 11,
+  "title": "LLM Engineering",
+  "tagline": "Put LLMs to work in production.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Prompt Engineering: Techniques & Patterns",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/01-prompt-engineering/"
+   },
+   {
+    "n": 2,
+    "title": "Few-Shot, CoT, Tree-of-Thought",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/11-llm-engineering/02-few-shot-cot/"
+   },
+   {
+    "n": 3,
+    "title": "Structured Outputs",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/03-structured-outputs/"
+   },
+   {
+    "n": 4,
+    "title": "Embeddings & Vector Representations",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/04-embeddings/"
+   },
+   {
+    "n": 5,
+    "title": "Context Engineering",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/05-context-engineering/"
+   },
+   {
+    "n": 6,
+    "title": "RAG: Retrieval-Augmented Generation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/06-rag/"
+   },
+   {
+    "n": 7,
+    "title": "Advanced RAG: Chunking, Reranking",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/07-advanced-rag/"
+   },
+   {
+    "n": 8,
+    "title": "Fine-Tuning with LoRA & QLoRA",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/11-llm-engineering/08-fine-tuning-lora/"
+   },
+   {
+    "n": 9,
+    "title": "Function Calling & Tool Use",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/09-function-calling/"
+   },
+   {
+    "n": 10,
+    "title": "Evaluation & Testing",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/10-evaluation/"
+   },
+   {
+    "n": 11,
+    "title": "Caching, Rate Limiting & Cost",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/11-caching-cost/"
+   },
+   {
+    "n": 12,
+    "title": "Guardrails & Safety",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/12-guardrails/"
+   },
+   {
+    "n": 13,
+    "title": "Building a Production LLM App",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/13-production-app/"
+   },
+   {
+    "n": 14,
+    "title": "Model Context Protocol (MCP)",
+    "type": "Build",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/11-llm-engineering/14-model-context-protocol/"
+   },
+   {
+    "n": 15,
+    "title": "Prompt Caching & Context Caching",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/15-prompt-caching/"
+   },
+   {
+    "n": 16,
+    "title": "Agent State Machines — Graphs, Nodes, Checkpoints",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/11-llm-engineering/16-langgraph-state-machines/"
+   },
+   {
+    "n": 17,
+    "title": "Agent Framework Tradeoffs",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/11-llm-engineering/17-agent-framework-tradeoffs/"
+   }
+  ]
+ },
+ {
+  "phase": 12,
+  "title": "Multimodal AI",
+  "tagline": "See, hear, read, and reason across modalities — from ViT patches to computer-use agents.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Vision Transformers and the Patch-Token Primitive",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/01-vision-transformer-patch-tokens/"
+   },
+   {
+    "n": 2,
+    "title": "CLIP and Contrastive Vision-Language Pretraining",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/02-clip-contrastive-pretraining/"
+   },
+   {
+    "n": 3,
+    "title": "BLIP-2 Q-Former as Modality Bridge",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/03-blip2-qformer-bridge/"
+   },
+   {
+    "n": 4,
+    "title": "Flamingo and Gated Cross-Attention",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/04-flamingo-gated-cross-attention/"
+   },
+   {
+    "n": 5,
+    "title": "LLaVA and Visual Instruction Tuning",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/05-llava-visual-instruction-tuning/"
+   },
+   {
+    "n": 6,
+    "title": "Any-Resolution Vision — Patch-n'-Pack and NaFlex",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/06-any-resolution-patch-n-pack/"
+   },
+   {
+    "n": 7,
+    "title": "Open-Weight VLM Recipes: What Actually Matters",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/07-open-weight-vlm-recipes/"
+   },
+   {
+    "n": 8,
+    "title": "LLaVA-OneVision: Single, Multi, Video",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/08-llava-onevision-single-multi-video/"
+   },
+   {
+    "n": 9,
+    "title": "Qwen-VL Family and Dynamic-FPS Video",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/09-qwen-vl-family-dynamic-fps/"
+   },
+   {
+    "n": 10,
+    "title": "InternVL3 Native Multimodal Pretraining",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/10-internvl3-native-multimodal/"
+   },
+   {
+    "n": 11,
+    "title": "Chameleon Early-Fusion Token-Only",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/11-chameleon-early-fusion-tokens/"
+   },
+   {
+    "n": 12,
+    "title": "Emu3 Next-Token Prediction for Generation",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/12-emu3-next-token-for-generation/"
+   },
+   {
+    "n": 13,
+    "title": "Transfusion Autoregressive + Diffusion",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/13-transfusion-autoregressive-diffusion/"
+   },
+   {
+    "n": 14,
+    "title": "Show-o Discrete-Diffusion Unified",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/14-show-o-discrete-diffusion-unified/"
+   },
+   {
+    "n": 15,
+    "title": "Janus-Pro Decoupled Encoders",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/15-janus-pro-decoupled-encoders/"
+   },
+   {
+    "n": 16,
+    "title": "MIO Any-to-Any Streaming",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/16-mio-any-to-any-streaming/"
+   },
+   {
+    "n": 17,
+    "title": "Video-Language Temporal Grounding",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/17-video-language-temporal-grounding/"
+   },
+   {
+    "n": 18,
+    "title": "Long-Video at Million-Token Context",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/18-long-video-million-token/"
+   },
+   {
+    "n": 19,
+    "title": "Audio-Language Models: Whisper to AF3",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/19-audio-language-whisper-to-af3/"
+   },
+   {
+    "n": 20,
+    "title": "Omni Models: Thinker-Talker Streaming",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/20-omni-models-thinker-talker/"
+   },
+   {
+    "n": 21,
+    "title": "Embodied VLAs: RT-2, OpenVLA, π0, GR00T",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/21-embodied-vlas-openvla-pi0-groot/"
+   },
+   {
+    "n": 22,
+    "title": "Document and Diagram Understanding",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/22-document-diagram-understanding/"
+   },
+   {
+    "n": 23,
+    "title": "ColPali Vision-Native Document RAG",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/23-colpali-vision-native-rag/"
+   },
+   {
+    "n": 24,
+    "title": "Multimodal RAG and Cross-Modal Retrieval",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/24-multimodal-rag-cross-modal/"
+   },
+   {
+    "n": 25,
+    "title": "Multimodal Agents and Computer-Use (Capstone)",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/12-multimodal-ai/25-multimodal-agents-computer-use/"
+   }
+  ]
+ },
+ {
+  "phase": 13,
+  "title": "Tools & Protocols",
+  "tagline": "The interfaces between AI and the real world.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "The Tool Interface",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/01-the-tool-interface/"
+   },
+   {
+    "n": 2,
+    "title": "Function Calling Deep Dive",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/02-function-calling-deep-dive/"
+   },
+   {
+    "n": 3,
+    "title": "Parallel and Streaming Tool Calls",
+    "type": "Build",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/13-tools-and-protocols/03-parallel-and-streaming-tool-calls/"
+   },
+   {
+    "n": 4,
+    "title": "Structured Output",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/04-structured-output/"
+   },
+   {
+    "n": 5,
+    "title": "Tool Schema Design",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/05-tool-schema-design/"
+   },
+   {
+    "n": 6,
+    "title": "MCP Fundamentals: Stateless Requests and JSON-RPC",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/06-mcp-fundamentals/"
+   },
+   {
+    "n": 7,
+    "title": "Building an MCP Server: Stateless Python and TypeScript",
+    "type": "Build",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/13-tools-and-protocols/07-building-an-mcp-server/"
+   },
+   {
+    "n": 8,
+    "title": "Building an MCP Client: Discovery, Routing, and Dual-Era Fallback",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/08-building-an-mcp-client/"
+   },
+   {
+    "n": 9,
+    "title": "MCP Transports: stdio and Stateless Streamable HTTP",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/13-tools-and-protocols/09-mcp-transports/"
+   },
+   {
+    "n": 10,
+    "title": "MCP Resources and Prompts: Addressable Context for Stateless Servers",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/10-mcp-resources-and-prompts/"
+   },
+   {
+    "n": 11,
+    "title": "MCP Model Input: Sampling Migration and Stateless MRTR",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/11-mcp-sampling/"
+   },
+   {
+    "n": 12,
+    "title": "Explicit Scope and Stateless Elicitation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/12-mcp-roots-and-elicitation/"
+   },
+   {
+    "n": 13,
+    "title": "MCP Tasks Extension: Durable Work on a Stateless Core",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/13-mcp-async-tasks/"
+   },
+   {
+    "n": 14,
+    "title": "MCP Apps on the Stateless Protocol",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/14-mcp-apps/"
+   },
+   {
+    "n": 15,
+    "title": "MCP Security: Poisoned Metadata, Routing, and MRTR State",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/15-mcp-security-tool-poisoning/"
+   },
+   {
+    "n": 16,
+    "title": "MCP Authorization: CIMD, Issuer Binding, PKCE, and Step-Up",
+    "type": "Build",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/13-tools-and-protocols/16-mcp-security-oauth-2-1/"
+   },
+   {
+    "n": 17,
+    "title": "Stateless MCP Gateways and Registry Admission",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/13-tools-and-protocols/17-mcp-gateways-and-registries/"
+   },
+   {
+    "n": 18,
+    "title": "MCP Auth in Production: Issuer-Bound Enrollment and Tokens",
+    "type": "Build",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/13-tools-and-protocols/18-mcp-auth-production/"
+   },
+   {
+    "n": 19,
+    "title": "A2A Protocol",
+    "type": "Build",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/13-tools-and-protocols/19-a2a-protocol/"
+   },
+   {
+    "n": 20,
+    "title": "OpenTelemetry GenAI",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/20-opentelemetry-genai/"
+   },
+   {
+    "n": 21,
+    "title": "LLM Routing Layer",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/13-tools-and-protocols/21-llm-routing-layer/"
+   },
+   {
+    "n": 22,
+    "title": "Agent Skills: Portable Contract and Runtime Boundary",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/22-skills-and-agent-sdks/"
+   },
+   {
+    "n": 23,
+    "title": "Capstone: Stateless Tool Ecosystem",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/23-capstone-tool-ecosystem/"
+   },
+   {
+    "n": 24,
+    "title": "Skill Discovery and Progressive Disclosure",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/24-skill-discovery-and-progressive-disclosure/"
+   },
+   {
+    "n": 25,
+    "title": "Skill Invocation and Routing",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/25-skill-invocation-and-routing/"
+   },
+   {
+    "n": 26,
+    "title": "Skill Permissions, Sandboxes, and Trust",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/26-skill-permissions-sandboxes-and-trust/"
+   },
+   {
+    "n": 27,
+    "title": "Skill Evals, Packaging, and Portability",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/27-skill-evals-packaging-and-portability/"
+   },
+   {
+    "n": 28,
+    "title": "MCP Tool Contracts and Content",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/28-mcp-tool-contracts-and-content/"
+   },
+   {
+    "n": 29,
+    "title": "MCP Reliability, Cancellation, and Flow Control",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/29-mcp-reliability-cancellation-and-flow-control/"
+   },
+   {
+    "n": 30,
+    "title": "MCP Registry Supply Chain: Admission, Drift, and Rollback",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/30-mcp-registry-supply-chain-and-drift/"
+   },
+   {
+    "n": 31,
+    "title": "MCP Conformance Engineering: Versioning, Evidence, and Operations",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/31-mcp-conformance-versioning-and-operations/"
+   },
+   {
+    "n": 32,
+    "title": "Program Anatomy: An ELF Reader From Scratch",
+    "type": "Build",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/13-tools-and-protocols/32-program-anatomy-elf-from-scratch/"
+   },
+   {
+    "n": 33,
+    "title": "Disassembly and Control Flow: From Bytes to a Graph You Can Check",
+    "type": "Build",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/13-tools-and-protocols/33-disassembly-and-control-flow/"
+   },
+   {
+    "n": 34,
+    "title": "Lifting to Pseudocode: IR, SSA, and Structuring From Scratch",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/34-lifting-to-pseudocode/"
+   },
+   {
+    "n": 35,
+    "title": "Evidence, Confidence, and Unknowns in Binary Analysis",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/35-evidence-confidence-and-unknowns/"
+   },
+   {
+    "n": 36,
+    "title": "Rebuild and Prove Equal: Differential Tests, Byte Comparison, and the Evidence Loop",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/36-rebuild-and-prove-equal/"
+   },
+   {
+    "n": 37,
+    "title": "The Reverse Engineering Landscape: History, Tool Families, and How a Decompiler Is Built",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/37-the-reverse-engineering-landscape/"
+   },
+   {
+    "n": 38,
+    "title": "Calling Conventions and Stack Frames: System V, Windows x64, and AArch64",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/38-calling-conventions-and-stack-frames/"
+   },
+   {
+    "n": 39,
+    "title": "Compiler Idioms: What Optimization Does to Your Code and How to Read It Back",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/39-compiler-idioms-and-optimization/"
+   },
+   {
+    "n": 40,
+    "title": "Linking, Loading, and Stripped Binaries: PLT, GOT, Imports, Fixups, and Function Identification",
+    "type": "Build",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/13-tools-and-protocols/40-linking-loading-and-stripped-binaries/"
+   },
+   {
+    "n": 41,
+    "title": "Recovering Data and Types: Structs, Arrays, C++ Objects, and DWARF",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/41-recovering-data-and-types/"
+   },
+   {
+    "n": 42,
+    "title": "Dynamic Analysis of Your Own Program: Debuggers, Traces, and Confirming Static Claims",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/42-dynamic-analysis-of-your-own-program/"
+   },
+   {
+    "n": 43,
+    "title": "Beyond Native Code: Python, JVM, .NET, and WebAssembly Bytecode",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/43-bytecode-and-managed-formats/"
+   },
+   {
+    "n": 44,
+    "title": "Binary Diffing and Symbolic Execution: Matching Functions and Solving for Inputs",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/44-binary-diffing-and-symbolic-execution/"
+   },
+   {
+    "n": 45,
+    "title": "AI-Assisted Reverse Engineering: LLM Decompilers, Analysis Agents, and Ground Truth",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/13-tools-and-protocols/45-ai-assisted-reverse-engineering/"
+   }
+  ]
+ },
+ {
+  "phase": 14,
+  "title": "Agent Engineering",
+  "tagline": "Build agents from first principles, use coding agents reliably, and shape the work before implementation.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "The Agent Loop",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/01-the-agent-loop/"
+   },
+   {
+    "n": 2,
+    "title": "ReWOO and Plan-and-Execute",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/02-rewoo-plan-and-execute/"
+   },
+   {
+    "n": 3,
+    "title": "Reflexion and Verbal Reinforcement Learning",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/03-reflexion-verbal-rl/"
+   },
+   {
+    "n": 4,
+    "title": "Tree of Thoughts and LATS",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/04-tree-of-thoughts-lats/"
+   },
+   {
+    "n": 5,
+    "title": "Self-Refine and CRITIC",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/05-self-refine-and-critic/"
+   },
+   {
+    "n": 6,
+    "title": "Tool Use and Function Calling",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/06-tool-use-and-function-calling/"
+   },
+   {
+    "n": 7,
+    "title": "Agent Memory — Virtual Context and Memory Paging",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/07-memory-virtual-context-memgpt/"
+   },
+   {
+    "n": 8,
+    "title": "Memory Blocks and Sleep-Time Compute",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/08-memory-blocks-sleep-time-compute/"
+   },
+   {
+    "n": 9,
+    "title": "Hybrid Memory — Vector + Graph + KV",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/09-hybrid-memory-mem0/"
+   },
+   {
+    "n": 10,
+    "title": "Skill Libraries and Lifelong Learning (Voyager)",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/10-skill-libraries-voyager/"
+   },
+   {
+    "n": 11,
+    "title": "Planning with HTN and Evolutionary Search",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/11-planning-htn-and-evolutionary/"
+   },
+   {
+    "n": 12,
+    "title": "Anthropic's Workflow Patterns",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/12-anthropic-workflow-patterns/"
+   },
+   {
+    "n": 13,
+    "title": "Stateful Graph Orchestration — Durable Execution and Checkpoints",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/13-langgraph-stateful-graphs/"
+   },
+   {
+    "n": 14,
+    "title": "The Actor Model for Agents",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/14-autogen-actor-model/"
+   },
+   {
+    "n": 15,
+    "title": "Role-Based Agent Teams — Roles, Tasks, Processes",
+    "type": "Build",
+    "lang": "Python",
+    "path": "phases/14-agent-engineering/15-crewai-role-based-crews/"
+   },
+   {
+    "n": 16,
+    "title": "OpenAI Agents SDK — Handoffs, Guardrails, Tracing",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/16-openai-agents-sdk/"
+   },
+   {
+    "n": 17,
+    "title": "The Harness as a Library — Subagents and Session Store",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/17-claude-agent-sdk/"
+   },
+   {
+    "n": 18,
+    "title": "Production Agent Runtimes",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/18-agno-and-mastra-runtimes/"
+   },
+   {
+    "n": 19,
+    "title": "Benchmarks — SWE-bench, GAIA, AgentBench",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/19-benchmarks-swebench-gaia/"
+   },
+   {
+    "n": 20,
+    "title": "Benchmarks — WebArena and OSWorld",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/20-benchmarks-webarena-osworld/"
+   },
+   {
+    "n": 21,
+    "title": "Computer Use — Claude, OpenAI CUA, Gemini",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/21-computer-use-agents/"
+   },
+   {
+    "n": 22,
+    "title": "Voice Agents — Pipecat and LiveKit",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/22-voice-agents-pipecat-livekit/"
+   },
+   {
+    "n": 23,
+    "title": "OpenTelemetry GenAI Semantic Conventions",
+    "type": "Build",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/14-agent-engineering/23-otel-genai-conventions/"
+   },
+   {
+    "n": 24,
+    "title": "Agent Observability — Langfuse, Phoenix, Opik",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/24-agent-observability-platforms/"
+   },
+   {
+    "n": 25,
+    "title": "Multi-Agent Debate and Collaboration",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/25-multi-agent-debate/"
+   },
+   {
+    "n": 26,
+    "title": "Failure Modes — Why Agents Break",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/26-failure-modes-agentic/"
+   },
+   {
+    "n": 27,
+    "title": "Prompt Injection and the PVE Defense",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/27-prompt-injection-defense/"
+   },
+   {
+    "n": 28,
+    "title": "Orchestration Patterns — Supervisor, Swarm, Hierarchical",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/28-orchestration-patterns/"
+   },
+   {
+    "n": 29,
+    "title": "Production Runtimes — Queue, Event, Cron",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/14-agent-engineering/29-production-runtimes/"
+   },
+   {
+    "n": 30,
+    "title": "Eval-Driven Agent Development",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/30-eval-driven-agent-development/"
+   },
+   {
+    "n": 31,
+    "title": "Agent Workbench: Why Capable Models Still Fail",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/31-agent-workbench-why-models-fail/"
+   },
+   {
+    "n": 32,
+    "title": "The Minimal Agent Workbench",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/32-minimal-agent-workbench/"
+   },
+   {
+    "n": 33,
+    "title": "Agent Instructions as Executable Constraints",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/33-instructions-as-executable-constraints/"
+   },
+   {
+    "n": 34,
+    "title": "Repo Memory and Durable State",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/34-repo-memory-and-state/"
+   },
+   {
+    "n": 35,
+    "title": "Initialization Scripts for Agents",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/35-initialization-scripts/"
+   },
+   {
+    "n": 36,
+    "title": "Scope Contracts and Task Boundaries",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/36-scope-contracts/"
+   },
+   {
+    "n": 37,
+    "title": "Runtime Feedback Loops",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/37-runtime-feedback-loops/"
+   },
+   {
+    "n": 38,
+    "title": "Verification Gates",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/38-verification-gates/"
+   },
+   {
+    "n": 39,
+    "title": "Reviewer Agent: Separate Builder from Marker",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/39-reviewer-agent/"
+   },
+   {
+    "n": 40,
+    "title": "Multi-Session Handoff",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/40-multi-session-handoff/"
+   },
+   {
+    "n": 41,
+    "title": "The Workbench on a Real Repo",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/41-workbench-for-real-repos/"
+   },
+   {
+    "n": 42,
+    "title": "Capstone: Ship a Reusable Agent Workbench Pack",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/42-agent-workbench-capstone/"
+   },
+   {
+    "n": 43,
+    "title": "Frame the Task Before the Agent Writes Code",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/43-frame-the-task-before-code/"
+   },
+   {
+    "n": 44,
+    "title": "Build an Evidence-Backed Execution Plan",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/44-plan-from-evidence/"
+   },
+   {
+    "n": 45,
+    "title": "Delegate Agent Work with Isolation and Merge Contracts",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/45-delegate-with-isolation/"
+   },
+   {
+    "n": 46,
+    "title": "Turn Every Agent Correction into a System Improvement",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/46-turn-feedback-into-system/"
+   },
+   {
+    "n": 47,
+    "title": "Define the Outcome Before You Choose the Output",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/47-outcomes-before-output/"
+   },
+   {
+    "n": 48,
+    "title": "Discover the Workflow People Actually Perform",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/48-discover-the-real-workflow/"
+   },
+   {
+    "n": 49,
+    "title": "Map Assumptions and Resolve the Riskiest One First",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/49-map-assumptions-and-risk/"
+   },
+   {
+    "n": 50,
+    "title": "Choose the Smallest Slice That Can Change the Decision",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/50-choose-the-smallest-testable-slice/"
+   },
+   {
+    "n": 51,
+    "title": "Write Specifications That Preserve Judgment",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/51-write-specifications-that-preserve-judgment/"
+   },
+   {
+    "n": 52,
+    "title": "Design Success Metrics Before the Result Exists",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/52-design-success-metrics/"
+   },
+   {
+    "n": 53,
+    "title": "Choose Prototype, Pilot, or Production Deliberately",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/53-prototype-pilot-or-production/"
+   },
+   {
+    "n": 54,
+    "title": "Build a Feedback Ratchet with Ownership and Retirement",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/14-agent-engineering/54-build-the-feedback-ratchet/"
+   }
+  ]
+ },
+ {
+  "phase": 15,
+  "title": "Autonomous Systems",
+  "tagline": "Long-horizon agents, self-improvement, and the 2026 safety stack.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "From Chatbots to Long-Horizon Agents (METR)",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/01-long-horizon-agents/"
+   },
+   {
+    "n": 2,
+    "title": "STaR, V-STaR, Quiet-STaR: Self-Taught Reasoning",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/02-star-family-reasoning/"
+   },
+   {
+    "n": 3,
+    "title": "AlphaEvolve: Evolutionary Coding Agents",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/03-alphaevolve-evolutionary-coding/"
+   },
+   {
+    "n": 4,
+    "title": "Darwin Gödel Machine: Self-Modifying Agents",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/04-darwin-godel-machine/"
+   },
+   {
+    "n": 5,
+    "title": "AI Scientist v2: Workshop-Level Research",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/05-ai-scientist-v2/"
+   },
+   {
+    "n": 6,
+    "title": "Automated Alignment Research (Anthropic AAR)",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/06-automated-alignment-research/"
+   },
+   {
+    "n": 7,
+    "title": "Recursive Self-Improvement: Capability vs Alignment",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/07-recursive-self-improvement/"
+   },
+   {
+    "n": 8,
+    "title": "Bounded Self-Improvement Designs",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/08-bounded-self-improvement/"
+   },
+   {
+    "n": 9,
+    "title": "Autonomous Coding Agent Landscape (SWE-bench, CodeAct)",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/09-coding-agent-landscape/"
+   },
+   {
+    "n": 10,
+    "title": "Permission Modes for Autonomous Agents",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/10-claude-code-permission-modes/"
+   },
+   {
+    "n": 11,
+    "title": "Browser Agents and Indirect Prompt Injection",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/11-browser-agents/"
+   },
+   {
+    "n": 12,
+    "title": "Durable Execution for Long-Running Agents",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/15-autonomous-systems/12-durable-execution/"
+   },
+   {
+    "n": 13,
+    "title": "Action Budgets, Iteration Caps, Cost Governors",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/13-cost-governors/"
+   },
+   {
+    "n": 14,
+    "title": "Kill Switches, Circuit Breakers, Canary Tokens",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/14-kill-switches-canaries/"
+   },
+   {
+    "n": 15,
+    "title": "HITL: Propose-Then-Commit",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/15-propose-then-commit/"
+   },
+   {
+    "n": 16,
+    "title": "Checkpoints and Rollback",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/16-checkpoints-rollback/"
+   },
+   {
+    "n": 17,
+    "title": "Constitutional AI and Rule Overrides",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/17-constitutional-ai/"
+   },
+   {
+    "n": 18,
+    "title": "Llama Guard and Input/Output Classification",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/18-llama-guard/"
+   },
+   {
+    "n": 19,
+    "title": "Anthropic Responsible Scaling Policy v3.0",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/19-anthropic-rsp/"
+   },
+   {
+    "n": 20,
+    "title": "OpenAI Preparedness Framework and DeepMind FSF",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/20-openai-preparedness-deepmind-fsf/"
+   },
+   {
+    "n": 21,
+    "title": "METR Time Horizons and External Evaluation",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/15-autonomous-systems/21-metr-external-evaluation/"
+   },
+   {
+    "n": 22,
+    "title": "CAIS, CAISI, and Societal-Scale Risk",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/15-autonomous-systems/22-cais-caisi-societal-risk/"
+   }
+  ]
+ },
+ {
+  "phase": 16,
+  "title": "Multi-Agent & Swarms",
+  "tagline": "Coordination, emergence, and collective intelligence.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Why Multi-Agent",
+    "type": "Learn",
+    "lang": "TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/01-why-multi-agent/"
+   },
+   {
+    "n": 2,
+    "title": "FIPA-ACL Heritage and Speech Acts",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/02-fipa-acl-heritage/"
+   },
+   {
+    "n": 3,
+    "title": "Communication Protocols",
+    "type": "Build",
+    "lang": "TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/03-communication-protocols/"
+   },
+   {
+    "n": 4,
+    "title": "The Multi-Agent Primitive Model",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/04-primitive-model/"
+   },
+   {
+    "n": 5,
+    "title": "Supervisor / Orchestrator-Worker Pattern",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/05-supervisor-orchestrator-pattern/"
+   },
+   {
+    "n": 6,
+    "title": "Hierarchical Architecture and Decomposition Drift",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/06-hierarchical-architecture/"
+   },
+   {
+    "n": 7,
+    "title": "Society of Mind and Multi-Agent Debate",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/07-society-of-mind-debate/"
+   },
+   {
+    "n": 8,
+    "title": "Role Specialization — Planner / Critic / Executor / Verifier",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/08-role-specialization/"
+   },
+   {
+    "n": 9,
+    "title": "Parallel Swarm and Networked Architectures",
+    "type": "Build",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/16-multi-agent-and-swarms/09-parallel-swarm-networks/"
+   },
+   {
+    "n": 10,
+    "title": "Group Chat and Speaker Selection",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/10-group-chat-speaker-selection/"
+   },
+   {
+    "n": 11,
+    "title": "Handoffs and Routines (Stateless Orchestration)",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/11-handoffs-and-routines/"
+   },
+   {
+    "n": 12,
+    "title": "A2A — The Agent-to-Agent Protocol",
+    "type": "Build",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/16-multi-agent-and-swarms/12-a2a-protocol/"
+   },
+   {
+    "n": 13,
+    "title": "Shared Memory and Blackboard Patterns",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/13-shared-memory-blackboard/"
+   },
+   {
+    "n": 14,
+    "title": "Consensus and Byzantine Fault Tolerance",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/14-consensus-and-bft/"
+   },
+   {
+    "n": 15,
+    "title": "Voting, Self-Consistency, and Debate Topology",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/15-voting-debate-topology/"
+   },
+   {
+    "n": 16,
+    "title": "Negotiation and Bargaining",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/16-negotiation-bargaining/"
+   },
+   {
+    "n": 17,
+    "title": "Generative Agents and Emergent Simulation",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/17-generative-agents-simulation/"
+   },
+   {
+    "n": 18,
+    "title": "Theory of Mind and Emergent Coordination",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/18-theory-of-mind-coordination/"
+   },
+   {
+    "n": 19,
+    "title": "Swarm Optimization (PSO, ACO)",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/16-multi-agent-and-swarms/19-swarm-optimization-pso-aco/"
+   },
+   {
+    "n": 20,
+    "title": "MARL — MADDPG, QMIX, MAPPO",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/20-marl-maddpg-qmix-mappo/"
+   },
+   {
+    "n": 21,
+    "title": "Agent Economies, Token Incentives, Reputation",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/21-agent-economies/"
+   },
+   {
+    "n": 22,
+    "title": "Production Scaling — Queues, Checkpoints, Durability",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/22-production-scaling-queues-checkpoints/"
+   },
+   {
+    "n": 23,
+    "title": "Failure Modes — MAST, Groupthink, Monoculture",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/23-failure-modes-mast-groupthink/"
+   },
+   {
+    "n": 24,
+    "title": "Evaluation and Coordination Benchmarks",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/24-evaluation-coordination-benchmarks/"
+   },
+   {
+    "n": 25,
+    "title": "Case Studies and 2026 State of the Art",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/16-multi-agent-and-swarms/25-case-studies-2026-sota/"
+   }
+  ]
+ },
+ {
+  "phase": 17,
+  "title": "Infrastructure & Production",
+  "tagline": "Ship AI to the real world.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Managed LLM Platforms — Bedrock, Azure OpenAI, Vertex AI",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/01-managed-llm-platforms/"
+   },
+   {
+    "n": 2,
+    "title": "Inference Platform Economics — Fireworks, Together, Baseten, Modal",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/02-inference-platform-economics/"
+   },
+   {
+    "n": 3,
+    "title": "GPU Autoscaling on Kubernetes — Karpenter, KAI Scheduler",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/03-gpu-autoscaling-kubernetes/"
+   },
+   {
+    "n": 4,
+    "title": "Serving Engine Internals — PagedAttention, Continuous Batching, Chunked Prefill",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/17-infrastructure-and-production/04-vllm-serving-internals/"
+   },
+   {
+    "n": 5,
+    "title": "EAGLE-3 Speculative Decoding in Production",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/05-eagle3-speculative-decoding/"
+   },
+   {
+    "n": 6,
+    "title": "Prefix-Cache Serving — RadixAttention and KV Reuse",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/17-infrastructure-and-production/06-sglang-radixattention/"
+   },
+   {
+    "n": 7,
+    "title": "Hardware-Specialized Inference Compilation — FP8 and NVFP4 on Blackwell",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/07-tensorrt-llm-blackwell/"
+   },
+   {
+    "n": 8,
+    "title": "Inference Metrics — TTFT, TPOT, ITL, Goodput, P99",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/08-inference-metrics-goodput/"
+   },
+   {
+    "n": 9,
+    "title": "Production Quantization — AWQ, GPTQ, GGUF, FP8, NVFP4",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/09-production-quantization/"
+   },
+   {
+    "n": 10,
+    "title": "Cold Start Mitigation for Serverless LLMs",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/10-cold-start-mitigation/"
+   },
+   {
+    "n": 11,
+    "title": "Multi-Region LLM Serving and KV Cache Locality",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/11-multi-region-kv-locality/"
+   },
+   {
+    "n": 12,
+    "title": "Edge Inference — ANE, Hexagon, WebGPU, Jetson",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/12-edge-inference/"
+   },
+   {
+    "n": 13,
+    "title": "LLM Observability Stack Selection",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/13-llm-observability/"
+   },
+   {
+    "n": 14,
+    "title": "Prompt Caching and Semantic Caching Economics",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/14-prompt-semantic-caching/"
+   },
+   {
+    "n": 15,
+    "title": "Batch APIs — the 50% Discount as Industry Standard",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/15-batch-apis/"
+   },
+   {
+    "n": 16,
+    "title": "Model Routing as a Cost-Reduction Primitive",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/16-model-routing/"
+   },
+   {
+    "n": 17,
+    "title": "Disaggregated Prefill/Decode — NVIDIA Dynamo and llm-d",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/17-disaggregated-prefill-decode/"
+   },
+   {
+    "n": 18,
+    "title": "Production Serving Stack — KV Offloading and Cache-Aware Routing",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/18-vllm-production-stack-lmcache/"
+   },
+   {
+    "n": 19,
+    "title": "AI Gateways — LiteLLM, Portkey, Kong, Bifrost",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/19-ai-gateways/"
+   },
+   {
+    "n": 20,
+    "title": "Shadow, Canary, and Progressive Deployment",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/20-shadow-canary-progressive/"
+   },
+   {
+    "n": 21,
+    "title": "A/B Testing LLM Features — GrowthBook and Statsig",
+    "type": "Learn",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/17-infrastructure-and-production/21-ab-testing-llm-features/"
+   },
+   {
+    "n": 22,
+    "title": "Load Testing LLM APIs — k6, LLMPerf, GenAI-Perf",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/22-load-testing-llm-apis/"
+   },
+   {
+    "n": 23,
+    "title": "SRE for AI — Multi-Agent Incident Response",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/23-sre-for-ai/"
+   },
+   {
+    "n": 24,
+    "title": "Chaos Engineering for LLM Production",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/24-chaos-engineering-llm/"
+   },
+   {
+    "n": 25,
+    "title": "Security — Secrets, PII Scrubbing, Audit Logs",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/25-security-secrets-audit/"
+   },
+   {
+    "n": 26,
+    "title": "Compliance — SOC 2, HIPAA, GDPR, EU AI Act, ISO 42001",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/26-compliance-frameworks/"
+   },
+   {
+    "n": 27,
+    "title": "FinOps for LLMs — Unit Economics and Multi-Tenant Attribution",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/27-finops-llms/"
+   },
+   {
+    "n": 28,
+    "title": "Self-Hosted Serving Selection — Matching Engine to Hardware and Scale",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/28-self-hosted-serving-selection/"
+   },
+   {
+    "n": 29,
+    "title": "Model Demo Interfaces — From a Function to a Shareable App",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/17-infrastructure-and-production/29-model-demo-interfaces/"
+   }
+  ]
+ },
+ {
+  "phase": 18,
+  "title": "Ethics, Safety & Alignment",
+  "tagline": "Build AI that helps humanity. Not optional.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Instruction-Following as Alignment Signal",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/01-instruction-following-alignment-signal/"
+   },
+   {
+    "n": 2,
+    "title": "Reward Hacking & Goodhart's Law",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/02-reward-hacking-goodhart/"
+   },
+   {
+    "n": 3,
+    "title": "Direct Preference Optimization Family",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/03-direct-preference-optimization-family/"
+   },
+   {
+    "n": 4,
+    "title": "Sycophancy as RLHF Amplification",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/04-sycophancy-rlhf-amplification/"
+   },
+   {
+    "n": 5,
+    "title": "Constitutional AI & RLAIF",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/05-constitutional-ai-rlaif/"
+   },
+   {
+    "n": 6,
+    "title": "Mesa-Optimization & Deceptive Alignment",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/06-mesa-optimization-deceptive-alignment/"
+   },
+   {
+    "n": 7,
+    "title": "Sleeper Agents — Persistent Deception",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/07-sleeper-agents-persistent-deception/"
+   },
+   {
+    "n": 8,
+    "title": "In-Context Scheming in Frontier Models",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/08-in-context-scheming-frontier-models/"
+   },
+   {
+    "n": 9,
+    "title": "Alignment Faking",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/09-alignment-faking/"
+   },
+   {
+    "n": 10,
+    "title": "AI Control — Safety Despite Subversion",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/10-ai-control-subversion/"
+   },
+   {
+    "n": 11,
+    "title": "Scalable Oversight & Weak-to-Strong",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/11-scalable-oversight-weak-to-strong/"
+   },
+   {
+    "n": 12,
+    "title": "Red-Teaming: PAIR & Automated Attacks",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/12-red-teaming-pair-automated-attacks/"
+   },
+   {
+    "n": 13,
+    "title": "Many-Shot Jailbreaking",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/13-many-shot-jailbreaking/"
+   },
+   {
+    "n": 14,
+    "title": "ASCII Art & Visual Jailbreaks",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/14-ascii-art-visual-jailbreaks/"
+   },
+   {
+    "n": 15,
+    "title": "Indirect Prompt Injection",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/15-indirect-prompt-injection/"
+   },
+   {
+    "n": 16,
+    "title": "Red-Team Tooling: Garak, Llama Guard, PyRIT",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/16-red-team-tooling-garak-llamaguard-pyrit/"
+   },
+   {
+    "n": 17,
+    "title": "WMDP & Dual-Use Capability Evaluation",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/17-wmdp-dual-use-evaluation/"
+   },
+   {
+    "n": 18,
+    "title": "Frontier Safety Frameworks — RSP, PF, FSF",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/18-frontier-safety-frameworks-rsp-pf-fsf/"
+   },
+   {
+    "n": 19,
+    "title": "Model Welfare Research",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/19-model-welfare-research/"
+   },
+   {
+    "n": 20,
+    "title": "Bias & Representational Harm",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/20-bias-representational-harm/"
+   },
+   {
+    "n": 21,
+    "title": "Fairness Criteria: Group, Individual, Counterfactual",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/21-fairness-criteria-group-individual-counterfactual/"
+   },
+   {
+    "n": 22,
+    "title": "Differential Privacy for LLMs",
+    "type": "Build",
+    "lang": "Python, TypeScript, Julia",
+    "path": "phases/18-ethics-safety-alignment/22-differential-privacy-for-llms/"
+   },
+   {
+    "n": 23,
+    "title": "Watermarking: SynthID, Stable Signature, C2PA",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/23-watermarking-synthid-stable-signature-c2pa/"
+   },
+   {
+    "n": 24,
+    "title": "Regulatory Frameworks: EU, US, UK, Korea",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/24-regulatory-frameworks-eu-us-uk-korea/"
+   },
+   {
+    "n": 25,
+    "title": "EchoLeak & CVEs for AI",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/25-echoleak-cves-for-ai/"
+   },
+   {
+    "n": 26,
+    "title": "Model, System & Dataset Cards",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/26-model-system-dataset-cards/"
+   },
+   {
+    "n": 27,
+    "title": "Data Provenance & Training-Data Governance",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/27-data-provenance-training-governance/"
+   },
+   {
+    "n": 28,
+    "title": "Alignment Research Ecosystem: MATS, Redwood, Apollo, METR",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/28-alignment-research-ecosystem/"
+   },
+   {
+    "n": 29,
+    "title": "Moderation Systems: OpenAI, Perspective, Llama Guard",
+    "type": "Build",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/29-moderation-systems-openai-perspective-llamaguard/"
+   },
+   {
+    "n": 30,
+    "title": "Dual-Use Risk: Cyber, Bio, Chem, Nuclear",
+    "type": "Learn",
+    "lang": "Python, TypeScript",
+    "path": "phases/18-ethics-safety-alignment/30-dual-use-risk-cyber-bio-chem-nuclear/"
+   }
+  ]
+ },
+ {
+  "phase": 19,
+  "title": "Capstone Projects",
+  "tagline": "17 end-to-end products + 9 deep-build tracks. 20-40 hours per project; 4-12 lessons per track.",
+  "lessons": [
+   {
+    "n": 1,
+    "title": "Terminal-Native Coding Agent",
+    "type": "P0 P5 P7 P10 P11 P13 P14 P15 P17 P18",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/01-terminal-native-coding-agent/"
+   },
+   {
+    "n": 2,
+    "title": "RAG over Codebase (Cross-Repo Semantic Search)",
+    "type": "P5 P7 P11 P13 P17",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/02-rag-over-codebase/"
+   },
+   {
+    "n": 3,
+    "title": "Real-Time Voice Assistant (ASR → LLM → TTS)",
+    "type": "P6 P7 P11 P13 P14 P17",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/03-realtime-voice-assistant/"
+   },
+   {
+    "n": 4,
+    "title": "Multimodal Document QA (Vision-First)",
+    "type": "P4 P5 P7 P11 P12 P17",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/04-multimodal-document-qa/"
+   },
+   {
+    "n": 5,
+    "title": "Autonomous Research Agent (AI-Scientist Class)",
+    "type": "P0 P2 P3 P7 P10 P14 P15 P16 P18",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/05-autonomous-research-agent/"
+   },
+   {
+    "n": 6,
+    "title": "DevOps Troubleshooting Agent for Kubernetes",
+    "type": "P11 P13 P14 P15 P17 P18",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/06-devops-troubleshooting-agent/"
+   },
+   {
+    "n": 7,
+    "title": "End-to-End Fine-Tuning Pipeline",
+    "type": "P2 P3 P7 P10 P11 P17 P18",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/07-end-to-end-fine-tuning-pipeline/"
+   },
+   {
+    "n": 8,
+    "title": "Production RAG Chatbot (Regulated Vertical)",
+    "type": "P5 P7 P11 P12 P17 P18",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/08-production-rag-chatbot/"
+   },
+   {
+    "n": 9,
+    "title": "Code Migration Agent (Repo-Level Upgrade)",
+    "type": "P5 P7 P11 P13 P14 P15 P17",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/09-code-migration-agent/"
+   },
+   {
+    "n": 10,
+    "title": "Multi-Agent Software Engineering Team",
+    "type": "P11 P13 P14 P15 P16 P17",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/10-multi-agent-software-team/"
+   },
+   {
+    "n": 11,
+    "title": "LLM Observability & Eval Dashboard",
+    "type": "P11 P13 P17 P18",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/19-capstone-projects/11-llm-observability-dashboard/"
+   },
+   {
+    "n": 12,
+    "title": "Video Understanding Pipeline (Scene → QA)",
+    "type": "P4 P6 P7 P11 P12 P17",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/12-video-understanding-pipeline/"
+   },
+   {
+    "n": 13,
+    "title": "Stateless MCP Server with Registry and Governance",
+    "type": "P11 P13 P14 P17 P18",
+    "lang": "Python, TypeScript, Go",
+    "path": "phases/19-capstone-projects/13-mcp-server-with-registry/"
+   },
+   {
+    "n": 14,
+    "title": "Speculative-Decoding Inference Server",
+    "type": "P3 P7 P10 P17",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/14-speculative-decoding-server/"
+   },
+   {
+    "n": 15,
+    "title": "Constitutional Safety Harness + Red-Team Range",
+    "type": "P10 P11 P13 P14 P18",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/15-constitutional-safety-harness/"
+   },
+   {
+    "n": 16,
+    "title": "GitHub Issue-to-PR Autonomous Agent",
+    "type": "P11 P13 P14 P15 P17",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/16-github-issue-to-pr-agent/"
+   },
+   {
+    "n": 17,
+    "title": "Personal AI Tutor (Adaptive, Multimodal)",
+    "type": "P5 P6 P11 P12 P14 P17 P18",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/17-personal-ai-tutor/"
+   },
+   {
+    "n": 20,
+    "title": "Agent Harness Loop Contract",
+    "type": "A. Agent harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/20-agent-harness-loop-contract/"
+   },
+   {
+    "n": 21,
+    "title": "Tool Registry with Schema Validation",
+    "type": "A. Agent harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/21-tool-registry-schema-validation/"
+   },
+   {
+    "n": 22,
+    "title": "JSON-RPC 2.0 Over Newline-Delimited Stdio",
+    "type": "A. Agent harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/22-jsonrpc-stdio-transport/"
+   },
+   {
+    "n": 23,
+    "title": "Function Call Dispatcher",
+    "type": "A. Agent harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/23-function-call-dispatcher/"
+   },
+   {
+    "n": 24,
+    "title": "Plan-Execute Control Flow",
+    "type": "A. Agent harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/24-plan-execute-control-flow/"
+   },
+   {
+    "n": 25,
+    "title": "Verification Gates and Observation Budget",
+    "type": "A. Agent harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/25-verification-gates-observation-budget/"
+   },
+   {
+    "n": 26,
+    "title": "Sandbox Runner with Denylist and Path Jail",
+    "type": "A. Agent harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/26-sandbox-runner-denylist/"
+   },
+   {
+    "n": 27,
+    "title": "Eval Harness with Fixture Tasks",
+    "type": "A. Agent harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/27-eval-harness-fixture-tasks/"
+   },
+   {
+    "n": 28,
+    "title": "Observability with OTel GenAI Spans and Prometheus Metrics",
+    "type": "A. Agent harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/28-observability-otel-traces/"
+   },
+   {
+    "n": 29,
+    "title": "End-to-End Coding Agent on the Harness",
+    "type": "A. Agent harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/29-end-to-end-coding-task-demo/"
+   },
+   {
+    "n": 30,
+    "title": "BPE Tokenizer From Scratch",
+    "type": "B. NLP LLM",
+    "lang": "Python, TypeScript, Rust",
+    "path": "phases/19-capstone-projects/30-bpe-tokenizer-from-scratch/"
+   },
+   {
+    "n": 31,
+    "title": "Tokenized Dataset with Sliding Window",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/31-tokenized-dataset-sliding-window/"
+   },
+   {
+    "n": 32,
+    "title": "Token and Positional Embeddings",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/32-token-positional-embeddings/"
+   },
+   {
+    "n": 33,
+    "title": "Multi-Head Self-Attention",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/33-multihead-self-attention/"
+   },
+   {
+    "n": 34,
+    "title": "Transformer Block from Scratch",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/34-transformer-block/"
+   },
+   {
+    "n": 35,
+    "title": "GPT Model Assembly",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/35-gpt-model-assembly/"
+   },
+   {
+    "n": 36,
+    "title": "Training Loop and Evaluation",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/36-training-loop-eval/"
+   },
+   {
+    "n": 37,
+    "title": "Loading Pretrained Weights",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/37-loading-pretrained-weights/"
+   },
+   {
+    "n": 38,
+    "title": "Classifier Fine-Tuning by Head Swap",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/38-classifier-finetuning/"
+   },
+   {
+    "n": 39,
+    "title": "Instruction Tuning by Supervised Fine-Tuning",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/39-instruction-tuning-sft/"
+   },
+   {
+    "n": 40,
+    "title": "Direct Preference Optimization from Scratch",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/40-dpo-from-scratch/"
+   },
+   {
+    "n": 41,
+    "title": "Full Evaluation Pipeline",
+    "type": "B. NLP LLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/41-eval-pipeline/"
+   },
+   {
+    "n": 42,
+    "title": "Large Corpus Downloader",
+    "type": "C. Train end-to-end",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/42-large-corpus-downloader/"
+   },
+   {
+    "n": 43,
+    "title": "HDF5 Tokenized Corpus",
+    "type": "C. Train end-to-end",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/43-hdf5-tokenized-corpus/"
+   },
+   {
+    "n": 44,
+    "title": "Cosine LR with Linear Warmup",
+    "type": "C. Train end-to-end",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/44-cosine-lr-warmup/"
+   },
+   {
+    "n": 45,
+    "title": "Gradient Clipping and Mixed Precision",
+    "type": "C. Train end-to-end",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/45-gradient-clipping-amp/"
+   },
+   {
+    "n": 46,
+    "title": "Gradient Accumulation",
+    "type": "C. Train end-to-end",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/46-gradient-accumulation/"
+   },
+   {
+    "n": 47,
+    "title": "Checkpoint Save and Resume",
+    "type": "C. Train end-to-end",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/47-checkpoint-save-resume/"
+   },
+   {
+    "n": 48,
+    "title": "Distributed Data Parallel and FSDP from Scratch",
+    "type": "C. Train end-to-end",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/48-distributed-fsdp-ddp/"
+   },
+   {
+    "n": 49,
+    "title": "Language Model Evaluation Harness",
+    "type": "C. Train end-to-end",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/49-lm-eval-harness/"
+   },
+   {
+    "n": 50,
+    "title": "Hypothesis Generator",
+    "type": "D. Auto research",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/50-hypothesis-generator/"
+   },
+   {
+    "n": 51,
+    "title": "Literature Retrieval",
+    "type": "D. Auto research",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/51-literature-retrieval/"
+   },
+   {
+    "n": 52,
+    "title": "Experiment Runner",
+    "type": "D. Auto research",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/52-experiment-runner/"
+   },
+   {
+    "n": 53,
+    "title": "Result Evaluator",
+    "type": "D. Auto research",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/53-result-evaluator/"
+   },
+   {
+    "n": 54,
+    "title": "Paper Writer",
+    "type": "D. Auto research",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/54-paper-writer/"
+   },
+   {
+    "n": 55,
+    "title": "Critic Loop",
+    "type": "D. Auto research",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/55-critic-loop/"
+   },
+   {
+    "n": 56,
+    "title": "Iteration Scheduler",
+    "type": "D. Auto research",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/56-iteration-scheduler/"
+   },
+   {
+    "n": 57,
+    "title": "End-to-End Research Demo",
+    "type": "D. Auto research",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/57-end-to-end-research-demo/"
+   },
+   {
+    "n": 58,
+    "title": "Vision Encoder Patches",
+    "type": "E. Multimodal VLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/58-vision-encoder-patches/"
+   },
+   {
+    "n": 59,
+    "title": "Vision Transformer Encoder",
+    "type": "E. Multimodal VLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/59-vit-transformer/"
+   },
+   {
+    "n": 60,
+    "title": "Projection Layer for Modality Alignment",
+    "type": "E. Multimodal VLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/60-projection-layer-modality-align/"
+   },
+   {
+    "n": 61,
+    "title": "Cross-Attention Fusion",
+    "type": "E. Multimodal VLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/61-cross-attention-fusion/"
+   },
+   {
+    "n": 62,
+    "title": "Vision-Language Pretraining",
+    "type": "E. Multimodal VLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/62-vision-language-pretraining/"
+   },
+   {
+    "n": 63,
+    "title": "Multimodal Evaluation",
+    "type": "E. Multimodal VLM",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/63-multimodal-eval/"
+   },
+   {
+    "n": 64,
+    "title": "Chunking Strategies, Compared",
+    "type": "F. Advanced RAG",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/64-chunking-strategies-advanced/"
+   },
+   {
+    "n": 65,
+    "title": "Hybrid Retrieval with BM25 and Dense Embeddings",
+    "type": "F. Advanced RAG",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/65-hybrid-retrieval-bm25-dense/"
+   },
+   {
+    "n": 66,
+    "title": "Cross-Encoder Reranker",
+    "type": "F. Advanced RAG",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/66-reranker-cross-encoder/"
+   },
+   {
+    "n": 67,
+    "title": "Query Rewriting: HyDE, Multi-Query, and Decomposition",
+    "type": "F. Advanced RAG",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/67-query-rewriting-hyde/"
+   },
+   {
+    "n": 68,
+    "title": "RAG Evaluation: Precision, Recall, MRR, nDCG, Faithfulness, Answer Relevance",
+    "type": "F. Advanced RAG",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/68-rag-eval-precision-recall/"
+   },
+   {
+    "n": 69,
+    "title": "End-to-End RAG System",
+    "type": "F. Advanced RAG",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/69-end-to-end-rag-system/"
+   },
+   {
+    "n": 70,
+    "title": "Task Spec Format",
+    "type": "G. Eval framework",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/70-task-spec-format/"
+   },
+   {
+    "n": 71,
+    "title": "Classical Metrics",
+    "type": "G. Eval framework",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/71-classical-metrics/"
+   },
+   {
+    "n": 72,
+    "title": "Code Exec Metric",
+    "type": "G. Eval framework",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/72-code-exec-metric/"
+   },
+   {
+    "n": 73,
+    "title": "Perplexity and Calibration",
+    "type": "G. Eval framework",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/73-perplexity-calibration/"
+   },
+   {
+    "n": 74,
+    "title": "Leaderboard Aggregation",
+    "type": "G. Eval framework",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/74-leaderboard-aggregation/"
+   },
+   {
+    "n": 75,
+    "title": "End-to-End Eval Runner",
+    "type": "G. Eval framework",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/75-end-to-end-eval-runner/"
+   },
+   {
+    "n": 76,
+    "title": "Collective Ops From Scratch",
+    "type": "H. Distributed train",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/76-collective-ops-from-scratch/"
+   },
+   {
+    "n": 77,
+    "title": "Data Parallel DDP From Scratch",
+    "type": "H. Distributed train",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/77-data-parallel-ddp/"
+   },
+   {
+    "n": 78,
+    "title": "ZeRO Optimizer State Sharding",
+    "type": "H. Distributed train",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/78-zero-parameter-sharding/"
+   },
+   {
+    "n": 79,
+    "title": "Pipeline Parallel and Bubble Analysis",
+    "type": "H. Distributed train",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/79-pipeline-parallel/"
+   },
+   {
+    "n": 80,
+    "title": "Sharded Checkpoint and Atomic Resume",
+    "type": "H. Distributed train",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/80-checkpoint-sharded-resume/"
+   },
+   {
+    "n": 81,
+    "title": "End-to-End Distributed Training",
+    "type": "H. Distributed train",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/81-end-to-end-distributed-train/"
+   },
+   {
+    "n": 82,
+    "title": "Jailbreak Taxonomy",
+    "type": "I. Safety harness",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/82-jailbreak-taxonomy/"
+   },
+   {
+    "n": 83,
+    "title": "Prompt Injection Detector",
+    "type": "I. Safety harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/83-prompt-injection-detector/"
+   },
+   {
+    "n": 84,
+    "title": "Refusal Evaluation",
+    "type": "I. Safety harness",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/84-refusal-evaluation/"
+   },
+   {
+    "n": 85,
+    "title": "Content Classifier Integration",
+    "type": "I. Safety harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/85-content-classifier-integration/"
+   },
+   {
+    "n": 86,
+    "title": "Constitutional Rules Engine",
+    "type": "I. Safety harness",
+    "lang": "Python",
+    "path": "phases/19-capstone-projects/86-constitutional-rules-engine/"
+   },
+   {
+    "n": 87,
+    "title": "End-to-End Safety Gate",
+    "type": "I. Safety harness",
+    "lang": "Python, TypeScript",
+    "path": "phases/19-capstone-projects/87-end-to-end-safety-gate/"
+   }
+  ]
+ }
+]
