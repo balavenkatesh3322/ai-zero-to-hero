@@ -184,6 +184,7 @@ Run locally: `npm install && npm run dev` → http://localhost:5173
 Lesson-1 completion ≥ 55% · weekly returning learners · GitHub stars & forks · contributors per month · merged lesson PRs · time-to-merge.
 
 ## Changelog
+- **v12.4 (2026-11-22):** Sidebar lessons show a topic icon instead of a generic page: a small coloured tile (colour = topic family: supervised blue, unsupervised violet, evaluation indigo, features teal, probability orange, time green, production peach, risk rose, optimisation sand) with a glyph for the idea (`src/components/TopicIcon.tsx`); a green check badge marks finished lessons; coming-soon lessons keep a muted page glyph.
 - **v12.2 (2026-11-22):** Light theme by default (only an explicit toggle is remembered); removed the language button; header GitHub button links to the repo; every step card links to “Open an issue” and “Edit on GitHub”; PR templates (general, add-lesson, edit-lesson), issue forms and two worked sample PRs in `docs/contributing/`.
 - **v12.1 (2026-11-22):** Professional README (one-line statement, screenshots in `docs/screenshots/`, features, curriculum status, run/contribute sections), `CONTRIBUTING.md` and MIT `LICENSE`. Dataset and third-party details stay in this spec and the scripts, not the README.
 - **v12 (2026-11-22):** SEO & sharing (per-page titles/descriptions, canonical URLs, generated Open Graph/Twitter cards, icons, manifest, sitemap, robots, JSON-LD), path URLs instead of hashes, ML Fundamentals renumbered as 00 · START with later phases 01–17 coming soon, deployment to Vercel from GitHub.

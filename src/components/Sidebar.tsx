@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { TopicIcon } from './TopicIcon';
 import { Icon } from './Icon';
 import { BUILT, BROWSE, COMING, FOLDERS, TOPICS, LIVE_LESSONS, type Folder } from '../lib/course';
 import { lessonHref, load, save } from '../lib/hooks';
@@ -116,9 +117,7 @@ export function Sidebar({ currentSlug, query, done }: Props) {
                       return (
                         <li key={l.slug} className={`lesson${cur ? ' is-current' : ''}${soon ? ' is-soon' : ''}`}>
                           <a href={lessonHref(l.slug)} aria-current={cur ? 'page' : undefined} className={cur ? 'pop' : undefined} tabIndex={isOpen ? 0 : -1}>
-                            <span className={done.has(l.slug) ? 'lesson__mark lesson__mark--done' : 'lesson__mark'}>
-                              <Icon name={done.has(l.slug) ? 'check' : 'doc'} size={12} strokeWidth={1.6} />
-                            </span>
+                            <TopicIcon slug={l.slug} done={done.has(l.slug)} soon={!l.built} />
                             <span className="lesson__title">{l.title}</span>
                           </a>
                         </li>
