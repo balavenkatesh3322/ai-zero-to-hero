@@ -67,7 +67,7 @@ Also on the roadmap: **Course map**, **Practice** (graded incident drills), **AI
 
 ## Features
 
-- 🧭 **Step-through lessons** with draw-in arrows, flowing requests, replay and pause, and keyboard controls (`←` `→` `R` `Space`)
+- 🧭 **Step-through lessons** with draw-in arrows, flowing requests, replay and pause, and keyboard controls (`←` `→` `R` `Space`, `[` `]` to hide the side panels)
 - ⚡ **Live apps** that run trained models fully in the browser, lazy-loaded per lesson
 - 🧱 **Realistic isometric objects** drawn from real 3-D geometry, consistent in light and dark themes
 - 🔗 **Shareable URLs** for every lesson and step, with generated preview cards for social links

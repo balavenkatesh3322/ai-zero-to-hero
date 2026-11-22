@@ -67,7 +67,7 @@ practice[]: { alert, trace, question, options[{text, correct, feedback}] }
 Widgets (reusable "detail" panels): token chips, vector bars, attention heat-row, probability bars + slider, table, chat transcript, cost bars, pipeline chips.
 **Live apps (v11).** Every lesson has a LIVE APP step just before the recap. The stage swaps the concept diagram for the lesson's **real production system** (`lesson.system`, e.g. phone → SMS gateway → tokenizer → spam model → inbox / spam folder), and below it a small working app runs **real public data through the real trained models** in the browser (`src/apps/`, widget `{type:'app', app}`). Apps load their data on demand and can be paused; learners can also type or edit their own inputs.
 
-Keyboard: ← → steps · R replay · Space pause · Ctrl K search. Every step has its own URL (`#/lesson-slug/3`) so it can be shared.
+Keyboard: `[` / `]` hide or show the course and step panels · ← → steps · R replay · Space pause · Ctrl K search. Every step has its own URL (`#/lesson-slug/3`) so it can be shared.
 
 ## 6. Design system
 - **Font:** JetBrains Mono everywhere (400–800).
@@ -184,6 +184,7 @@ Run locally: `npm install && npm run dev` → http://localhost:5173
 Lesson-1 completion ≥ 55% · weekly returning learners · GitHub stars & forks · contributors per month · merged lesson PRs · time-to-merge.
 
 ## Changelog
+- **v12.5 (2026-11-22):** Collapsible side panels: the course tree (left) and the step panel (right) each have a close button and collapse to a slim strip with a reopen button (the right strip keeps Back / Next). Shortcuts `[` and `]`; the choice is remembered per browser (`azh:panels`). On narrow screens a closed panel becomes a one-line bar.
 - **v12.4 (2026-11-22):** Sidebar lessons show a topic icon instead of a generic page: a small coloured tile (colour = topic family: supervised blue, unsupervised violet, evaluation indigo, features teal, probability orange, time green, production peach, risk rose, optimisation sand) with a glyph for the idea (`src/components/TopicIcon.tsx`); a green check badge marks finished lessons; coming-soon lessons keep a muted page glyph.
 - **v12.2 (2026-11-22):** Light theme by default (only an explicit toggle is remembered); removed the language button; header GitHub button links to the repo; every step card links to “Open an issue” and “Edit on GitHub”; PR templates (general, add-lesson, edit-lesson), issue forms and two worked sample PRs in `docs/contributing/`.
 - **v12.1 (2026-11-22):** Professional README (one-line statement, screenshots in `docs/screenshots/`, features, curriculum status, run/contribute sections), `CONTRIBUTING.md` and MIT `LICENSE`. Dataset and third-party details stay in this spec and the scripts, not the README.

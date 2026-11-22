@@ -67,3 +67,20 @@ export function useProgress(): [Set<string>, (slug: string) => void] {
   }, []);
   return [done, mark];
 }
+
+/* ---------- side panels (left course tree, right step rail): open/closed, remembered per browser ---------- */
+export interface Panels { left: boolean; right: boolean }
+export function usePanels(): [Panels, (which: keyof Panels) => void] {
+  const [p, setP] = useState<Panels>(() => ({ left: true, right: true, ...load<Partial<Panels>>('azh:panels', {}) }));
+  const toggle = useCallback((which: keyof Panels) => setP((cur) => { const next = { ...cur, [which]: !cur[which] }; save('azh:panels', next); return next; }), []);
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const el = e.target as HTMLElement;
+      if (el.closest('input, textarea, select, [contenteditable]') || e.metaKey || e.ctrlKey || e.altKey) return;
+      if (e.key === '[') { e.preventDefault(); toggle('left'); } else if (e.key === ']') { e.preventDefault(); toggle('right'); }
+    };
+    addEventListener('keydown', onKey);
+    return () => removeEventListener('keydown', onKey);
+  }, [toggle]);
+  return [p, toggle];
+}

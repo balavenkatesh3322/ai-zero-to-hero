@@ -20,11 +20,11 @@ function FolderGlyph({ fill, stroke }: { fill: string; stroke: string }) {
   );
 }
 
-interface Props { currentSlug: string; query: string; done: Set<string> }
+interface Props { currentSlug: string; query: string; done: Set<string>; panelOpen: boolean; onToggle: () => void }
 
 const BUILT_SLUGS = new Set(BUILT.map((l) => l.slug));
 
-export function Sidebar({ currentSlug, query, done }: Props) {
+export function Sidebar({ currentSlug, query, done, panelOpen, onToggle }: Props) {
   const currentFolder = FOLDERS.find((f) => f.lessons.some((l) => l.slug === currentSlug))?.id ?? 'SH';
   const [open, setOpen] = useState<Record<string, boolean>>(() => ({ ...load<Record<string, boolean>>('azh:open', {}), [currentFolder]: true }));
   const [filter, setFilter] = useState<string>(() => load('azh:show', 'available'));
@@ -62,12 +62,27 @@ export function Sidebar({ currentSlug, query, done }: Props) {
   const countFor = (ids: string[] | null, topicId?: string) => FOLDERS.filter((f) => !ids || ids.includes(f.id)).reduce((n, f) => n + f.lessons.filter((l) => !topicId || l.topics.includes(topicId)).length, 0);
   const forceOpen = !!q || !!topic;
 
+  if (!panelOpen) {
+    return (
+      <aside className="panel-strip panel-strip--left" aria-label="Course (collapsed)">
+        <button type="button" className="tool-btn panel-strip__btn" onClick={onToggle} aria-expanded={false} aria-controls="course-panel" title="Show course ( [ )">
+          <Icon name="panelLeftOpen" size={16} />
+        </button>
+        <span className="panel-strip__label">Course</span>
+        <span className="panel-strip__meta">{[...done].filter((d) => BUILT_SLUGS.has(d)).length}/{LIVE_LESSONS}</span>
+      </aside>
+    );
+  }
+
   return (
-    <aside className="side" aria-label="Course">
+    <aside className="side" id="course-panel" aria-label="Course">
       <div className="tree-root">
         <svg width="20" height="17" viewBox="0 0 24 20" aria-hidden="true"><path d="M1.5 4.5a2 2 0 0 1 2-2h5l2 2.2h9a2 2 0 0 1 2 2V16a2 2 0 0 1-2 2h-16a2 2 0 0 1-2-2z" fill="currentColor" /></svg>
         Course
         <span className="tree-root__meta">{shownCount} lessons</span>
+        <button type="button" className="panel-close" onClick={onToggle} aria-expanded={true} aria-controls="course-panel" title="Hide course ( [ )" aria-label="Hide course panel">
+          <Icon name="panelLeft" size={15} />
+        </button>
       </div>
 
       <div className="showmenu" ref={menuRef}>

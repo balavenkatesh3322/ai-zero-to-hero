@@ -617,3 +617,18 @@
 .topic--plain { background: transparent; border-color: transparent; box-shadow: none; color: var(--muted); }
 .topic__done { position: absolute; right: -5px; bottom: -5px; width: 12px; height: 12px; border-radius: 50%; background: #2f8a43; border: 1.4px solid var(--paper); display: inline-flex; align-items: center; justify-content: center; }
 .lesson.is-current .topic { box-shadow: none; }
+
+/* collapsible side panels */
+.panel-close { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; margin-left: 6px; border-radius: 8px; border: 1.3px solid var(--line-strong); background: var(--ghost); color: var(--ink-2); cursor: pointer; transition: background 0.15s, border-color 0.15s; }
+.panel-close:hover { border-color: var(--ink); color: var(--ink); background: var(--card); }
+.panel-close:focus-visible, .panel-strip__btn:focus-visible { outline: 2px solid var(--rust); outline-offset: 2px; }
+.panel-close--rail { align-self: flex-end; margin: 0 0 -6px; }
+.panel-strip { flex: 0 0 46px; min-height: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px 0; border: 1px solid var(--line); border-radius: 12px; background: var(--card); animation: rise 0.3s var(--ease) both; }
+.panel-strip__btn { width: 34px; height: 34px; padding: 0; display: inline-flex; align-items: center; justify-content: center; }
+.panel-strip__btn:disabled { opacity: 0.4; cursor: default; }
+.panel-strip__label { writing-mode: vertical-rl; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; color: var(--ink-2); }
+.panel-strip__meta { font-size: 10px; font-weight: 700; color: var(--muted); }
+@media (max-width: 1100px) {
+  .panel-strip { flex: 1 1 100%; flex-direction: row; justify-content: flex-start; padding: 6px 10px; }
+  .panel-strip__label { writing-mode: horizontal-tb; transform: none; }
+}

@@ -5,7 +5,7 @@ import { LessonPlayer } from './lesson/LessonPlayer';
 import { ComingSoon, SCREENS } from './components/ComingSoon';
 import { ObjectGallery } from './components/ObjectGallery';
 import { DEFAULT_SLUG, findLesson } from './lib/course';
-import { navigate, useProgress, useRoute, useTheme } from './lib/hooks';
+import { navigate, usePanels, useProgress, useRoute, useTheme } from './lib/hooks';
 import { useSeo } from './lib/seo';
 
 export function App() {
@@ -13,6 +13,7 @@ export function App() {
   const [theme, toggleTheme] = useTheme();
   const [query, setQuery] = useState('');
   const [done, markDone] = useProgress();
+  const [panels, togglePanel] = usePanels();
   const [booting, setBooting] = useState(true);
   useEffect(() => { const t = setTimeout(() => setBooting(false), 2600); return () => clearTimeout(t); }, []);
 
@@ -29,7 +30,7 @@ export function App() {
     <div className={booting ? 'app is-booting' : 'app'}>
       <Header view={route.view} theme={theme} toggleTheme={toggleTheme} query={query} setQuery={setQuery} />
       <div className="row">
-        <Sidebar currentSlug={found.lesson.slug} query={query} done={done} />
+        <Sidebar currentSlug={found.lesson.slug} query={query} done={done} panelOpen={panels.left} onToggle={() => togglePanel('left')} />
         {isLearn && found.lesson.built ? (
           <LessonPlayer
             key={found.lesson.slug}
@@ -38,6 +39,8 @@ export function App() {
             index={found.index}
             step={route.step}
             onFinish={() => markDone(found.lesson.slug)}
+            railOpen={panels.right}
+            onToggleRail={() => togglePanel('right')}
           />
         ) : isLearn ? (
           <ComingSoon

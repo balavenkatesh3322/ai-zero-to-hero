@@ -8,14 +8,14 @@ import type { Lesson, LessonCtx } from './types';
 import type { Folder } from '../lib/course';
 import { lessonHref, navigate } from '../lib/hooks';
 
-interface Props { lesson: Lesson; folder: Folder; index: number; step: number; onFinish: () => void }
+interface Props { lesson: Lesson; folder: Folder; index: number; step: number; onFinish: () => void; railOpen: boolean; onToggleRail: () => void }
 
 const SWATCH: Record<Lesson['legend'][number]['swatch'], string> = {
   request: 'legend__dot legend__dot--request', grounded: 'legend__dot legend__dot--grounded',
   done: 'legend__dot legend__dot--done', focus: 'legend__dot legend__dot--focus',
 };
 
-export function LessonPlayer({ lesson, folder, index, step, onFinish }: Props) {
+export function LessonPlayer({ lesson, folder, index, step, onFinish, railOpen, onToggleRail }: Props) {
   const [ctx, setCtx] = useState<LessonCtx>({ temp: 1 });
   const [paused, setPaused] = useState(false);
   const [replayKey, setReplayKey] = useState(0);
@@ -100,19 +100,33 @@ export function LessonPlayer({ lesson, folder, index, step, onFinish }: Props) {
         <Stepper steps={lesson.steps} step={s} go={go} />
       </main>
 
-      <aside className="rail" aria-label="Step">
-        <StepCard lessonTitle={lesson.title} step={cur} index={s} total={n} onBack={() => go(s - 1)} onNext={next} nextLabel={nextLabel} />
-        <section className="card learn">
-          <div className="eyebrow">YOU’LL LEARN</div>
-          <ul>
-            {lesson.youWillLearn.map((t, i) => (
-              <li key={t} className={s > i + 2 ? 'is-done' : ''}>
-                <span className="learn__box">{s > i + 2 && <Icon name="check" size={10} strokeWidth={3} />}</span>{t}
-              </li>
-            ))}
-          </ul>
-        </section>
-      </aside>
+      {railOpen ? (
+        <aside className="rail" id="step-panel" aria-label="Step">
+          <button type="button" className="panel-close panel-close--rail" onClick={onToggleRail} aria-expanded={true} aria-controls="step-panel" title="Hide step panel ( ] )" aria-label="Hide step panel">
+            <Icon name="panelRight" size={15} />
+          </button>
+          <StepCard lessonTitle={lesson.title} step={cur} index={s} total={n} onBack={() => go(s - 1)} onNext={next} nextLabel={nextLabel} />
+          <section className="card learn">
+            <div className="eyebrow">YOU’LL LEARN</div>
+            <ul>
+              {lesson.youWillLearn.map((t, i) => (
+                <li key={t} className={s > i + 2 ? 'is-done' : ''}>
+                  <span className="learn__box">{s > i + 2 && <Icon name="check" size={10} strokeWidth={3} />}</span>{t}
+                </li>
+              ))}
+            </ul>
+          </section>
+        </aside>
+      ) : (
+        <aside className="panel-strip panel-strip--right" aria-label="Step (collapsed)">
+          <button type="button" className="tool-btn panel-strip__btn" onClick={onToggleRail} aria-expanded={false} aria-controls="step-panel" title="Show step panel ( ] )">
+            <Icon name="panelRightOpen" size={16} />
+          </button>
+          <span className="panel-strip__label">Step {s + 1}/{n}</span>
+          <button type="button" className="tool-btn panel-strip__btn" onClick={() => go(s - 1)} disabled={s === 0} aria-label="Previous step"><Icon name="arrowLeft" size={15} /></button>
+          <button type="button" className="pop panel-strip__btn" onClick={next} aria-label={nextLabel}><Icon name={s === n - 1 ? 'check' : 'arrowRight'} size={15} /></button>
+        </aside>
+      )}
     </>
   );
 }
