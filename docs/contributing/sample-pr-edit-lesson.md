@@ -10,7 +10,7 @@ This is a complete example of a small, good edit PR. Copy its shape for your own
 
 > ## Edit lesson: Naive Bayes
 >
-> **Lesson URL:** https://ai-zero-to-hero.vercel.app/learn/naive-bayes/2
+> **Lesson URL:** https://ai-zerotohero.vercel.app/learn/naive-bayes/2
 > **Closes:** #42
 >
 > ### What was wrong or unclear

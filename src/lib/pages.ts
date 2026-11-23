@@ -6,7 +6,7 @@ import { BUILT, FOLDERS, findLesson, DEFAULT_SLUG } from './course';
 import type { AppId, Lesson } from '../lesson/types';
 
 export const SITE = {
-  url: 'https://ai-zero-to-hero.vercel.app',
+  url: 'https://ai-zerotohero.vercel.app',
   name: 'AI Zero to Hero',
   tagline: 'Learn machine learning by running it on real data',
   description: 'A free, open-source, interactive AI engineering course. Every lesson is an animated system you step through, and ends with a live app running real public data through a real model — spam filters, home prices, recommenders, fraud screening and more.',

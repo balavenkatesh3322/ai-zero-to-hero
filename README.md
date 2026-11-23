@@ -7,14 +7,14 @@
 <p align="center"><b>Learn machine learning by running it — every lesson ends in a live app powered by a real model on real data.</b></p>
 
 <p align="center">
-  <a href="https://ai-zero-to-hero.vercel.app"><img alt="Live site" src="https://img.shields.io/badge/live-ai--zero--to--hero.vercel.app-cfe3b2?style=flat-square&labelColor=1d1b18" /></a>
+  <a href="https://ai-zerotohero.vercel.app"><img alt="Live site" src="https://img.shields.io/badge/live-ai--zerotohero.vercel.app-cfe3b2?style=flat-square&labelColor=1d1b18" /></a>
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-f6cd82?style=flat-square&labelColor=1d1b18" /></a>
   <a href="CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-cbbae6?style=flat-square&labelColor=1d1b18" /></a>
   <img alt="React 18 + TypeScript" src="https://img.shields.io/badge/React_18-TypeScript-a9c5e8?style=flat-square&labelColor=1d1b18" />
 </p>
 
 <p align="center">
-  <a href="https://ai-zero-to-hero.vercel.app"><b>Start learning →</b></a> ·
+  <a href="https://ai-zerotohero.vercel.app"><b>Start learning →</b></a> ·
   <a href="#screenshots">Screenshots</a> ·
   <a href="#run-it-locally">Run locally</a> ·
   <a href="CONTRIBUTING.md">Contribute</a>

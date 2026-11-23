@@ -1,6 +1,6 @@
 ## Edit lesson: <!-- lesson title -->
 
-**Lesson URL:** <!-- e.g. https://ai-zero-to-hero.vercel.app/learn/naive-bayes/3 -->
+**Lesson URL:** <!-- e.g. https://ai-zerotohero.vercel.app/learn/naive-bayes/3 -->
 **Closes:** #<!-- issue, if any -->
 
 ### What was wrong or unclear
